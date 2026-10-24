@@ -1,0 +1,688 @@
+{
+  "schemas": {
+    "examples": [
+      {
+        "column_name": "example_id",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "query",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "query_id",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_id",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_locale",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "esci_label",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "small_version",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "large_version",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "split",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "__index_level_0__",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      }
+    ],
+    "products": [
+      {
+        "column_name": "product_id",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_title",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_description",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_bullet_point",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_brand",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_color",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "product_locale",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      }
+    ],
+    "sources": [
+      {
+        "column_name": "query_id",
+        "column_type": "BIGINT",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      },
+      {
+        "column_name": "source",
+        "column_type": "VARCHAR",
+        "null": "YES",
+        "key": null,
+        "default": null,
+        "extra": null
+      }
+    ]
+  },
+  "totals": {
+    "examples": 2621288,
+    "products": 1814924,
+    "sources": 130652
+  },
+  "example_splits": [
+    {
+      "product_locale": "es",
+      "split": "test",
+      "judgments": 93347,
+      "queries": 3844,
+      "products": 80949
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "judgments": 263063,
+      "queries": 11336,
+      "products": 201686
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "judgments": 118907,
+      "queries": 4667,
+      "products": 105906
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "judgments": 327146,
+      "queries": 13460,
+      "products": 260320
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "judgments": 425762,
+      "queries": 22458,
+      "products": 360873
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "judgments": 1393063,
+      "queries": 74888,
+      "products": 982641
+    }
+  ],
+  "version_flags": [
+    {
+      "small_version": 0,
+      "large_version": 1,
+      "judgments": 1503277
+    },
+    {
+      "small_version": 1,
+      "large_version": 1,
+      "judgments": 1118011
+    }
+  ],
+  "small_splits": [
+    {
+      "product_locale": "es",
+      "split": "test",
+      "judgments": 65883,
+      "queries": 2417,
+      "products": 58122
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "judgments": 152891,
+      "queries": 5632,
+      "products": 123147
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "judgments": 88789,
+      "queries": 3123,
+      "products": 79957
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "judgments": 209094,
+      "queries": 7284,
+      "products": 171436
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "judgments": 181701,
+      "queries": 8956,
+      "products": 164900
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "judgments": 419653,
+      "queries": 20888,
+      "products": 351961
+    }
+  ],
+  "label_counts": [
+    {
+      "product_locale": "es",
+      "split": "test",
+      "esci_label": "C",
+      "judgments": 4902
+    },
+    {
+      "product_locale": "es",
+      "split": "test",
+      "esci_label": "E",
+      "judgments": 27074
+    },
+    {
+      "product_locale": "es",
+      "split": "test",
+      "esci_label": "I",
+      "judgments": 11449
+    },
+    {
+      "product_locale": "es",
+      "split": "test",
+      "esci_label": "S",
+      "judgments": 22458
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "esci_label": "C",
+      "judgments": 12488
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "esci_label": "E",
+      "judgments": 63131
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "esci_label": "I",
+      "judgments": 26472
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "esci_label": "S",
+      "judgments": 50800
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "esci_label": "C",
+      "judgments": 4033
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "esci_label": "E",
+      "judgments": 41597
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "esci_label": "I",
+      "judgments": 13604
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "esci_label": "S",
+      "judgments": 29555
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "esci_label": "C",
+      "judgments": 8970
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "esci_label": "E",
+      "judgments": 96170
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "esci_label": "I",
+      "judgments": 34454
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "esci_label": "S",
+      "judgments": 69500
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "esci_label": "C",
+      "judgments": 8099
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "esci_label": "E",
+      "judgments": 79708
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "esci_label": "I",
+      "judgments": 30331
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "esci_label": "S",
+      "judgments": 63563
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "esci_label": "C",
+      "judgments": 19090
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "esci_label": "E",
+      "judgments": 181819
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "esci_label": "I",
+      "judgments": 71116
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "esci_label": "S",
+      "judgments": 147628
+    }
+  ],
+  "candidates_per_query": [
+    {
+      "product_locale": "es",
+      "split": "test",
+      "min_candidates": 8,
+      "median_candidates": 23.0,
+      "mean_candidates": 27.258171286719072,
+      "max_candidates": 61,
+      "queries_with_duplicate_candidates": 0
+    },
+    {
+      "product_locale": "es",
+      "split": "train",
+      "min_candidates": 8,
+      "median_candidates": 21.0,
+      "mean_candidates": 27.146839488636363,
+      "max_candidates": 77,
+      "queries_with_duplicate_candidates": 0
+    },
+    {
+      "product_locale": "jp",
+      "split": "test",
+      "min_candidates": 8,
+      "median_candidates": 31.0,
+      "mean_candidates": 28.43067563240474,
+      "max_candidates": 86,
+      "queries_with_duplicate_candidates": 0
+    },
+    {
+      "product_locale": "jp",
+      "split": "train",
+      "min_candidates": 8,
+      "median_candidates": 35.0,
+      "mean_candidates": 28.705930807248766,
+      "max_candidates": 96,
+      "queries_with_duplicate_candidates": 0
+    },
+    {
+      "product_locale": "us",
+      "split": "test",
+      "min_candidates": 8,
+      "median_candidates": 16.0,
+      "mean_candidates": 20.288186690486825,
+      "max_candidates": 95,
+      "queries_with_duplicate_candidates": 0
+    },
+    {
+      "product_locale": "us",
+      "split": "train",
+      "min_candidates": 8,
+      "median_candidates": 16.0,
+      "mean_candidates": 20.09062619685944,
+      "max_candidates": 188,
+      "queries_with_duplicate_candidates": 0
+    }
+  ],
+  "product_fields": [
+    {
+      "product_locale": "es",
+      "products": 260011,
+      "unique_ids": 260011,
+      "product_title_missing": 0,
+      "product_title_mean_characters": 115.83090715392811,
+      "product_description_missing": 118370,
+      "product_description_mean_characters": 519.7046394191015,
+      "product_bullet_point_missing": 36977,
+      "product_bullet_point_mean_characters": 596.3380664664187,
+      "product_brand_missing": 12020,
+      "product_brand_mean_characters": 8.11526820019153,
+      "product_color_missing": 100088,
+      "product_color_mean_characters": 5.90425789678129
+    },
+    {
+      "product_locale": "jp",
+      "products": 339059,
+      "unique_ids": 339059,
+      "product_title_missing": 0,
+      "product_title_mean_characters": 61.947144892186905,
+      "product_description_missing": 189640,
+      "product_description_mean_characters": 154.46610176989844,
+      "product_bullet_point_missing": 88367,
+      "product_bullet_point_mean_characters": 192.07965575312852,
+      "product_brand_missing": 58401,
+      "product_brand_mean_characters": 8.215885730802015,
+      "product_color_missing": 184828,
+      "product_color_mean_characters": 2.683535903780758
+    },
+    {
+      "product_locale": "us",
+      "products": 1215854,
+      "unique_ids": 1215854,
+      "product_title_missing": 0,
+      "product_title_mean_characters": 105.70294953176943,
+      "product_description_missing": 569795,
+      "product_description_mean_characters": 446.4528191707228,
+      "product_bullet_point_missing": 178776,
+      "product_bullet_point_mean_characters": 576.8901224982604,
+      "product_brand_missing": 72335,
+      "product_brand_mean_characters": 9.198666122741711,
+      "product_color_missing": 406104,
+      "product_color_mean_characters": 6.293105915677375
+    }
+  ],
+  "integrity": {
+    "duplicate_product_locale_keys": 0,
+    "query_ids_in_multiple_splits": 1,
+    "unmatched_judgments": 0,
+    "invalid_labels": 0
+  },
+  "small_split_integrity": {
+    "overlapping_query_ids": 0
+  },
+  "cross_split_ids_all_versions": [
+    {
+      "query_id": 79706,
+      "product_locale": "us",
+      "splits": 2
+    }
+  ],
+  "us_small_product_fields": {
+    "products": 482105,
+    "missing_description": 230347,
+    "missing_bullet_points": 63627,
+    "missing_description_percent": 47.77942564379129
+  },
+  "us_small_product_overlap": {
+    "union_products": 482105,
+    "train_products": 351961,
+    "test_products": 164900,
+    "shared_products": 34756
+  },
+  "us_small_query_lengths": [
+    {
+      "split": "test",
+      "queries": 8956,
+      "median_words": 4.0,
+      "mean_words": 3.8868914694059846,
+      "queries_at_least_six_words": 1245
+    },
+    {
+      "split": "train",
+      "queries": 20888,
+      "median_words": 4.0,
+      "mean_words": 3.888644197625431,
+      "queries_at_least_six_words": 2959
+    }
+  ],
+  "sources": [
+    {
+      "source": "behavioral",
+      "queries": 3780
+    },
+    {
+      "source": "negations",
+      "queries": 6964
+    },
+    {
+      "source": "nlqec",
+      "queries": 169
+    },
+    {
+      "source": "other",
+      "queries": 113656
+    },
+    {
+      "source": "parse_pattern",
+      "queries": 6083
+    }
+  ],
+  "training_samples": [
+    {
+      "query_id": 733,
+      "query": "1 fl oz hand sanitizer bulk spread love not germa",
+      "esci_label": "C",
+      "product_id": "B08DM6WQB3",
+      "product_title": "Wedding Favor LABELS - 20 Personalized Mini Hand Sanitizer STICKERS, Share Love Not Germs"
+    },
+    {
+      "query_id": 733,
+      "query": "1 fl oz hand sanitizer bulk spread love not germa",
+      "esci_label": "E",
+      "product_id": "B004T0GJDO",
+      "product_title": "PURELL Advanced Hand Sanitizer Refreshing Gel, Clean Scent, 1 Fl Oz Travel Size Flip-Cap Bottle with Display Bowl (Pack of 36) – 3901-36-BWL"
+    },
+    {
+      "query_id": 733,
+      "query": "1 fl oz hand sanitizer bulk spread love not germa",
+      "esci_label": "I",
+      "product_id": "B06Y56QLJB",
+      "product_title": "Mini Clear Plastic Spray Bottle Portable Cute Perfume Mouthwash Atomizer for Cleaning, Travel, Essential Oils, Perfume (60, 5ml)"
+    },
+    {
+      "query_id": 733,
+      "query": "1 fl oz hand sanitizer bulk spread love not germa",
+      "esci_label": "S",
+      "product_id": "B007IY3JE0",
+      "product_title": "Bath & Body Works Japanese Cherry Blossom 5-Pack PocketBac Sanitizers Anti-Bacterial Hand Gel 1 Fl Oz"
+    },
+    {
+      "query_id": 5117,
+      "query": "7 x 5 acrylic sign holder landscape",
+      "esci_label": "E",
+      "product_id": "B00NPBV528",
+      "product_title": "Dazzling Displays 7 x 5 Slanted Sign Holders (6-Pack)"
+    },
+    {
+      "query_id": 5117,
+      "query": "7 x 5 acrylic sign holder landscape",
+      "esci_label": "S",
+      "product_id": "B07HQLHLZC",
+      "product_title": "MaxGear Wall Mount Sign Holder, 8.5x11 inches Acrylic Sign Holder with Mounting Screws, Plastic Sign Holder Clear Acrylic Picture Frame for Home, Office, Store, Restaurant, Landscape (12 Pack)"
+    },
+    {
+      "query_id": 24328,
+      "query": "center punch",
+      "esci_label": "E",
+      "product_id": "B00004T7RH",
+      "product_title": "General Tools 79 Steel Automatic Center Punch , Black"
+    },
+    {
+      "query_id": 24328,
+      "query": "center punch",
+      "esci_label": "S",
+      "product_id": "B000E64RBI",
+      "product_title": "Starrett S117PC Center Punch Set, Set of 5 - 1/16\", 5/64\", 3/32\", 1/8\", 5/32\" Diameters, Hardened Tempered Steel Metal, Centering Tool for Machinists, Carpenters with Knurled Finger Grip, Storage Pouch"
+    },
+    {
+      "query_id": 75921,
+      "query": "orang comforters",
+      "esci_label": "E",
+      "product_id": "B08B4SRBHF",
+      "product_title": "Sheet Set 4 Piece Duvet Cover Set- Twin Size Halloween Trick or Treat Orang Black Ultra Soft Microfiber Quilt Cover with Zipper Closure (1 Comforter Cover + 1 Flat Sheet + 2 Pillow Shams)"
+    },
+    {
+      "query_id": 75921,
+      "query": "orang comforters",
+      "esci_label": "S",
+      "product_id": "B076Q6KXWX",
+      "product_title": "Softta Paisley Bedding Design 800 Thread Count 100% Cotton 3Pcs Duvet Cover Set,Cal King Size,Khaki"
+    }
+  ],
+  "sample_product_metadata": [
+    {
+      "product_id": "B00004T7RH",
+      "product_title": "General Tools 79 Steel Automatic Center Punch , Black",
+      "product_brand": "General Tools",
+      "product_color": "Black",
+      "description_excerpt": null,
+      "bullet_point_excerpt": "DELIVERS A HIGH IMPACT STRIKE - one-handed spring-loaded impact operation, no hammer required\nADJUSTABLE SPRING TENSION - adjustable spring tension cap for light or heavy strokes and marking\nALL STEEL 5\" BODY - center punch has an all-steel body, knurled finger grip and rust-resistant black oxide fi"
+    },
+    {
+      "product_id": "B004T0GJDO",
+      "product_title": "PURELL Advanced Hand Sanitizer Refreshing Gel, Clean Scent, 1 Fl Oz Travel Size Flip-Cap Bottle with Display Bowl (Pack of 36) – 3901-36-BWL",
+      "product_brand": "Purell",
+      "product_color": "Clear",
+      "description_excerpt": null,
+      "bullet_point_excerpt": "Show you care about the well-being of your team and visitors in the office and on-the-go\nPlace PURELL hand sanitizer at desks, in common areas, and restrooms\nPerfect for frequent use. Mild formula with 4 moisturizers is free of triclosan, parabens, phthalates, and preservatives; so it does not dry o"
+    },
+    {
+      "product_id": "B00NPBV528",
+      "product_title": "Dazzling Displays 7 x 5 Slanted Sign Holders (6-Pack)",
+      "product_brand": "Dazzling Displays",
+      "product_color": "Clear",
+      "description_excerpt": "<b>Dazzling Displays 6-Pack of Landscape 7\"W x 5\"H Slanted Sign Holders</b> <p>This package of landscape 7\"W x 5\"H slanted sign holders is ideal for trade shows, retail stores, offices, presentations, counter PoP sales, and even in open houses in real-estate sales. </p> <p>Great for displaying pictu",
+      "bullet_point_excerpt": "SELF-STANDING. Self-standing and innovatively designed, our Dazzling Displays Sign Holders are ideal for photos, menus, advertising, drink specials and much more! It displays pictures and posters efficiently, and stands on its own without difficulty thanks to its wide, sturdy base.\nMULTIPURPOSE. Our"
+    },
+    {
+      "product_id": "B08B4SRBHF",
+      "product_title": "Sheet Set 4 Piece Duvet Cover Set- Twin Size Halloween Trick or Treat Orang Black Ultra Soft Microfiber Quilt Cover with Zipper Closure (1 Comforter Cover + 1 Flat Sheet + 2 Pillow Shams)",
+      "product_brand": "Millxiu",
+      "product_color": "Halloween-021mix0158",
+      "description_excerpt": "<b> Millxiu Luxury Ultra Soft High Quality Duvet Cover Sets Give You All Year Comfortable</b><br><br> <b>Soft Breathable Durable</b><br> <b>100% MICROFIBER POLYESTER</b><br> Our Bedding Set are made of microfiber polyester, which is soft, breathable and not easy to shrink.<br> Best gift for children",
+      "bullet_point_excerpt": "Breathable & Durable ：Millxiu's lightweight microfiber duvet cover sets are made of high quality polyester, that is soft and comfortable, keep you sleep well all night.\nZipper Closure & Corner Ties：Each duvet cover has a zipper closure, concealed 4 corner ties help hold the duvet in place to ensure "
+    }
+  ]
+}

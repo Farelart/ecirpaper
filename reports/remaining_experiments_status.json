@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-10-05T13:23:19.970296+00:00",
+  "complete": true,
+  "stages": {
+    "encoding": {
+      "state": "complete",
+      "artifact": "/Users/farelganlaky/Documents/ecirpaper/outputs/e5_small/summary.json",
+      "session_wall_seconds": 2030.7959074169999
+    },
+    "dense_and_hybrid_evaluation": {
+      "state": "complete",
+      "artifact": "/Users/farelganlaky/Documents/ecirpaper/reports/neural_evaluation.json",
+      "session_wall_seconds": 2.930288917000098
+    },
+    "t5_generation": {
+      "state": "complete",
+      "artifact": "/Users/farelganlaky/Documents/ecirpaper/outputs/doc2query_t5/full_b16/summary.json",
+      "session_wall_seconds": 23238.122301834002
+    },
+    "t5_evaluation": {
+      "state": "complete",
+      "artifact": "/Users/farelganlaky/Documents/ecirpaper/reports/doc2query_evaluation.json",
+      "session_wall_seconds": 16.251926417000504
+    }
+  },
+  "current_stage": null,
+  "finished_at_utc": "2026-10-05T21:42:44.470905+00:00"
+}

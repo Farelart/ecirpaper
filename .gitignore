@@ -1,0 +1,13 @@
+.venv/
+.venv-neural/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+data/raw/
+data/processed/
+*.part
+
+outputs/
+
+data/models/

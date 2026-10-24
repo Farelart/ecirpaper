@@ -1,0 +1,20 @@
+{
+  "products": 200,
+  "attempted": 200,
+  "status": {
+    "ok": 200
+  },
+  "usage": {
+    "prompt_tokens": 102376,
+    "completion_tokens": 147347,
+    "total_tokens": 249723
+  },
+  "mean_entries": {
+    "keywords": 14.355,
+    "situations": 6.775,
+    "synonyms": 6.765
+  },
+  "mean_request_seconds": 5.318309277849185,
+  "quality_review": "Schema checks only; semantic grounding requires inspecting source/output pairs.",
+  "implementation_sha256": "96d98e4325109a1b24ed5515425060b3f70b72c19ec00a7775cafa4c3d797240"
+}

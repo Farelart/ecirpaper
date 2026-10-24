@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "estimate_hours_remaining": [
+    0,
+    0
+  ],
+  "estimate_status": "Complete: all benchmarks, independent validation, cost report and abstract update verified.",
+  "started_at_utc": "2026-10-06T05:44:00Z",
+  "stages": {
+    "ling_doc2query": "complete; 164900 products; three queries each",
+    "splade": "Complete: all164900 products and8956 queries encoded; settings, numerical weights and saved scores verified",
+    "indexing_retrieval": "complete; reports/retrieval_benchmark.json",
+    "independent_quality_validation": "complete; reports/ranking_sql_validation_final.json",
+    "paper_update": "Complete: reports/ecir_abstract_draft.md updated using verified results",
+    "final_report": "Complete: reports/final_experiments_verified.md/.json"
+  },
+  "modal_ceiling_usd": 30,
+  "scope_note": "Existing local effectiveness outputs preserved; cloud CUDA T5 outputs only preparation measurements",
+  "latest_observation": {
+    "checked_at_utc": "2026-10-06T09:58:45.586799+00:00",
+    "ling_verified_complete": true,
+    "ling_products": 164900,
+    "ling_generated_queries": 494700,
+    "ling_control_reported_cost_usd": 0.9950095764,
+    "shared_budget_used_usd": "2.42493314280",
+    "splade": {
+      "kind": "encoding",
+      "products_completed": 164900,
+      "queries_completed": 8956,
+      "complete": true
+    },
+    "modal_workspace_ephemeral_apps_metered_usd": "3.43528563",
+    "modal_workspace_payable_usd": "0E-8",
+    "splade_encoding_complete": true,
+    "splade_coverage_verified": true,
+    "splade_timed_queries": 26868,
+    "splade_recent_mean_ms": 42.84570514368111,
+    "e5_timed_queries": 26868,
+    "e5_median_ms": 12.891374999995264,
+    "e5_p95_ms": 14.497560300000599,
+    "local_benchmark_pid": null,
+    "splade_completed_repeats": 3,
+    "splade_recent_queries_per_second": 26.107506774973228,
+    "splade_remaining_timing_minutes_estimate": 0,
+    "splade_metered_compute_usd": "1.52231147",
+    "splade_metered_including_egress_usd": "1.52273621",
+    "billing_checked_at_utc": "2026-10-06T09:23:39.879716+00:00",
+    "splade_median_ms": 39.269541500004834,
+    "splade_p95_ms": 46.29856919995063,
+    "hybrid_plain_timed_queries": 26868,
+    "hybrid_structured_timed_queries": 26868,
+    "hybrid_structured_queries_per_second": 64.98778365183377,
+    "hybrid_structured_remaining_timing_minutes_estimate": 0
+  },
+  "completed_timing_methods": [
+    "plain",
+    "structured",
+    "doc2query_t5",
+    "ling_doc2query",
+    "e5",
+    "splade",
+    "hybrid_plain",
+    "hybrid_structured"
+  ],
+  "benchmark_pipeline_complete": true,
+  "completed_at_utc": "2026-10-06T09:58:45.586799+00:00",
+  "primary_comparison": "reports/modal_common_t4_verified.md",
+  "common_modal_t4_complete": true
+}

@@ -1,0 +1,13 @@
+{
+  "completed": 200,
+  "statuses": {
+    "ok": 200
+  },
+  "provider_reported_cost_usd": 0.493229,
+  "responses_with_cost": 200,
+  "projected_164900_products_usd": 406.6673105,
+  "projection_note": "Rough linear extrapolation from a balanced quality sample, not a representative workload or quote.",
+  "audit_sample": 20,
+  "audit_selection": "five per stratum, smallest SHA256(product_id + :audit42); independent of generated content",
+  "audit_ready": 20
+}

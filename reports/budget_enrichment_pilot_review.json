@@ -1,0 +1,658 @@
+{
+  "reviewer": "Codex exploratory review; no independent second annotator",
+  "products": 20,
+  "flagged": 9,
+  "limitations": "Balanced exploratory sample, including ambiguous synonym cases; not a validated hallucination rate. Model, prompt, context length and cleanup all changed, so differences cannot be attributed to the prompt alone.",
+  "items": [
+    {
+      "product_id": "B07ZKJB8GF",
+      "title": "3.5mm Female to XLR Male Stereo Audio Adapter Cable, 1/8 inch Mini Jack Female to XLR Male Adapter Cable, 1 Feet - JOLGOO",
+      "input": {
+        "product_title": "3.5mm Female to XLR Male Stereo Audio Adapter Cable, 1/8 inch Mini Jack Female to XLR Male Adapter Cable, 1 Feet - JOLGOO",
+        "product_brand": "JOLGOO",
+        "product_color": "",
+        "product_bullet_point": "PRO GRADE CABLE: This TRS 3.5mm Female to XLR Male stereo audio adapter cable can connect CD, speaker, PC, phone, tablet and more to microphone and others. Give you the perfect sound quality! NOTE: it is not compatible with devices that use phantom power. EXCELLENT SOUND : 20 AWG 4N Oxygen Free Copper with shielding, Foil shielding and metal braid ",
+        "product_description": "JOLGOO 3.5mm Female to XLR Male Stereo Audio Adapter Cable, 1/8 inch Mini Jack Female to XLR Male Adapter Cable, 1 Feet. Workes great and is exactly what You needed. Will make your music sound very clear and powerful. Specifications: Gender : Female-Male Connector A : 3.5 mm TRS Female Connector B : 3 pin XLR Male Cable Conductors : Bare Copper Con"
+      },
+      "enrichment": {
+        "keywords": [
+          "3.5mm female to XLR male",
+          "stereo audio adapter cable",
+          "1/8 inch mini jack",
+          "1 feet JOLGOO",
+          "20 AWG 4N oxygen free copper"
+        ],
+        "situations": [
+          "connect CD speaker PC phone to microphone",
+          "audio adapter for stereo equipment"
+        ],
+        "synonyms": [
+          "audio adapter cable",
+          "mini jack to XLR cable",
+          "stereo adapter cable"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2F1MSHE7B33ET8HX1J25",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07DCJ3GLT",
+      "title": "Shade&Beyond Sun Canopy Shade Sail 12'x16' Rectangle UV Block for Patio Deck Yard and Outdoor Activities Sand",
+      "input": {
+        "product_title": "Shade&Beyond Sun Canopy Shade Sail 12'x16' Rectangle UV Block for Patio Deck Yard and Outdoor Activities Sand",
+        "product_brand": "Shade&Beyond",
+        "product_color": "Sand",
+        "product_bullet_point": "High Quality Guarantee - Constructed of 185 gsm UV protected high density polyethylene (HDPE) shade fabric with strong stitched seam and durable stainless steel D-rings in each corner, fitted hardware kits and ropes for easy hanging( Hardware kits and ropes are not included for this shade sail) Breathable Material Design - Allows cooling breezes an",
+        "product_description": "Shade&Beyond shade sail information Product Name: Shade&Beyond 12'x16' Rectangle Sand Color Sun Shade Sail Canopy with D Rings Material: 185 gsm high-quality HDPE sun shade fabric Size: 12'x16'inch/ 3.66x4.9m-3.8x5.05m Color: Sand/ Yellow/ Tan Shape: Triangle Weight: 3.5kg/ 7.7lb With hardware kits or ropes: No Waterproof: No Service Life: 5-year l"
+      },
+      "enrichment": {
+        "keywords": [
+          "Shade&Beyond Sun Canopy Shade Sail",
+          "12'x16' rectangle",
+          "UV block",
+          "patio deck yard",
+          "sand color"
+        ],
+        "situations": [
+          "outdoor shade",
+          "patio protection",
+          "deck sun coverage"
+        ],
+        "synonyms": [
+          "shade sail",
+          "sun canopy",
+          "outdoor shade sail"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P26PZMN6ZB624K9EMV9CA",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B0831S1PX9",
+      "title": "CUK ASUS TUF506IV Gaming Laptop PC (AMD Ryzen 7 4800H CPU, 64GB RAM, 2TB NVMe SSD, NVIDIA GeForce RTX 2060 6GB GPU, 15.6\" Full HD 144Hz, Windows 10 Home) Gamer Notebook Computer",
+      "input": {
+        "product_title": "CUK ASUS TUF506IV Gaming Laptop PC (AMD Ryzen 7 4800H CPU, 64GB RAM, 2TB NVMe SSD, NVIDIA GeForce RTX 2060 6GB GPU, 15.6\" Full HD 144Hz, Win",
+        "product_brand": "Computer Upgrade King",
+        "product_color": "",
+        "product_bullet_point": "Processor: AMD Ryzen 7 4800H 8 Core Processor (8MB Cache, 2.9GHz-4.2GHz) 45W RAM: 64GB DDR4 3200MHz | Hard Drive: 2TB NVMe Solid State Drive Keyboard: Backlit Chiclet Keyboard RGB | Operating System: Windows 10 Home x64 Graphics: NVIDIA GeForce RTX 2060 6GB GDDR6 | Display: 15.6\" Full HD IPS-Level 144Hz Anti-Glare Wideview Display (1920 x 1080) 64G",
+        "product_description": "Computer Upgrade King sells computers with upgraded configurations. If the computer has modifications (listed above), then the manufacturer box is opened for it to be tested and inspected and to install the upgrades to achieve the specifications as advertised. If no modifications are listed, the item is unopened and untested. Defects & blemishes ar"
+      },
+      "enrichment": {
+        "keywords": [
+          "CUK ASUS TUF506IV gaming laptop",
+          "AMD Ryzen 7 4800H",
+          "64GB RAM 2TB NVMe SSD",
+          "NVIDIA GeForce RTX 2060 6GB",
+          "15.6\" Full HD 144Hz"
+        ],
+        "situations": [
+          "gaming PC with upgraded config",
+          "high performance laptop for gaming"
+        ],
+        "synonyms": [
+          "gaming laptop",
+          "ASUS TUF gaming PC",
+          "Ryzen 7 gaming laptop"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2F1MSHE7B33ET8HX1J25",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07L2TLCHM",
+      "title": "Unbreakable Love,Mr Right and Mrs Always Right Couple Mug, Valentines Wedding Gifts for Couple,Bridal Shower Gifts,Engagement Gifts or Christmas Gifts for Anniversary,Birthday,Growlers Cups,Beer Cups",
+      "input": {
+        "product_title": "Unbreakable Love,Mr Right and Mrs Always Right Couple Mug, Valentines Wedding Gifts for Couple,Bridal Shower Gifts,Engagement Gifts or Chris",
+        "product_brand": "MCleanPin",
+        "product_color": "MR & MRS",
+        "product_bullet_point": "\ud83d\udc97UNBREAKABLE LOVE\ud83d\udc97- Quite profound gift for any occasion!\ud83c\udf89Two high quality cups with stylish letters would amuse everyone who sees them. \ud83c\udf81Engagement Gifts- Would be the most eye-catching gifts ever,\u201dYou\u2019re my queen,\ud83d\udc78& you are my man\ud83e\udd34! \u201c \ud83d\udc69\u200d\u2764\u200d\ud83d\udc8b\u200d\ud83d\udc68Wedding Gifts- These couple cups with \u201cMr Right\ud83e\udd35& Mrs Always Right\ud83d\udc70\u201d on them, definitely your best choice ",
+        "product_description": "If you\u2019re struggling on looking for a perfect gift, \ud83c\udf81like Bridal shower gifts,Wedding Gifts for Couple,Couples Gifts, Engament Gifts, Newlyweds Gifts,Anniversiry, or just for a Surprise for your Mr and Mrs , you just find it RIGHT HERE ! RIGHT NOW! \ud83c\udf80If you want a funny gift,the word on the cups \u201c Mr Right\u201d\ud83e\udd34and \u201cMrs Always Right\ud83d\udc78\u201d won\u2019t never ease t"
+      },
+      "enrichment": {
+        "keywords": [
+          "valentines wedding gifts for couple"
+        ],
+        "situations": [
+          "gift for wedding or engagement",
+          "gift for bridal shower",
+          "gift for valentines day"
+        ],
+        "synonyms": [
+          "couple mug",
+          "wedding gift mug",
+          "engagement gift mug"
+        ]
+      },
+      "dropped_keywords": [
+        "Unbreakable Love couple mug",
+        "Mr Right Mrs Always Right mug",
+        "bridal shower gifts for couple",
+        "engagement gifts for couple"
+      ],
+      "response_id": "gen_01M44P26PWAH7NJD929B6DSD9X",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07JZDNWQT",
+      "title": "Emmi-dent Oral Waver Electric Toothbrush Cleans with 100% Ultrasound and no Abrasive Brushing. Gentle Massage Feature. Limited Edition Carbon Starter Kit",
+      "input": {
+        "product_title": "Emmi-dent Oral Waver Electric Toothbrush Cleans with 100% Ultrasound and no Abrasive Brushing. Gentle Massage Feature. Limited Edition Carbo",
+        "product_brand": "Emmi-dent",
+        "product_color": "Carbon Black / Silver",
+        "product_bullet_point": "Deep-cleaning of teeth and gums with patented 100% Ultrasound wave technology. More gentle dental cleaning - no brushing required, zero abrasion Clinically tested to remove harmful bacterial plaque Recommended for sensitive teeth and gums, receding gums, gingivitis, implants and braces and whenever extra gentle oral cleaning is desired. Limited edi",
+        "product_description": "Dental care with patented 100% ultrasound wave technology and without abrasive brushing. Most gentle deep-clean with ultrasound waves and millions of nano-bubbles. Clinically tested and proven to thoroughly clean teeth and gums. No brushing or scrubbing required - nano bubbles gently remove of harmful bacterial plaque and stains Ideal for sensitive"
+      },
+      "enrichment": {
+        "keywords": [
+          "Emmi-dent Oral Waver Electric Toothbrush",
+          "100% ultrasound",
+          "no abrasive brushing",
+          "gentle massage"
+        ],
+        "situations": [
+          "dental cleaning",
+          "oral care",
+          "sensitive teeth brushing"
+        ],
+        "synonyms": [
+          "electric toothbrush",
+          "ultrasound toothbrush",
+          "oral cleaner"
+        ]
+      },
+      "dropped_keywords": [
+        "sensitive teeth gums"
+      ],
+      "response_id": "gen_01M44P26PZMN6ZB624K9EMV9CA",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07Z83JD3N",
+      "title": "Losi Front Rear Diff Pinion Gear, 12T: DBXL-E 2.0, LOS252124",
+      "input": {
+        "product_title": "Losi Front Rear Diff Pinion Gear, 12T: DBXL-E 2.0, LOS252124",
+        "product_brand": "Losi",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": "Losi Front Rear Diff Pinion Gear, 12T: DBXL-E 2.0, LOS252124"
+      },
+      "enrichment": {
+        "keywords": [
+          "Front Rear Diff Pinion Gear",
+          "12T",
+          "DBXL-E 2.0"
+        ],
+        "situations": [
+          "replacing diff pinion gear for DBXL-E 2.0"
+        ],
+        "synonyms": [
+          "diff pinion gear",
+          "12T pinion gear"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P6SXB42B5H1H1CD7ZEGVV",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B00N41RRRQ",
+      "title": "RWR No Knot Hair Nets (Grey)",
+      "input": {
+        "product_title": "RWR No Knot Hair Nets (Grey)",
+        "product_brand": "RWR",
+        "product_color": "Grey",
+        "product_bullet_point": "",
+        "product_description": "Pull On, Pull Up, Done! No Pins, No Knots"
+      },
+      "enrichment": {
+        "keywords": [
+          "RWR No Knot Hair Nets",
+          "Grey",
+          "Pull On",
+          "Pull Up",
+          "No Pins No Knots"
+        ],
+        "situations": [
+          "hair net",
+          "no-knot hair tie",
+          "grey hair accessory"
+        ],
+        "synonyms": [
+          "hair net",
+          "hair tie",
+          "pull-up hair net"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2A00FXNN41JBDVSHTVAV",
+      "flag": true,
+      "note": "Hair tie changes hair-net product type."
+    },
+    {
+      "product_id": "B085BL4PCY",
+      "title": "No Way Out: A Lucy Kincaid Novella (Lucy Kincaid Novels)",
+      "input": {
+        "product_title": "No Way Out: A Lucy Kincaid Novella (Lucy Kincaid Novels)",
+        "product_brand": "",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": "From Allison Brennan, the New York Times bestselling author of Cut and Run , comes a new e-novella, No Way Out : FBI Agent Lucy Kincaid faces her worst fear when her husband goes missing Nine years ago, mercenary Kane Rogan and photojournalist Siobhan Walsh risked their lives to rescue Hestia Juarez, a thirteen-year-old girl being forced to marry a"
+      },
+      "enrichment": {
+        "keywords": [
+          "No Way Out",
+          "Lucy Kincaid Novella",
+          "FBI Agent Lucy Kincaid",
+          "husband goes missing",
+          "Allison Brennan"
+        ],
+        "situations": [
+          "reading a romantic suspense novella",
+          "following an FBI agent's personal crisis",
+          "enjoying a Lucy Kincaid story"
+        ],
+        "synonyms": [
+          "Lucy Kincaid novella",
+          "romantic suspense novella",
+          "FBI agent romance"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2FD3RX1767HHSJQJWT4M",
+      "flag": true,
+      "note": "FBI agent romance/romantic suspense is not established by supplied excerpt."
+    },
+    {
+      "product_id": "B006RODC1M",
+      "title": "Heart Leaf Philodendron - Easiest House Plant to Grow - 4\" Pot - Live Plant",
+      "input": {
+        "product_title": "Heart Leaf Philodendron - Easiest House Plant to Grow - 4\" Pot - Live Plant",
+        "product_brand": "Hirt's Gardens",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": "Proper name: Philodendron cordatum Grows almost anywhere in the house, except full sun Keep soil evenly moist, but not wet or dry Great in a hanging pot The plant you will receive is growing in a 4\" pot \"Heart-leaf\" Philodendron is probably one of the easiest house plants to grow. Place them nearly anywhere (except direct sun) and they will thrive."
+      },
+      "enrichment": {
+        "keywords": [
+          "Heart Leaf Philodendron",
+          "Philodendron cordatum",
+          "easiest house plant",
+          "4\" pot",
+          "live plant"
+        ],
+        "situations": [
+          "indoor house plant",
+          "hanging pot plant",
+          "low light plant"
+        ],
+        "synonyms": [
+          "Philodendron",
+          "houseplant",
+          "indoor plant"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2A00FXNN41JBDVSHTVAV",
+      "flag": true,
+      "note": "Low-light suitability is not established by avoiding direct sun."
+    },
+    {
+      "product_id": "B01FL2T3ZE",
+      "title": "Lansinoh Contact Nipple Shields, 2 Count (3 Pack)",
+      "input": {
+        "product_title": "Lansinoh Contact Nipple Shields, 2 Count (3 Pack)",
+        "product_brand": "Lansinoh",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": "Description : Make breastfeeding easier with the Lansinoh Contact Nipple Shield. It is ideal for helping with for latch-on challenges such as flat or inverted nipples, tongue/lip tie and overactive let-down. This breast nipple shield is made from ultra-thin, super-soft, flexible 100 percent silicone for comfort. It has a special cut-out design for "
+      },
+      "enrichment": {
+        "keywords": [
+          "breastfeeding",
+          "nipple shield",
+          "latch-on",
+          "silicone",
+          "Lansinoh"
+        ],
+        "situations": [
+          "breastfeeding support",
+          "nipple protection",
+          "latch assistance"
+        ],
+        "synonyms": [
+          "breast shield",
+          "nipple cover",
+          "feeding shield"
+        ]
+      },
+      "dropped_keywords": [
+        "flat nipples"
+      ],
+      "response_id": "gen_01M44P2CSBYJ7X3KBEZ0N51B74",
+      "flag": true,
+      "note": "Breast shield/nipple cover can denote another product type."
+    },
+    {
+      "product_id": "B07MN6G7VX",
+      "title": "Comfort Colors Men Adult Long Sleeve Tee, Style 6014, Blue Jean, Large",
+      "input": {
+        "product_title": "Comfort Colors Men Adult Long Sleeve Tee, Style 6014, Blue Jean, Large",
+        "product_brand": "Comfort Colors",
+        "product_color": "Blue Jean",
+        "product_bullet_point": "Soft washed garment dyed fabric Double needle collar Twill taped neck and shoulders Rib cuffs Double needle bottom hem",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Comfort Colors Men Adult Long Sleeve Tee",
+          "Style 6014",
+          "Blue Jean",
+          "Soft washed garment dyed fabric",
+          "Double needle collar",
+          "Twill taped neck and shoulders",
+          "Rib cuffs",
+          "Double needle bottom hem"
+        ],
+        "situations": [
+          "casual everyday wear",
+          "soft comfortable long sleeve tee"
+        ],
+        "synonyms": [
+          "men's long sleeve t-shirt",
+          "adult cotton tee",
+          "blue jean colored shirt"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2PX2APBEFHRDA7J9ZZ9G",
+      "flag": true,
+      "note": "Cotton appears in a synonym without stated material."
+    },
+    {
+      "product_id": "B002XDRCY4",
+      "title": "MET-Rx RTD 51 Protein Shake, Ready to Drink and Convenient for Meal Replacement, Low Carb, Cookies and Creme, With Vitamin A, Vitamin C, Vitamin D, and Zinc to Support Immune Health, 15 oz, 12 Count",
+      "input": {
+        "product_title": "MET-Rx RTD 51 Protein Shake, Ready to Drink and Convenient for Meal Replacement, Low Carb, Cookies and Creme, With Vitamin A, Vitamin C, Vit",
+        "product_brand": "MET-Rx",
+        "product_color": "Cookies N' Cream",
+        "product_bullet_point": "READY TO DRINK PROTEIN SHAKE: Formulated for fitness-minded individuals, MET-Rx RTD 51 is the powerhouse of read to drink protein shakes. Packed with protein, amino acids, vitamins, and minerals; 51 grams of protein per can, low fat, with 4 grams of sugar. MUSCLE RECOVERY AND EXTENDED SUPPORT: MET-Rx RTD 51 come in convenient cans that are easy to ",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "MET-Rx RTD 51 Protein Shake",
+          "Ready to Drink",
+          "Meal Replacement"
+        ],
+        "situations": [
+          "fitness-minded individuals protein shake",
+          "muscle recovery and extended support",
+          "low carb meal replacement"
+        ],
+        "synonyms": [
+          "protein shake",
+          "ready to drink protein",
+          "meal replacement shake"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2K46EZD50NKR8R2CA8MH",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07W3SH4BD",
+      "title": "The Party Animal NFL Minnesota Vikings, Adam Thielen Player Jersey Apron",
+      "input": {
+        "product_title": "The Party Animal NFL Minnesota Vikings, Adam Thielen Player Jersey Apron",
+        "product_brand": "The Party Animal",
+        "product_color": "Purple",
+        "product_bullet_point": "Apron for indoor/outdoor grilling and cooking Design features NFL player jersey dye sublimation graphics Features 24\" long waist ties, adjustable neck strap, and two front pockets Dimensions: 34\u201d (L) x 26\u201d (W) One size fits most adults",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "The Party Animal NFL Minnesota Vikings",
+          "Adam Thielen Player Jersey Apron",
+          "indoor/outdoor grilling and cooking",
+          "NFL player jersey dye sublimation graphics",
+          "adjustable neck strap",
+          "two front pockets"
+        ],
+        "situations": [
+          "NFL themed grilling apron",
+          "cooking and BBQ apron",
+          "Minnesota Vikings fan apparel"
+        ],
+        "synonyms": [
+          "grilling apron",
+          "cooking apron",
+          "NFL jersey apron"
+        ]
+      },
+      "dropped_keywords": [
+        "24 inch long waist ties",
+        "34 inch L x 26 inch W"
+      ],
+      "response_id": "gen_01M44P2PX2APBEFHRDA7J9ZZ9G",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B004BTE78C",
+      "title": "Quality Chain Cobra Cable Passenger Snow Traction Tire Chains (1022)",
+      "input": {
+        "product_title": "Quality Chain Cobra Cable Passenger Snow Traction Tire Chains (1022)",
+        "product_brand": "Quality Chain",
+        "product_color": "",
+        "product_bullet_point": "Fits Tire Sizes: 185/55-15, 195/55-15, 165/65-15, 175/65-15, 165/70-15, 175/70-15, 175/75-15, 155/80-15, 165/80-15, 175/80-13, 195/55-14, 175/75-14, 175/80-14, 200/60-365, 175/75-16 Rubber Adjusters Sold Separately (Part# 0212) (Recommended) Not for Use on Trailers Sold in Pairs (2 Chains/Covers 2 Tires) SAE Class \"S\" Clearance",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Quality Chain Cobra Cable Passenger Snow Traction Tire Chains",
+          "1022",
+          "Rubber Adjusters Sold Separately"
+        ],
+        "situations": [
+          "snow traction for passenger tires",
+          "fits tire sizes 185/55-15 to 200/60-365",
+          "sold in pairs for 2 tires"
+        ],
+        "synonyms": [
+          "tire chains",
+          "snow traction chains",
+          "cobra cable chains"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2K46EZD50NKR8R2CA8MH",
+      "flag": true,
+      "note": "A list of discrete compatible tire sizes becomes an apparent continuous range."
+    },
+    {
+      "product_id": "B00XA30QI0",
+      "title": "Roller Derby Firestar Youth Girl's Quad Roller Skates, White/Pink, Size 13",
+      "input": {
+        "product_title": "Roller Derby Firestar Youth Girl's Quad Roller Skates, White/Pink, Size 13",
+        "product_brand": "Roller Derby",
+        "product_color": "White/Pink",
+        "product_bullet_point": "SIZING: Regular U.S. children's shoe size CLOSURE: Sport shoe design with power strap & lace closure boot CHASSIS: Lightweight torsion beam frame WHEELS: 54mm Urethane wheels BEARINGS: 608Z Excellerator bearings",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Youth Girl's Quad Roller Skates",
+          "54mm Urethane wheels",
+          "608Z Excellerator bearings",
+          "Sport shoe design",
+          "Lightweight torsion beam frame"
+        ],
+        "situations": [
+          "roller skating",
+          "youth sports",
+          "outdoor recreation"
+        ],
+        "synonyms": [
+          "quad skates",
+          "roller skates",
+          "youth roller skates"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2KESENM9BGEKWXPS52WN",
+      "flag": true,
+      "note": "Outdoor suitability is not specified."
+    },
+    {
+      "product_id": "1623970180",
+      "title": "The Martha Washington Cook Book",
+      "input": {
+        "product_title": "The Martha Washington Cook Book",
+        "product_brand": "",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "The Martha Washington Cook Book"
+        ],
+        "situations": [
+          "historical cookbook",
+          "Martha Washington recipes"
+        ],
+        "synonyms": [
+          "Martha Washington cook book"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2QVT0QC9K42DPW743D11",
+      "flag": true,
+      "note": "Historical recipes are not established by title alone."
+    },
+    {
+      "product_id": "B0851BRKTY",
+      "title": "Anzuo Screen Protector for iPhone 8 Plus/7 Plus/6S Plus/6 Plus, [2 Pack] 5.5-Inch Full Coverage Premium Tempered Glass,9H Hardness,Case Friendly,Anti Bubble 3D Touch Accuracy Film - Black",
+      "input": {
+        "product_title": "Anzuo Screen Protector for iPhone 8 Plus/7 Plus/6S Plus/6 Plus, [2 Pack] 5.5-Inch Full Coverage Premium Tempered Glass,9H Hardness,Case Frie",
+        "product_brand": "Anzuo",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Screen Protector for iPhone 8 Plus/7 Plus/6S Plus/6 Plus",
+          "[2 Pack] 5.5-Inch Full Coverage Premium Tempered Glass,9H Hardness"
+        ],
+        "situations": [
+          "phone screen protection",
+          "case friendly"
+        ],
+        "synonyms": [
+          "tempered glass screen protector",
+          "iphone screen protector"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2V9CM8HTPCMSBA2XP89H",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "B07F8BMP7Q",
+      "title": "Nidecker x Flow Trinity Boa Focus Snoaboard Boot - Women's Black, 7.0",
+      "input": {
+        "product_title": "Nidecker x Flow Trinity Boa Focus Snoaboard Boot - Women's Black, 7.0",
+        "product_brand": "Nidecker",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Nidecker x Flow Trinity Boa Focus",
+          "Women's Black",
+          "7.0"
+        ],
+        "situations": [
+          "snowboarding boot wear"
+        ],
+        "synonyms": [
+          "Trinity Boa Focus boot"
+        ]
+      },
+      "dropped_keywords": [
+        "Snowboard Boot"
+      ],
+      "response_id": "gen_01M44P2TPTSW9ZKNA7RYY16BBS",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    },
+    {
+      "product_id": "1418542563",
+      "title": "Fathered by God Small Group Video Series",
+      "input": {
+        "product_title": "Fathered by God Small Group Video Series",
+        "product_brand": "",
+        "product_color": "",
+        "product_bullet_point": "",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Fathered by God Small Group Video Series"
+        ],
+        "situations": [
+          "small group video study",
+          "Christian group video series"
+        ],
+        "synonyms": [
+          "Fathered by God video series"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2QVT0QC9K42DPW743D11",
+      "flag": true,
+      "note": "Christian-specific audience/content is inferred from title-only input."
+    },
+    {
+      "product_id": "1465418318",
+      "title": "Eye Wonder: Sharks",
+      "input": {
+        "product_title": "Eye Wonder: Sharks",
+        "product_brand": "DK Children",
+        "product_color": "Multicolor",
+        "product_bullet_point": "",
+        "product_description": ""
+      },
+      "enrichment": {
+        "keywords": [
+          "Eye Wonder Sharks",
+          "DK Children"
+        ],
+        "situations": [
+          "shark book for children",
+          "educational animal book"
+        ],
+        "synonyms": [
+          "Eye Wonder Sharks book"
+        ]
+      },
+      "dropped_keywords": [],
+      "response_id": "gen_01M44P2QVT0QC9K42DPW743D11",
+      "flag": false,
+      "note": "No specific grounding or synonym concern identified in this review."
+    }
+  ]
+}

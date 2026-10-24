@@ -1,0 +1,184 @@
+{
+  "products": 164900,
+  "queries": 8956,
+  "candidate_pairs": 181701,
+  "gains": {
+    "E": 1.0,
+    "S": 0.1,
+    "C": 0.01,
+    "I": 0.0
+  },
+  "k1": 1.2,
+  "b": 0.75,
+  "analyzer": "unicode_alphanumeric_casefold_html_v1",
+  "results": {
+    "plain": {
+      "ndcg_at_10": {
+        "mean": 0.7009012568216625,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8240256456612414,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7554616809742571,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.626507369361322,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6669611484164533,
+        "queries": 8955
+      }
+    },
+    "structured": {
+      "ndcg_at_10": {
+        "mean": 0.7130518987807293,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8315252809187894,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7695536091587124,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6476105404198302,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6761405563569604,
+        "queries": 8955
+      }
+    },
+    "doc2query_t5": {
+      "ndcg_at_10": {
+        "mean": 0.7091335343474253,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8298207954015954,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7692062126382831,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6459356855739169,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6716987112246812,
+        "queries": 8955
+      }
+    }
+  },
+  "paired_comparisons": {
+    "doc2query_t5_vs_plain": {
+      "ndcg_at_10": {
+        "mean_difference": 0.008232277525762806,
+        "bootstrap_95_percent_ci": [
+          0.006637497327385689,
+          0.009956409578077516
+        ],
+        "improved_queries": 3686,
+        "worsened_queries": 2855
+      },
+      "ndcg_full": {
+        "mean_difference": 0.005795149740354033,
+        "bootstrap_95_percent_ci": [
+          0.004716470673080828,
+          0.00698256554901423
+        ],
+        "improved_queries": 4054,
+        "worsened_queries": 3177
+      }
+    },
+    "doc2query_t5_vs_structured": {
+      "ndcg_at_10": {
+        "mean_difference": -0.003918364433304043,
+        "bootstrap_95_percent_ci": [
+          -0.005730752028126271,
+          -0.0019149192850554224
+        ],
+        "improved_queries": 3486,
+        "worsened_queries": 3795
+      },
+      "ndcg_full": {
+        "mean_difference": -0.0017044855171940046,
+        "bootstrap_95_percent_ci": [
+          -0.0030132810120897108,
+          -0.00027645099379825904
+        ],
+        "improved_queries": 3735,
+        "worsened_queries": 4064
+      }
+    }
+  },
+  "generation": {
+    "complete": true,
+    "products": 164900,
+    "selected_products": 164900,
+    "generation_wall_seconds": 23000.246065338106,
+    "timing_scope": "Batch input construction, tokenization, device transfers, generation, synchronization and decoding; excludes file writes and model loading.",
+    "process_cpu_seconds": 4519.8886669999965,
+    "products_per_second": 7.169488514668895,
+    "largest_observed_process_rss_bytes": 1111228416,
+    "model_load_seconds_latest_session": 3.0197397500000003,
+    "warmup_seconds_latest_session": 1.9356216249999996,
+    "projected_164900_generation_hours": 6.388957240371696,
+    "projection_note": "Throughput extrapolation, not a measured full-run time; excludes setup, idle time and thermal changes.",
+    "cash_api_cost_usd": 0,
+    "electricity_cost_usd": null,
+    "input_tokens": 23364625,
+    "generated_non_special_tokens": 4416532,
+    "products_sha256": "1da1c584a0c99d70d3cac539e4f28dfd8a92d590d630fc77acba832e4336ba8e",
+    "configuration": {
+      "model": "castorini/doc2query-t5-base-msmarco",
+      "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+      "source_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+      "input": "Exact saved shortened metadata supplied to structured LLM; field values concatenated.",
+      "input_max_tokens": 512,
+      "num_return_sequences": 3,
+      "max_length": 64,
+      "do_sample": true,
+      "top_k": 10,
+      "top_p": 1.0,
+      "padding_policy": "Batch maximum rounded to a multiple of 128; attention mask preserved.",
+      "temperature": 1.0,
+      "seed": 42,
+      "seed_policy": "Seed 42 + batch position; same batch layout required on resume.",
+      "batch_size": 16,
+      "device": "mps",
+      "threads": 4,
+      "limit": 0,
+      "torch": "2.8.0",
+      "transformers": "4.57.6",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "processor": "arm64",
+      "cash_api_cost_usd": 0,
+      "electricity_cost_usd": null,
+      "hardware_cost_usd": null,
+      "note": "Zero API bill is not zero total cost. Power and cloud-equivalent prices are not measured."
+    }
+  },
+  "corpus": {
+    "documents": 164900,
+    "average_length": 210.16693753790176,
+    "vocabulary": 263890
+  },
+  "note": "Pinned pretrained doc2query-T5 with 3 queries per product: economical configuration, not reproduction of the original 40-query MS MARCO experiment. Same saved metadata inputs as structured LLM; full original metadata remains in BM25.",
+  "timing": {
+    "corpus_statistics_seconds": 6.5660419999999995,
+    "candidate_scoring_and_sort_seconds": 6.625971943000046,
+    "ranking_metrics_and_csv_seconds": 7.187648542,
+    "evaluation_wall_seconds_before_report_write": 16.082610916999997,
+    "note": "Offline evaluation phases; scoring includes candidate document tokenization. Not indexed whole-catalog search or online serving latency. Timed while the experiment pipeline is active; not a controlled cross-method latency benchmark."
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "plain": {
+    "method": "plain",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 0.8169795000014801,
+    "p95_ms": 2.191677200000441,
+    "mean_query_encoding_ms": 0.0,
+    "mean_search_and_top10_ms": 1.0362431521512556,
+    "index": {
+      "build_and_write_seconds": 11.189681457999999,
+      "index_bytes": 112683010,
+      "average_document_length": 190.93963614311704,
+      "document_tokenization_seconds_separately_measured": 3.50196282210527,
+      "total_indexing_seconds": 14.691644280105269,
+      "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time.",
+      "reference_score_validation_queries": 100
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "structured": {
+    "method": "structured",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 0.8319170000135045,
+    "p95_ms": 2.1590249000020374,
+    "mean_query_encoding_ms": 0.0,
+    "mean_search_and_top10_ms": 1.020682628182162,
+    "index": {
+      "build_and_write_seconds": 12.242357292000001,
+      "index_bytes": 119368143,
+      "average_document_length": 220.8061188599151,
+      "document_tokenization_seconds_separately_measured": 3.9914853146256064,
+      "total_indexing_seconds": 16.233842606625608,
+      "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time.",
+      "reference_score_validation_queries": 100
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "doc2query_t5": {
+    "method": "doc2query_t5",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 0.8093960000010725,
+    "p95_ms": 2.1865896999969423,
+    "mean_query_encoding_ms": 0.0,
+    "mean_search_and_top10_ms": 1.0297745213636944,
+    "index": {
+      "build_and_write_seconds": 22.537174042000004,
+      "index_bytes": 119144655,
+      "average_document_length": 210.16693753790176,
+      "document_tokenization_seconds_separately_measured": 0,
+      "total_indexing_seconds": 22.537174042000004,
+      "text_preparation_note": "Previously cleaned neural export under frozen Python 3.9 T5 scorer. No previous rankings changed.",
+      "reference_score_validation_queries": 100
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "ling_doc2query": {
+    "method": "ling_doc2query",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 0.8013959999857434,
+    "p95_ms": 2.1231534999998285,
+    "mean_query_encoding_ms": 0.0,
+    "mean_search_and_top10_ms": 1.0158241431069943,
+    "index": {
+      "build_and_write_seconds": 11.197440457999988,
+      "index_bytes": 115864483,
+      "average_document_length": 209.64032747119467,
+      "document_tokenization_seconds_separately_measured": 3.8414720526416204,
+      "total_indexing_seconds": 15.038912510641609,
+      "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time."
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "e5": {
+    "method": "e5",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 12.891374999995264,
+    "p95_ms": 14.497560300000599,
+    "mean_query_encoding_ms": 8.596501870515098,
+    "mean_search_and_top10_ms": 4.558589465274662,
+    "index": {
+      "build_and_write_seconds": 0.4838046250000012,
+      "index_bytes": 253286528,
+      "note": "Representation assembly/serialization only; document model encoding reported separately.",
+      "dense_backend_validation": "Finite cosine bounds checked on every query; independent einsum agrees for 20+ reference queries across full corpus within float32 tolerance."
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "splade": {
+    "method": "splade",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 39.269541500004834,
+    "p95_ms": 46.29856919995063,
+    "mean_query_encoding_ms": 34.819878378034275,
+    "mean_search_and_top10_ms": 5.339738276796936,
+    "index": {
+      "build_and_write_seconds": 10.191351417000021,
+      "index_bytes": 156767177,
+      "note": "Representation assembly/serialization only; document model encoding reported separately."
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "hybrid_plain": {
+    "method": "hybrid_plain",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 15.15620800000761,
+    "p95_ms": 17.139866649961277,
+    "mean_query_encoding_ms": 8.844611873640623,
+    "mean_search_and_top10_ms": 6.551806772406609,
+    "index": {
+      "build_and_write_seconds": 11.673486083,
+      "index_bytes": 365969538,
+      "note": "Sum of separately measured component builds; shared indexes; RRF k60 with 1000 hits per component, fixed without test tuning."
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  },
+  "hybrid_structured": {
+    "method": "hybrid_structured",
+    "products": 164900,
+    "queries": 8956,
+    "repeats": 3,
+    "warmup_queries": 20,
+    "median_ms": 15.125166499956322,
+    "p95_ms": 17.133770400096182,
+    "mean_query_encoding_ms": 8.818254421988211,
+    "mean_search_and_top10_ms": 6.536057623716375,
+    "index": {
+      "build_and_write_seconds": 12.726161917000002,
+      "index_bytes": 372654671,
+      "note": "Sum of separately measured component builds; shared indexes; RRF k60 with 1000 hits per component, fixed without test tuning."
+    },
+    "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+    "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+  }
+}

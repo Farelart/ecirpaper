@@ -1,0 +1,19 @@
+{
+  "products": 164900,
+  "missing_products": 0,
+  "extra_products": 0,
+  "unique_products": 164900,
+  "new_pipeline_reported_charges_usd": "1.4269628520",
+  "uncertain_charge_reservations_usd": "0.00235853520",
+  "new_pipeline_accounted_usd": "1.42932138720",
+  "previous_gemini_pilot_usd": "0.493229",
+  "total_accounted_including_pilots_usd": "1.92255038720",
+  "budget_satisfied": true,
+  "enrichment_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+  "final_parser_sha256": "4a488c8d997447ae387be4a3b345d8f1ba0197d116bd87841101a5d0e1e185d8",
+  "notes": [
+    "Complete coverage of official English test-candidate products.",
+    "Raw outputs retained; deduplication, field limits, source-span keyword filtering and narrow missing-key-separator JSON syntax repair applied before evaluation.",
+    "Temporary provider HTTP 503 responses and checkpoint resumes retained; no relevance labels used in generation or repair."
+  ]
+}

@@ -1,0 +1,887 @@
+{
+  "complete": true,
+  "verified_at_utc": "2026-10-06T13:11:19.605337+00:00",
+  "products": 164900,
+  "queries": 8956,
+  "judged_pairs": 181701,
+  "table": {
+    "plain": {
+      "preparation_seconds": 0,
+      "indexing_seconds": 33.76250387599945,
+      "combined_recorded_phase_seconds": 33.76250387599945,
+      "index_bytes": 112683193,
+      "median_search_ms": 4.79588399999642,
+      "p95_search_ms": 6.5895698999995025,
+      "ndcg_at_10": 0.7009012568216669
+    },
+    "structured": {
+      "preparation_seconds": 2688.0218057632446,
+      "indexing_seconds": 36.70605128400379,
+      "combined_recorded_phase_seconds": 2724.7278570472486,
+      "index_bytes": 119368143,
+      "median_search_ms": 4.749752999970269,
+      "p95_search_ms": 6.532920700003329,
+      "ndcg_at_10": 0.7130518987807338
+    },
+    "doc2query_t5": {
+      "preparation_seconds": 7196.832066375007,
+      "indexing_seconds": 35.70646505300846,
+      "combined_recorded_phase_seconds": 7232.538531428016,
+      "index_bytes": 119144768,
+      "median_search_ms": 4.744807999998102,
+      "p95_search_ms": 6.53342870001836,
+      "ndcg_at_10": 0.7091335343474297
+    },
+    "ling_doc2query": {
+      "preparation_seconds": 3765.473277568817,
+      "indexing_seconds": 36.09141195499001,
+      "combined_recorded_phase_seconds": 3801.564689523807,
+      "index_bytes": 115864472,
+      "median_search_ms": 4.766335499994057,
+      "p95_search_ms": 6.506703149989335,
+      "ndcg_at_10": 0.7150485781953576
+    },
+    "e5": {
+      "preparation_seconds": 1459.4679911259987,
+      "indexing_seconds": 31.56865807099996,
+      "combined_recorded_phase_seconds": 1491.0366491969985,
+      "index_bytes": 253286528,
+      "median_search_ms": 7.8154330000188565,
+      "p95_search_ms": 8.538292250034372,
+      "ndcg_at_10": 0.7337992261476931
+    },
+    "splade": {
+      "preparation_seconds": 6561.427980124009,
+      "indexing_seconds": 46.92193319499995,
+      "combined_recorded_phase_seconds": 6608.349913319009,
+      "index_bytes": 157079410,
+      "median_search_ms": 9.305742500032466,
+      "p95_search_ms": 10.147974899871313,
+      "ndcg_at_10": 0.7368134625201852
+    },
+    "hybrid_plain": {
+      "preparation_seconds": 1459.4679911259987,
+      "indexing_seconds": 65.3311619469994,
+      "combined_recorded_phase_seconds": 1524.799153072998,
+      "index_bytes": 365969721,
+      "median_search_ms": 18.485222999970574,
+      "p95_search_ms": 24.481160400000586,
+      "ndcg_at_10": 0.7259287421619547
+    },
+    "hybrid_structured": {
+      "preparation_seconds": 4147.489796889244,
+      "indexing_seconds": 68.27470935500375,
+      "combined_recorded_phase_seconds": 4215.764506244247,
+      "index_bytes": 372654671,
+      "median_search_ms": 18.230911000046035,
+      "p95_search_ms": 24.01861180005653,
+      "ndcg_at_10": 0.7325217508547891
+    }
+  },
+  "quality": {
+    "plain": {
+      "ndcg_at_10": {
+        "mean": 0.7009012568216625,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8240256456612414,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7554616809742571,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.626507369361322,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6669611484164533,
+        "queries": 8955
+      }
+    },
+    "structured": {
+      "ndcg_at_10": {
+        "mean": 0.7130518987807293,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8315252809187894,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7695536091587124,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6476105404198302,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6761405563569604,
+        "queries": 8955
+      }
+    },
+    "doc2query_t5": {
+      "ndcg_at_10": {
+        "mean": 0.7091335343474252,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8298207954015954,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7692062126382831,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6459356855739169,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6716987112246812,
+        "queries": 8955
+      }
+    },
+    "ling_doc2query": {
+      "ndcg_at_10": {
+        "mean": 0.7150485781953538,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8327769366864557,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7719420617324315,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6506252791424744,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6780987928954479,
+        "queries": 8955
+      }
+    },
+    "e5": {
+      "ndcg_at_10": {
+        "mean": 0.7337992261476876,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8433729994878709,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7958324170174632,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6854622599374721,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6947908235141435,
+        "queries": 8955
+      }
+    },
+    "splade": {
+      "ndcg_at_10": {
+        "mean": 0.7368134625201813,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8461342937274897,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.8017952328013478,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.694059848146494,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6941962931529059,
+        "queries": 8955
+      }
+    },
+    "hybrid_plain": {
+      "ndcg_at_10": {
+        "mean": 0.7259287421619545,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8387760084740602,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7884094517744098,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6730683340777133,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.689662915079806,
+        "queries": 8955
+      }
+    },
+    "hybrid_structured": {
+      "ndcg_at_10": {
+        "mean": 0.7325217508547835,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8425242995510087,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7950902625641395,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6842340330504689,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6948213970671034,
+        "queries": 8955
+      }
+    }
+  },
+  "paired_comparisons": {
+    "structured_minus_plain": {
+      "mean_difference": 0.01215064195906685,
+      "paired_95_percent_interval": [
+        0.010289482420858932,
+        0.014015128478112737
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+    },
+    "structured_minus_doc2query_t5": {
+      "mean_difference": 0.003918364433304043,
+      "paired_95_percent_interval": [
+        0.00206523718471923,
+        0.005770975090092499
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+    },
+    "structured_minus_ling_doc2query": {
+      "mean_difference": -0.0019966794146244844,
+      "paired_95_percent_interval": [
+        -0.003553062613884037,
+        -0.00023441910568435345
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+    },
+    "e5_minus_structured": {
+      "mean_difference": 0.020747327366958244,
+      "paired_95_percent_interval": [
+        0.016913548032380307,
+        0.02435902084436215
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+    },
+    "splade_minus_e5": {
+      "mean_difference": 0.0030142363724937797,
+      "paired_95_percent_interval": [
+        -0.00015356780605030353,
+        0.00607836497011054
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+    }
+  },
+  "cloud_summary": {
+    "complete": true,
+    "products": 164900,
+    "queries": 8956,
+    "methods": {
+      "plain": {
+        "method": "plain",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 4.79588399999642,
+        "p95_ms": 6.5895698999995025,
+        "mean_query_encoding_ms": 0.0,
+        "mean_search_and_top10_ms": 3.823076121222274,
+        "index": {
+          "build_and_write_seconds": 21.538660526999998,
+          "index_bytes": 112683193,
+          "average_document_length": 190.93963614311704,
+          "document_tokenization_seconds": 12.223843348999454,
+          "total_indexing_seconds": 33.76250387599945,
+          "frozen_token_stream_mismatching_documents": 0,
+          "note": "Tokenization timed on source text separately; index built from frozen canonical tokens to preserve prior ranking semantics. Python runtime differences recorded, not silently applied."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "structured": {
+        "method": "structured",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 4.749752999970269,
+        "p95_ms": 6.532920700003329,
+        "mean_query_encoding_ms": 0.0,
+        "mean_search_and_top10_ms": 3.7659788125279343,
+        "index": {
+          "build_and_write_seconds": 22.78347916300001,
+          "index_bytes": 119368143,
+          "average_document_length": 220.8061188599151,
+          "document_tokenization_seconds": 13.922572121003782,
+          "total_indexing_seconds": 36.70605128400379,
+          "frozen_token_stream_mismatching_documents": 162743,
+          "note": "Tokenization timed on source text separately; index built from frozen canonical tokens to preserve prior ranking semantics. Python runtime differences recorded, not silently applied."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "doc2query_t5": {
+        "method": "doc2query_t5",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 4.744807999998102,
+        "p95_ms": 6.53342870001836,
+        "mean_query_encoding_ms": 0.0,
+        "mean_search_and_top10_ms": 3.8020517602351522,
+        "index": {
+          "build_and_write_seconds": 23.000424572999975,
+          "index_bytes": 119144768,
+          "average_document_length": 210.16693753790176,
+          "document_tokenization_seconds": 12.706040480008483,
+          "total_indexing_seconds": 35.70646505300846,
+          "frozen_token_stream_mismatching_documents": 1,
+          "note": "Tokenization timed on source text separately; index built from frozen canonical tokens to preserve prior ranking semantics. Python runtime differences recorded, not silently applied."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "ling_doc2query": {
+        "method": "ling_doc2query",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 4.766335499994057,
+        "p95_ms": 6.506703149989335,
+        "mean_query_encoding_ms": 0.0,
+        "mean_search_and_top10_ms": 3.776830258634602,
+        "index": {
+          "build_and_write_seconds": 22.820741354999996,
+          "index_bytes": 115864472,
+          "average_document_length": 209.64032747119467,
+          "document_tokenization_seconds": 13.270670599990012,
+          "total_indexing_seconds": 36.09141195499001,
+          "frozen_token_stream_mismatching_documents": 0,
+          "note": "Tokenization timed on source text separately; index built from frozen canonical tokens to preserve prior ranking semantics. Python runtime differences recorded, not silently applied."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "e5": {
+        "method": "e5",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 7.8154330000188565,
+        "p95_ms": 8.538292250034372,
+        "mean_query_encoding_ms": 6.230457773485075,
+        "mean_search_and_top10_ms": 1.6816947055237026,
+        "index": {
+          "build_and_write_seconds": 31.56865807099996,
+          "index_bytes": 253286528,
+          "note": "Representation assembly, serialization and upload to resident GPU included; product model encoding measured separately.",
+          "independent_score_validation": "CPU dot-product agrees for21 evenly spaced full-corpus queries; rtol1e-4 atol1e-5."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "splade": {
+        "method": "splade",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 9.305742500032466,
+        "p95_ms": 10.147974899871313,
+        "mean_query_encoding_ms": 7.115095853878358,
+        "mean_search_and_top10_ms": 2.255811020731089,
+        "index": {
+          "build_and_write_seconds": 46.92193319499995,
+          "index_bytes": 157079410,
+          "note": "Representation assembly, serialization and upload to resident GPU included; product model encoding measured separately.",
+          "independent_score_validation": "CPU dot-product agrees for21 evenly spaced full-corpus queries; rtol1e-4 atol1e-5."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "hybrid_plain": {
+        "method": "hybrid_plain",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 18.485222999970574,
+        "p95_ms": 24.481160400000586,
+        "mean_query_encoding_ms": 6.472404298533377,
+        "mean_search_and_top10_ms": 12.010396128442828,
+        "index": {
+          "build_and_write_seconds": 53.10731859799996,
+          "total_indexing_seconds": 65.3311619469994,
+          "index_bytes": 365969721,
+          "note": "Sum of component builds; shared indexes. Candidate quality uses full-candidate RRF, timed search uses top1000/component."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      },
+      "hybrid_structured": {
+        "method": "hybrid_structured",
+        "products": 164900,
+        "queries": 8956,
+        "repeats": 3,
+        "warmup_queries": 20,
+        "median_ms": 18.230911000046035,
+        "p95_ms": 24.01861180005653,
+        "mean_query_encoding_ms": 6.456872117947407,
+        "mean_search_and_top10_ms": 11.54714243799353,
+        "index": {
+          "build_and_write_seconds": 54.35213723399997,
+          "total_indexing_seconds": 68.27470935500375,
+          "index_bytes": 372654671,
+          "note": "Sum of component builds; shared indexes. Candidate quality uses full-candidate RRF, timed search uses top1000/component."
+        },
+        "hardware": {
+          "gpu": "Tesla T4",
+          "gpu_class": "T4",
+          "cpu": "",
+          "container_hostname": "modal",
+          "cpu_threads": 1,
+          "cpu_request_cores": 2,
+          "cpu_limit_cores": 4,
+          "memory_limit_mib": 8192,
+          "host": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+          "torch": "2.8.0+cu128",
+          "numpy": "2.0.2",
+          "scipy": "1.16.2"
+        },
+        "scope": "Same Modal T4 host; exact full-corpus top10, single query, warm resident index, three shuffled repeats. Neural query encoding/dot search on GPU; score transfer and deterministic top10 selection on CPU included. BM25 uses CPU postings. No network/ANN."
+      }
+    },
+    "input_manifest": {
+      "products": 164900,
+      "queries": 8956,
+      "t5_tokenizer_runtime": "Python3.9 frozen scorer",
+      "files": {
+        "lexical_inputs.jsonl.gz": "240af62801e56ddd1860edff846233b8c920bc4e68477c9d990bc807c269c039",
+        "queries.jsonl": "f7ae23553959ba8f13389178beb4db901343681723211951549fb715da2b83ba",
+        "products_ids.json": "471538745186b44e5915201960302081f3cc5a44c941929f37c1331a78c6e63e",
+        "query_tokens_reference.json": "791102b2dcee1ce13809c34b67c145cd054dc1759a984aa52bc35249245406a1"
+      }
+    }
+  },
+  "independent_validation": {
+    "all_passed": true,
+    "methods": {
+      "plain": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7009012568216669,
+        "independent_ndcg_full": 0.8240256456612434,
+        "median_ms": 4.79588399999642,
+        "p95_ms": 6.5895698999995025,
+        "rankings_sha256": "ab0f557bb3a7c5ce68ce71016381d8845208643b3ee02baa638a10821863fd20",
+        "timings_sha256": "8cd80bfe8b3bc5f79bf1714316a9708cb43988b1e0f191f6c448144a94367ca7"
+      },
+      "structured": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7130518987807338,
+        "independent_ndcg_full": 0.8315252809187932,
+        "median_ms": 4.749752999970269,
+        "p95_ms": 6.53292070000333,
+        "rankings_sha256": "08a525c7f335a5c8d99e1c08600c65dc24f7ab5dbe2732945b003d0bb0bc8273",
+        "timings_sha256": "24aa03cf14896f88e32a7c51565964b6e97ff0121583f0fa202b810136fbf56e"
+      },
+      "doc2query_t5": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7091335343474297,
+        "independent_ndcg_full": 0.8298207954015956,
+        "median_ms": 4.744807999998102,
+        "p95_ms": 6.5334287000183595,
+        "rankings_sha256": "39cdb16199dc7b8ef7b0c9798465f069ebbedae6f08d826f098b26aa6f8dabbd",
+        "timings_sha256": "6fd6dadcb632da330548b94aa1a2ef48fd1da175219d3070739b839aab6b612e"
+      },
+      "ling_doc2query": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7150485781953576,
+        "independent_ndcg_full": 0.8327769366864559,
+        "median_ms": 4.766335499994057,
+        "p95_ms": 6.506703149989335,
+        "rankings_sha256": "80c527a7e77bdd3fef440942c4c4771170f287cde47fe2ab11a0eae56eb9d60d",
+        "timings_sha256": "a5349f2d3d7ec6414449bf6ddd9965433a1943a120cbade155c81b291d4c8a9f"
+      },
+      "e5": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7337992261476931,
+        "independent_ndcg_full": 0.8433729994878737,
+        "median_ms": 7.8154330000188565,
+        "p95_ms": 8.538292250034374,
+        "rankings_sha256": "7a07b4dd5b441eb518da93e3efa4e3a24b298167944229561eb53ef6833dee8a",
+        "timings_sha256": "2f9ee950fd507bb87683191b46220968295dc26cea7fa5fef3995ec5f23c9c25"
+      },
+      "splade": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7368134625201852,
+        "independent_ndcg_full": 0.8461342937274924,
+        "median_ms": 9.305742500032466,
+        "p95_ms": 10.147974899871313,
+        "rankings_sha256": "edb70f008f320711fd98e2fbae0138288e8e5a626c02d97a0e276e5bd89fd535",
+        "timings_sha256": "bfbb5b27bc166a706bfc2bcbf2b41568b55758b6a0e0334389592e597b795cdd"
+      },
+      "hybrid_plain": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7259287421619547,
+        "independent_ndcg_full": 0.8387760084740619,
+        "median_ms": 18.485222999970574,
+        "p95_ms": 24.481160400000586,
+        "rankings_sha256": "3776cd9a938c452bb873d00871ae04d4c27e7bd408b6a0daf916689330808e8a",
+        "timings_sha256": "fcbc3239e046a559af3f49c2942fba6ffa0ca01562f2935dce2a3f574339b736"
+      },
+      "hybrid_structured": {
+        "passed": true,
+        "rows": 181701,
+        "queries": 8956,
+        "searches": 26868,
+        "independent_ndcg_at_10": 0.7325217508547891,
+        "independent_ndcg_full": 0.8425242995510088,
+        "median_ms": 18.230911000046035,
+        "p95_ms": 24.01861180005653,
+        "rankings_sha256": "4f2bda953d26ef3ac9d28141451e29f46fca25dff416507e4add0569d6214d03",
+        "timings_sha256": "6175404d7e5b9f8ad460e63da668a10db2693fba846cf755171badcb49128881"
+      }
+    }
+  },
+  "e5_encoding_validation": {
+    "passed": true,
+    "configuration": {
+      "model": "intfloat/e5-small-v2",
+      "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+      "gpu": "T4",
+      "precision": "float32",
+      "batch_size": 32,
+      "max_length": 512,
+      "pooling": "masked mean + L2 normalization",
+      "prefixes": {
+        "products": "passage: ",
+        "queries": "query: "
+      },
+      "input_sha256": {
+        "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+        "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+      }
+    },
+    "coverage": {
+      "products": {
+        "rows": 164900,
+        "checkpoint_files": 81,
+        "all_finite": true,
+        "max_l2_norm_error": 1.1920928955078125e-07,
+        "processing_seconds": 1459.4679911259987
+      },
+      "queries": {
+        "rows": 8956,
+        "checkpoint_files": 5,
+        "all_finite": true,
+        "max_l2_norm_error": 1.1920928955078125e-07,
+        "processing_seconds": 3.1963714729990897
+      }
+    },
+    "summary_sha256": "aa0a14f4ce91d6b43de1defb261db9e64be912423a529f4ec9398e6ddbbb4c20",
+    "note": "Independent local verification of all checkpoint arrays, ordered unique input IDs, pinned settings and summed recorded durations."
+  },
+  "source_tokenization_audit": {
+    "documents": 164900,
+    "runtime": "Python3.12 source analyzer vs frozen canonical streams",
+    "note": "BM25 uses token counts; field concatenation order differences alone do not change scores. Frozen streams remain actual indexed input.",
+    "methods": {
+      "plain": {
+        "ordered_stream_differences": 0,
+        "term_frequency_differences": 0,
+        "examples": []
+      },
+      "structured": {
+        "ordered_stream_differences": 162743,
+        "term_frequency_differences": 0,
+        "examples": []
+      },
+      "doc2query_t5": {
+        "ordered_stream_differences": 1,
+        "term_frequency_differences": 1,
+        "examples": [
+          "B01N5JHXW8"
+        ]
+      },
+      "ling_doc2query": {
+        "ordered_stream_differences": 0,
+        "term_frequency_differences": 0,
+        "examples": []
+      }
+    }
+  },
+  "api_generation_timing": {
+    "method": "Reconstructed from each logged UTC request start and monotonic request duration. First dispatch to latest reconstructed response includes gaps, retries and restarts; excludes setup before first request and final export after last response.",
+    "checked_at_utc": "2026-10-06T10:41:44.057551+00:00",
+    "clock_note": "UTC start plus monotonic duration gives approximate response timestamp; no continuous whole-job monotonic timer was saved.",
+    "methods": {
+      "structured": {
+        "products": 164900,
+        "logged_requests": 23320,
+        "timed_requests": 23296,
+        "untimed_failed_requests": {
+          "http_error": 24
+        },
+        "first_request_utc": "2026-10-05T08:38:25.751240+00:00",
+        "latest_reconstructed_response_utc": "2026-10-05T09:23:13.773046+00:00",
+        "observed_generation_span_seconds": 2688.0218057632446,
+        "observed_generation_span_minutes": 44.80036342938741,
+        "union_of_timed_request_intervals_seconds": 2475.0592885017395,
+        "no_timed_request_in_flight_seconds_within_span": 212.96251726150513,
+        "sum_of_overlapping_request_seconds": 68794.94984960556,
+        "peak_observed_timed_request_overlap": 64,
+        "index_construction_seconds": 16.233842606625608,
+        "generation_span_plus_index_seconds": 2704.2556483698704,
+        "batches_sha256": "14724100054a0a9903734ba8803c638bc2041c64ab51acce8e810fc224656e62",
+        "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+      },
+      "ling_doc2query": {
+        "products": 164900,
+        "logged_requests": 22838,
+        "timed_requests": 22835,
+        "untimed_failed_requests": {
+          "request_error": 2,
+          "http_error": 1
+        },
+        "first_request_utc": "2026-10-06T05:44:50.957859+00:00",
+        "latest_reconstructed_response_utc": "2026-10-06T06:47:36.431137+00:00",
+        "observed_generation_span_seconds": 3765.473277568817,
+        "observed_generation_span_minutes": 62.757887959480286,
+        "union_of_timed_request_intervals_seconds": 3266.700947999954,
+        "no_timed_request_in_flight_seconds_within_span": 498.7723295688629,
+        "sum_of_overlapping_request_seconds": 52483.857652425766,
+        "peak_observed_timed_request_overlap": 32,
+        "index_construction_seconds": 15.038912510641609,
+        "generation_span_plus_index_seconds": 3780.512190079459,
+        "batches_sha256": "e5d837e861c51296747e22043e811ebbaac5a3a4d2a5062fbe3912cb956b969c",
+        "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+      }
+    }
+  },
+  "billing": {
+    "checked_at_utc": "2026-10-06T13:11:19.605337+00:00",
+    "experiment_app_totals": {
+      "ap-0i1xiZ8m2lOJEYnfutdIdJ": {
+        "description": "ecir-e5-full-t4",
+        "compute_usd": "0.36649437",
+        "including_egress_usd": "0.36682888"
+      },
+      "ap-GM2WEAqaXlfk2P7KsswVqo": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.00844796",
+        "including_egress_usd": "0.00883850"
+      },
+      "ap-KeEObtyO01vt5qW3ECOdld": {
+        "description": "ecir-common-t4-retrieval",
+        "compute_usd": "0.48260798",
+        "including_egress_usd": "0.48311671"
+      },
+      "ap-PKW41ibPKoHtdnSi8Ws5dX": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.01316274",
+        "including_egress_usd": "0.01392078"
+      },
+      "ap-TvOIXraV1xPVTNKtUkTbTU": {
+        "description": "ecir-doc2query-t5-full",
+        "compute_usd": "1.60737280",
+        "including_egress_usd": "1.60778359"
+      },
+      "ap-TxPfXkNJDB1WrFNupYGnFX": {
+        "description": "ecir-splade-full",
+        "compute_usd": "1.52231147",
+        "including_egress_usd": "1.52273621"
+      },
+      "ap-aaNYXugtuH6UrI0wPeGHW5": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.00595282",
+        "including_egress_usd": "0.00621038"
+      },
+      "ap-jR0WRJSAUy1Qz2d5sCykh3": {
+        "description": "ecir-doc2query-t5-full",
+        "compute_usd": "0.00166399",
+        "including_egress_usd": "0.00166399"
+      }
+    },
+    "reported_experiment_apps_total_usd": "4.01109904",
+    "workspace_monthly_summary": {
+      "metered_cost": "5.53104365",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "reservation_adjustment": "-0E-8",
+        "free_storage": "-1.23795873",
+        "network_egress_allowance": "-0.00308492",
+        "plan_cost": "0E-8",
+        "credits": "-4.29000000"
+      },
+      "metered_cost_breakdown": {
+        "llm_tokens": "0E-8",
+        "ephemeral_apps": "4.29770780",
+        "volumes": "1.23795873"
+      }
+    },
+    "note": "Provider-reported snapshots, before credits, subject to later adjustments; failed-attempt/pilot charges retained. Workspace summary has broader scope; not attributed wholly to this experiment."
+  },
+  "boundaries": [
+    "Neural preparation uses the same T4 resource class and CPU/memory allocation across distinct preparation jobs; retrieval methods all ran sequentially in one common T4 invocation.",
+    "BM25 uses CPU postings; neural query encoding and exact dot products use CUDA; GPU-to-CPU score transfer and deterministic CPU top10 selection included. No network serving or ANN.",
+    "Preparation sums recorded phases: Ling spans include gaps/recovery, neural batch timers exclude checkpoint/loading overhead. Hybrid sums are component sums, not measured concurrent elapsed time.",
+    "Index construction includes lexical tokenization separately, or neural representation assembly/serialization/GPU transfer. Index sizes exclude shared metadata/IDs and model weights.",
+    "Frozen lexical token counts preserve earlier scoring. Expansion-field order changes do not change BM25; one T5 tokenization runtime discrepancy is frozen rather than applied.",
+    "Quality ranks judged candidates. Hybrid quality uses full-candidate RRF, timed hybrids use1000 hits per component with k60.",
+    "Ling API generation is a separate deployment measure, not T4-hosted. Model/input/output allowance matched between the two Ling strategies, but observed concurrency differs.",
+    "Shortened metadata for expansion versus full512token inputs for E5/SPLADE limits cross-family attribution. No ESCI fine-tuning, no universal cheapest-method or accuracy claim.",
+    "T5 candidate effectiveness and index construction use original local generated queries; the T4 generation rerun measures preparation only. Combined T5 phases are not one artifact-identical end-to-end pipeline."
+  ]
+}

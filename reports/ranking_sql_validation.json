@@ -1,0 +1,102 @@
+{
+  "validated_methods": {
+    "plain": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7009012568216669,
+      "independent_sql_ndcg_full": 0.8240256456612434,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 4.440892098500626e-15,
+        "ndcg_full": 1.9984014443252818e-15
+      },
+      "rankings_sha256": "5a66ffb541db2d90efdb25073f2c4e501d63f9944259938e370d34acba99551b",
+      "passed": true
+    },
+    "structured": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7130518987807338,
+      "independent_sql_ndcg_full": 0.8315252809187932,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 4.551914400963142e-15,
+        "ndcg_full": 3.774758283725532e-15
+      },
+      "rankings_sha256": "d363c610b7eb2e90d1fcb8ccddc7111e5f0b3d647b5324c107ae3ceb0a80a77e",
+      "passed": true
+    },
+    "dense": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7337892740605353,
+      "independent_sql_ndcg_full": 0.8433572013840902,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 5.329070518200751e-15,
+        "ndcg_full": 2.55351295663786e-15
+      },
+      "rankings_sha256": "f9d896fe5155f61e7a8d59b071db3dd184fd801a1f62eecf6e257a08b2ac8b7b",
+      "passed": true
+    },
+    "hybrid_plain": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7259338289331454,
+      "independent_sql_ndcg_full": 0.8387795200886644,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 1.1102230246251565e-16,
+        "ndcg_full": 1.7763568394002505e-15
+      },
+      "rankings_sha256": "8790b3b748a6ca865381aeda0f48d8f2b63641316356ff849b6e291dd2a5ba64",
+      "passed": true
+    },
+    "hybrid_structured": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7325239218605789,
+      "independent_sql_ndcg_full": 0.8425200473142566,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 5.662137425588298e-15,
+        "ndcg_full": 0.0
+      },
+      "rankings_sha256": "94c5e6632c4f1656c92fed87e4126cd368304e7c62ff4c489ad5722c1cdfd19d",
+      "passed": true
+    },
+    "doc2query_t5": {
+      "rows": 181701,
+      "queries": 8956,
+      "missing": 0,
+      "extra": 0,
+      "duplicates": 0,
+      "invalid_ranks": 0,
+      "independent_sql_ndcg_at_10": 0.7091335343474297,
+      "independent_sql_ndcg_full": 0.8298207954015956,
+      "absolute_metric_discrepancies": {
+        "ndcg_at_10": 4.3298697960381105e-15,
+        "ndcg_full": 2.220446049250313e-16
+      },
+      "rankings_sha256": "fa5d34d8005397d64dbbeb0e965e350d49cf6956443639d8698c2ad4542d94b8",
+      "passed": true
+    }
+  },
+  "method": "Independent DuckDB SQL over saved ranks and original ESCI labels; direct gains and full-candidate ideal ranking.",
+  "all_present_methods_passed": true
+}

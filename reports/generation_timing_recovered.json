@@ -1,0 +1,48 @@
+{
+  "method": "Reconstructed from each logged UTC request start and monotonic request duration. First dispatch to latest reconstructed response includes gaps, retries and restarts; excludes setup before first request and final export after last response.",
+  "checked_at_utc": "2026-10-06T10:41:44.057551+00:00",
+  "clock_note": "UTC start plus monotonic duration gives approximate response timestamp; no continuous whole-job monotonic timer was saved.",
+  "methods": {
+    "structured": {
+      "products": 164900,
+      "logged_requests": 23320,
+      "timed_requests": 23296,
+      "untimed_failed_requests": {
+        "http_error": 24
+      },
+      "first_request_utc": "2026-10-05T08:38:25.751240+00:00",
+      "latest_reconstructed_response_utc": "2026-10-05T09:23:13.773046+00:00",
+      "observed_generation_span_seconds": 2688.0218057632446,
+      "observed_generation_span_minutes": 44.80036342938741,
+      "union_of_timed_request_intervals_seconds": 2475.0592885017395,
+      "no_timed_request_in_flight_seconds_within_span": 212.96251726150513,
+      "sum_of_overlapping_request_seconds": 68794.94984960556,
+      "peak_observed_timed_request_overlap": 64,
+      "index_construction_seconds": 16.233842606625608,
+      "generation_span_plus_index_seconds": 2704.2556483698704,
+      "batches_sha256": "14724100054a0a9903734ba8803c638bc2041c64ab51acce8e810fc224656e62",
+      "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+    },
+    "ling_doc2query": {
+      "products": 164900,
+      "logged_requests": 22838,
+      "timed_requests": 22835,
+      "untimed_failed_requests": {
+        "request_error": 2,
+        "http_error": 1
+      },
+      "first_request_utc": "2026-10-06T05:44:50.957859+00:00",
+      "latest_reconstructed_response_utc": "2026-10-06T06:47:36.431137+00:00",
+      "observed_generation_span_seconds": 3765.473277568817,
+      "observed_generation_span_minutes": 62.757887959480286,
+      "union_of_timed_request_intervals_seconds": 3266.700947999954,
+      "no_timed_request_in_flight_seconds_within_span": 498.7723295688629,
+      "sum_of_overlapping_request_seconds": 52483.857652425766,
+      "peak_observed_timed_request_overlap": 32,
+      "index_construction_seconds": 15.038912510641609,
+      "generation_span_plus_index_seconds": 3780.512190079459,
+      "batches_sha256": "e5d837e861c51296747e22043e811ebbaac5a3a4d2a5062fbe3912cb956b969c",
+      "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+    }
+  }
+}

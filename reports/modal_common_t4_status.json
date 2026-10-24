@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "stage": "complete",
+  "detail": "All8 common-host benchmarks and independent checks complete; report, abstract and provider billing updated",
+  "started_at_utc": "2026-10-06T11:32:12.615691+00:00",
+  "products": 164900,
+  "queries": 8956,
+  "methods": 8,
+  "modal_ceiling_usd": 30,
+  "gpu": "T4",
+  "retrieval_repeats": 3,
+  "neural_query_device": "CUDA",
+  "bm25_query_device": "CPU",
+  "original_results_preserved": true,
+  "estimated_remaining_minutes": [
+    0,
+    0
+  ],
+  "estimate_status": "Complete",
+  "updated_at_utc": "2026-10-06T13:07:49.988734+00:00",
+  "latest_e5_progress": {
+    "kind": "products",
+    "completed": 149504,
+    "total": 164900,
+    "last_block_seconds": 19.205337155000507,
+    "last_block_items_per_second": 106.6370240455144
+  },
+  "e5_encoding_remaining_minutes_estimate": 0,
+  "e5_recent_checkpoint_wall_products_per_second": 92.2185515564518,
+  "e5_metered_compute_usd_partial": null,
+  "billing_status": "E5 app-specific billing pending; no zero-cost claim.",
+  "e5_encoding_complete": true,
+  "e5_products": 164900,
+  "e5_queries": 8956,
+  "e5_product_processing_seconds": 1459.4679911259987,
+  "e5_query_processing_seconds": 3.1963714729990897,
+  "latest_common_benchmark_progress": {
+    "stage": "hybrid_plain",
+    "detail": "complete"
+  },
+  "completed_common_timing_methods": [
+    "plain",
+    "structured",
+    "doc2query_t5",
+    "ling_doc2query",
+    "e5",
+    "splade",
+    "hybrid_plain",
+    "hybrid_structured"
+  ],
+  "e5_representation_verification": "All164900 product and8956 query vectors independently verified: unique ordered coverage, finite values, L2 norms and pins/input hashes.",
+  "e5_recorded_gpu_median_ms": 7.8154330000188565,
+  "e5_recorded_gpu_p95_ms": 8.538292250034372,
+  "latest_app_billing": {
+    "ap-0i1xiZ8m2lOJEYnfutdIdJ": {
+      "reported_compute_usd": "0.36649437",
+      "status": "Provider snapshot; later charges/adjustments possible"
+    },
+    "ap-KeEObtyO01vt5qW3ECOdld": {
+      "reported_compute_usd": "0.04750447",
+      "status": "Provider snapshot; later charges/adjustments possible"
+    }
+  },
+  "splade_recorded_gpu_median_ms": 9.305742500032466,
+  "splade_recorded_gpu_p95_ms": 10.147974899871313,
+  "completed_at_utc": "2026-10-06T13:13:11.293898+00:00",
+  "verified_report": "reports/modal_common_t4_verified.md",
+  "reported_modal_experiment_apps_usd": "4.01109904",
+  "resolved_validation_error": "Reserved SQL alias renamed; independent NDCG@10/full checks passed without inference rerun"
+}

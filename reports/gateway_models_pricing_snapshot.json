@@ -1,0 +1,57 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "inclusionai/ling-3.0-flash",
+      "object": "model",
+      "created": 1755815280,
+      "released": 1785974400,
+      "owned_by": "inclusionai",
+      "name": "Ling 3.0 Flash",
+      "description": "Ling 3.0 Flash is designed with token efficiency and production-scale agentic inference as key priorities, enabling developers to complete more useful work within constrained token, latency, and serving-cost budgets.",
+      "context_window": 256000,
+      "max_tokens": 32000,
+      "type": "language",
+      "zdr": "none",
+      "no_training": "none",
+      "tags": [
+        "reasoning",
+        "tool-use",
+        "implicit-caching"
+      ],
+      "supported_specifications": [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "stop",
+        "tools",
+        "tool_choice",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "temperature": true,
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "pricing": {
+        "input": "0.000000021",
+        "output": "0.000000063",
+        "input_cache_read": "0.0000000042"
+      }
+    }
+  ]
+}

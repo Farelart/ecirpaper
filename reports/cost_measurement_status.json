@@ -1,0 +1,344 @@
+{
+  "products": 164900,
+  "structured_full_generation_logged_api_usd": 1.4240369976,
+  "logged_api_usd_per_1000_products": 0.008635761052759247,
+  "accounting_note": "Logged full-generation charges, shared ledger and historical outside-ledger pilots are separate; no unified reconciled total is asserted.",
+  "update_scenarios": [
+    {
+      "monthly_fraction_changed": 0,
+      "products": 0,
+      "estimated_logged_api_usd": 0.0,
+      "assumption": "Same mean product length, output length, prices and retry rate as completed generation; estimate only."
+    },
+    {
+      "monthly_fraction_changed": 0.01,
+      "products": 1649,
+      "estimated_logged_api_usd": 0.014240369976,
+      "assumption": "Same mean product length, output length, prices and retry rate as completed generation; estimate only."
+    },
+    {
+      "monthly_fraction_changed": 0.1,
+      "products": 16490,
+      "estimated_logged_api_usd": 0.14240369976,
+      "assumption": "Same mean product length, output length, prices and retry rate as completed generation; estimate only."
+    }
+  ],
+  "query_volumes": [
+    10000,
+    100000,
+    1000000
+  ],
+  "t5_api_usd": 0,
+  "t5_compute_cost_usd": null,
+  "embedding_compute_cost_usd": null,
+  "serving_and_storage_cost_usd": null,
+  "note": "Common Modal T4 results are primary. Cloud preparation bills, API generation charges, benchmark job charges and unmeasured serving/storage monetary costs remain separate.",
+  "t5_throughput_benchmark": {
+    "products": 32,
+    "products_per_second": 5.892419154705044,
+    "projected_full_generation_hours": 7.773641751025167,
+    "queries_per_product": 3,
+    "note": "Short sample projection, not measured full runtime."
+  },
+  "t5_full_generation_status": "complete; 164900 products; three queries per product",
+  "larger_batch_probe_status": "full batch-16 run complete",
+  "time_cap_removed_by_user": true,
+  "next_full_t5_configuration": {
+    "batch_size": 16,
+    "queries_per_product": 3,
+    "products": 164900,
+    "output": "outputs/doc2query_t5/full_b16",
+    "note": "Re-run all products under one configuration; prior interrupted batch-4 output is preserved separately."
+  },
+  "t5_full_generation_measurements": {
+    "complete": true,
+    "products": 164900,
+    "selected_products": 164900,
+    "generation_wall_seconds": 23000.246065338106,
+    "timing_scope": "Batch input construction, tokenization, device transfers, generation, synchronization and decoding; excludes file writes and model loading.",
+    "process_cpu_seconds": 4519.8886669999965,
+    "products_per_second": 7.169488514668895,
+    "largest_observed_process_rss_bytes": 1111228416,
+    "model_load_seconds_latest_session": 3.0197397500000003,
+    "warmup_seconds_latest_session": 1.9356216249999996,
+    "projected_164900_generation_hours": 6.388957240371696,
+    "projection_note": "Throughput extrapolation, not a measured full-run time; excludes setup, idle time and thermal changes.",
+    "cash_api_cost_usd": 0,
+    "electricity_cost_usd": null,
+    "input_tokens": 23364625,
+    "generated_non_special_tokens": 4416532,
+    "products_sha256": "1da1c584a0c99d70d3cac539e4f28dfd8a92d590d630fc77acba832e4336ba8e",
+    "configuration": {
+      "model": "castorini/doc2query-t5-base-msmarco",
+      "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+      "source_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+      "input": "Exact saved shortened metadata supplied to structured LLM; field values concatenated.",
+      "input_max_tokens": 512,
+      "num_return_sequences": 3,
+      "max_length": 64,
+      "do_sample": true,
+      "top_k": 10,
+      "top_p": 1.0,
+      "padding_policy": "Batch maximum rounded to a multiple of 128; attention mask preserved.",
+      "temperature": 1.0,
+      "seed": 42,
+      "seed_policy": "Seed 42 + batch position; same batch layout required on resume.",
+      "batch_size": 16,
+      "device": "mps",
+      "threads": 4,
+      "limit": 0,
+      "torch": "2.8.0",
+      "transformers": "4.57.6",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "processor": "arm64",
+      "cash_api_cost_usd": 0,
+      "electricity_cost_usd": null,
+      "hardware_cost_usd": null,
+      "note": "Zero API bill is not zero total cost. Power and cloud-equivalent prices are not measured."
+    }
+  },
+  "t5_evaluation_timing": {
+    "corpus_statistics_seconds": 6.5660419999999995,
+    "candidate_scoring_and_sort_seconds": 6.625971943000046,
+    "ranking_metrics_and_csv_seconds": 7.187648542,
+    "evaluation_wall_seconds_before_report_write": 16.082610916999997,
+    "note": "Offline evaluation phases; scoring includes candidate document tokenization. Not indexed whole-catalog search or online serving latency. Timed while the experiment pipeline is active; not a controlled cross-method latency benchmark."
+  },
+  "embedding_product_inference_seconds": 2191.880882013,
+  "t5_cloud_preparation_measurements": {
+    "verified_complete": true,
+    "products": 164900,
+    "generated_queries": 494700,
+    "checkpoint_files": 81,
+    "input_sha256": "ef91acfb8b5a8e80d312883b98d4a7fdf3e11f69449c2cda51c0e47b0cbecc3e",
+    "pins_verified": {
+      "model": "castorini/doc2query-t5-base-msmarco",
+      "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+      "batch_size": 16,
+      "queries_per_product": 3,
+      "precision": "float32",
+      "input_max_tokens": 512,
+      "max_length": 64,
+      "top_k": 10,
+      "top_p": 1.0,
+      "temperature": 1.0
+    },
+    "batch_processing_seconds": 7196.832066375007,
+    "batch_processing_minutes": 119.94720110625012,
+    "products_per_second": 22.91285922460866,
+    "latest_session_wall_seconds": 3062.23937832,
+    "total_elapsed_wall_seconds": null,
+    "timing_note": "Batch processing sum covers all saved products. Session timer reset on worker restarts; latest-session time is not full elapsed time. Uncheckpointed work and restart overhead excluded.",
+    "app_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+    "reported_metered_usd_partial": 1.60778359,
+    "billing_status": "Completed app billing reported as of 2026-10-06T05:40:57Z; later provider adjustments possible",
+    "estimated_batch_compute_usd": 1.4966531965233467,
+    "effectiveness_outputs_replaced": false,
+    "actual_reported_metered_compute_usd": 1.6073728,
+    "actual_reported_metered_app_total_usd": 1.60778359,
+    "billing_rows": [
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T00:00:00+01:00",
+        "resource": "Memory",
+        "cost": "0.02948779"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T00:00:00+01:00",
+        "resource": "CPU",
+        "cost": "0.04367185"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T00:00:00+01:00",
+        "resource": "Network Egress",
+        "cost": "0.00012079"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T00:00:00+01:00",
+        "resource": "T4",
+        "cost": "0.27184057"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T01:00:00+01:00",
+        "resource": "Memory",
+        "cost": "0.06368000"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T01:00:00+01:00",
+        "resource": "CPU",
+        "cost": "0.09425242"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T01:00:00+01:00",
+        "resource": "Network Egress",
+        "cost": "0.00029000"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T01:00:00+01:00",
+        "resource": "T4",
+        "cost": "0.58705004"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T02:00:00+01:00",
+        "resource": "Memory",
+        "cost": "0.04423319"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T02:00:00+01:00",
+        "resource": "CPU",
+        "cost": "0.06538219"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T02:00:00+01:00",
+        "resource": "Network Egress",
+        "cost": "0E-8"
+      },
+      {
+        "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+        "description": "ecir-doc2query-t5-full",
+        "environment": "main",
+        "interval_start": "2026-10-06T02:00:00+01:00",
+        "resource": "T4",
+        "cost": "0.40777475"
+      }
+    ],
+    "workspace_billed_cost_usd": 0.0,
+    "billing_note": "App compute includes billed GPU/CPU/memory across restart attempts. Credits are workspace-level; zero payable is not zero resource cost. Report total differs from monthly summary, so monthly usage is not attributed wholly to this app."
+  },
+  "historical_pre_ling_control_total_including_pilots_and_uncertain_reservations_usd": "1.92255038720",
+  "experiment_total_including_pilots_and_uncertain_reservations_usd": null,
+  "ling_doc2query_logged_api_usd": 0.9950095764,
+  "shared_api_ledger_used_usd": "2.42493314280",
+  "splade_cloud_preparation_measurements": {
+    "coverage_and_configuration_verified": true,
+    "numerical_weight_validation": {
+      "passed": true,
+      "files": 86,
+      "nnz": 29849463,
+      "checks": "All weights finite and strictly positive; CSR canonical; vocab dimension 30522"
+    },
+    "configuration": {
+      "model": "naver/splade-cocondenser-ensembledistil",
+      "revision": "49cf4c7b0db5b870a401ddf5e2669993ef3699c7",
+      "max_length": 512,
+      "batch_size": 8,
+      "precision": "float32",
+      "pooling": "max(log1p(relu(logits)) * attention_mask)",
+      "pruning": "none; retain every strictly positive weight",
+      "gpu": "T4",
+      "input_sha256": {
+        "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+        "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+      }
+    },
+    "processing_seconds": {
+      "products": 6561.427980124009,
+      "queries": 16.060086830005275
+    },
+    "note": "Batch encoding time excludes checkpoint and orchestration overhead; query encoding is offline batched, not serving latency.",
+    "products": {
+      "rows": 164900,
+      "checkpoint_files": 81,
+      "nnz": 29434500
+    },
+    "queries": {
+      "rows": 8956,
+      "checkpoint_files": 5,
+      "nnz": 414963
+    },
+    "reported_metered_app_cost_usd": 1.52273621,
+    "billing_status": "Reported snapshot; possible provider lag and later adjustments",
+    "independent_saved_score_validation": {
+      "passed": true,
+      "queries": 21,
+      "judged_pairs": 381,
+      "max_absolute_float32_difference": 1.9073486328125e-06,
+      "method": "Independent SciPy sparse matrix dot on judged candidate rows versus saved CSC posting-accumulation scores; rtol1e-5 atol1e-6"
+    }
+  },
+  "indexing_and_retrieval_verified_report": "reports/final_experiments_verified.json",
+  "reconstructed_api_generation_timing": {
+    "method": "Reconstructed from each logged UTC request start and monotonic request duration. First dispatch to latest reconstructed response includes gaps, retries and restarts; excludes setup before first request and final export after last response.",
+    "checked_at_utc": "2026-10-06T10:41:44.057551+00:00",
+    "clock_note": "UTC start plus monotonic duration gives approximate response timestamp; no continuous whole-job monotonic timer was saved.",
+    "methods": {
+      "structured": {
+        "products": 164900,
+        "logged_requests": 23320,
+        "timed_requests": 23296,
+        "untimed_failed_requests": {
+          "http_error": 24
+        },
+        "first_request_utc": "2026-10-05T08:38:25.751240+00:00",
+        "latest_reconstructed_response_utc": "2026-10-05T09:23:13.773046+00:00",
+        "observed_generation_span_seconds": 2688.0218057632446,
+        "observed_generation_span_minutes": 44.80036342938741,
+        "union_of_timed_request_intervals_seconds": 2475.0592885017395,
+        "no_timed_request_in_flight_seconds_within_span": 212.96251726150513,
+        "sum_of_overlapping_request_seconds": 68794.94984960556,
+        "peak_observed_timed_request_overlap": 64,
+        "index_construction_seconds": 16.233842606625608,
+        "generation_span_plus_index_seconds": 2704.2556483698704,
+        "batches_sha256": "14724100054a0a9903734ba8803c638bc2041c64ab51acce8e810fc224656e62",
+        "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+      },
+      "ling_doc2query": {
+        "products": 164900,
+        "logged_requests": 22838,
+        "timed_requests": 22835,
+        "untimed_failed_requests": {
+          "request_error": 2,
+          "http_error": 1
+        },
+        "first_request_utc": "2026-10-06T05:44:50.957859+00:00",
+        "latest_reconstructed_response_utc": "2026-10-06T06:47:36.431137+00:00",
+        "observed_generation_span_seconds": 3765.473277568817,
+        "observed_generation_span_minutes": 62.757887959480286,
+        "union_of_timed_request_intervals_seconds": 3266.700947999954,
+        "no_timed_request_in_flight_seconds_within_span": 498.7723295688629,
+        "sum_of_overlapping_request_seconds": 52483.857652425766,
+        "peak_observed_timed_request_overlap": 32,
+        "index_construction_seconds": 15.038912510641609,
+        "generation_span_plus_index_seconds": 3780.512190079459,
+        "batches_sha256": "e5d837e861c51296747e22043e811ebbaac5a3a4d2a5062fbe3912cb956b969c",
+        "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+      }
+    }
+  },
+  "common_modal_t4_verified_report": "reports/modal_common_t4_verified.json",
+  "cloud_e5_preparation_compute_usd": 0.36649437,
+  "cloud_common_benchmark_compute_usd": 0.48260798,
+  "reported_all_experiment_modal_apps_including_egress_usd": "4.01109904"
+}

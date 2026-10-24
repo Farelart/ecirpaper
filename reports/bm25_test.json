@@ -1,0 +1,96 @@
+{
+  "method": "plain_bm25_candidate_ranking",
+  "split": "test",
+  "queries": 8956,
+  "candidate_pairs": 181701,
+  "all_zero_score_queries": 122,
+  "metrics": {
+    "ndcg_at_10": {
+      "mean": 0.7007559199246198,
+      "queries": 8956,
+      "bootstrap_95_percent_ci": [
+        0.6960594019393533,
+        0.7055334628304816
+      ]
+    },
+    "ndcg_full": {
+      "mean": 0.8240254343218075,
+      "queries": 8956,
+      "bootstrap_95_percent_ci": [
+        0.8206475656495813,
+        0.8273770180165265
+      ]
+    },
+    "mrr_exact": {
+      "mean": 0.7552924370425987,
+      "queries": 8956
+    },
+    "exact_at_1": {
+      "mean": 0.6263957123715944,
+      "queries": 8956
+    },
+    "recall_exact_at_10": {
+      "mean": 0.6667635202908081,
+      "queries": 8955
+    }
+  },
+  "config": {
+    "fields": [
+      "product_title",
+      "product_description",
+      "product_bullet_point",
+      "product_brand",
+      "product_color"
+    ],
+    "analyzer": "unicode_alphanumeric_casefold_html_v1",
+    "stopwords_removed": false,
+    "stemming": false,
+    "text_truncated": false,
+    "k1": 1.2,
+    "b": 0.75,
+    "query_term_frequency": "unique_terms",
+    "gain_mapping": {
+      "E": 1.0,
+      "S": 0.1,
+      "C": 0.01,
+      "I": 0.0
+    },
+    "tie_break": "product_id ascending",
+    "query_limit": null,
+    "seed": 42,
+    "bootstrap_repetitions": 1000
+  },
+  "corpus": {
+    "documents": 482105,
+    "average_length": 190.0679312597878,
+    "total_tokens": 91632700,
+    "vocabulary": 475232,
+    "statistics_scope": "union of all English small-version candidate products"
+  },
+  "provenance": {
+    "source_revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+    "products_sha256": "ab85faa4633e59db50bf0e9272701c096382943423af3f32028da7fb1af21901",
+    "evaluation_split_sha256": "6f26543d252ab50df2d4b2da382a3dd4c2efee23d8d6c6a3a0b4c82448257fb7",
+    "implementation_sha256": {
+      "scripts/run_bm25.py": "1ef490b49a04860057ba255b66444ffe62d984e86ecd50fe448236167180d4d5",
+      "src/ecirpaper/retrieval.py": "49bc7b869932c16fbbcb200066ee2997c1e9815ff44bffb5b745c31d7edd1ffc",
+      "src/ecirpaper/metrics.py": "f37e6012b0f5766c6490f803b3f7277ba0d54b31b27493e98a07c2680f7da16f"
+    },
+    "duckdb_version": "1.5.6"
+  },
+  "timings_seconds": {
+    "corpus_statistics": 18.999397541978396,
+    "scoring_and_evaluation": 6.785010209016036,
+    "total_pipeline": 28.22325345900026
+  },
+  "built_at_utc": "2026-10-04T23:16:04.635357+00:00",
+  "notes": [
+    "Initial untuned reference, not an optimized BM25 claim.",
+    "Corpus statistics use metadata only, without query text or relevance labels.",
+    "Every supplied candidate is ranked; zero scores are retained.",
+    "NDCG ideal rankings use all official candidate judgments.",
+    "Recall-exact excludes queries with no Exact candidates; MRR-exact includes them as zero.",
+    "Elapsed processing times are not serving or whole-catalog retrieval latency.",
+    "Confidence intervals describe this benchmark query set, not all shopping traffic."
+  ]
+}

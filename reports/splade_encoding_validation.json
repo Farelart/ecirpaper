@@ -1,0 +1,47 @@
+{
+  "coverage_and_configuration_verified": true,
+  "numerical_weight_validation": {
+    "passed": true,
+    "files": 86,
+    "nnz": 29849463,
+    "checks": "All weights finite and strictly positive; CSR canonical; vocab dimension 30522"
+  },
+  "configuration": {
+    "model": "naver/splade-cocondenser-ensembledistil",
+    "revision": "49cf4c7b0db5b870a401ddf5e2669993ef3699c7",
+    "max_length": 512,
+    "batch_size": 8,
+    "precision": "float32",
+    "pooling": "max(log1p(relu(logits)) * attention_mask)",
+    "pruning": "none; retain every strictly positive weight",
+    "gpu": "T4",
+    "input_sha256": {
+      "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+      "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+    }
+  },
+  "processing_seconds": {
+    "products": 6561.427980124009,
+    "queries": 16.060086830005275
+  },
+  "note": "Batch encoding time excludes checkpoint and orchestration overhead; query encoding is offline batched, not serving latency.",
+  "products": {
+    "rows": 164900,
+    "checkpoint_files": 81,
+    "nnz": 29434500
+  },
+  "queries": {
+    "rows": 8956,
+    "checkpoint_files": 5,
+    "nnz": 414963
+  },
+  "reported_metered_app_cost_usd": 1.52273621,
+  "billing_status": "Reported snapshot; possible provider lag and later adjustments",
+  "independent_saved_score_validation": {
+    "passed": true,
+    "queries": 21,
+    "judged_pairs": 381,
+    "max_absolute_float32_difference": 1.9073486328125e-06,
+    "method": "Independent SciPy sparse matrix dot on judged candidate rows versus saved CSC posting-accumulation scores; rtol1e-5 atol1e-6"
+  }
+}

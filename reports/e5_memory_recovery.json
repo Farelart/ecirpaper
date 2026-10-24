@@ -1,0 +1,6 @@
+{
+  "completed_products_before_restart": 78944,
+  "reason": "MPS out of memory after variable-length graph caching",
+  "change": "Pad to one of 128/256/384/512 and empty reusable GPU cache after each batch",
+  "unchanged": "model revision, float32 precision, input tokens, masking, pooling, batch size and all candidates"
+}

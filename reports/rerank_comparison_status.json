@@ -1,0 +1,27 @@
+{
+  "stage": "complete_with_unreported_failed_startup_charge",
+  "updated_at_utc": "2026-10-06T20:35:30.690490+00:00",
+  "complete": true,
+  "error": null,
+  "billing_complete": false,
+  "previous_validation_error": "CalledProcessError: Command '['python3', 'scripts/verify_rerank_comparison.py']' returned non-zero exit status 1.",
+  "report": "reports/rerank_comparison_verified.md",
+  "billing": {
+    "observed_at_utc": "2026-10-06T20:05:59.891385+00:00",
+    "successful_app_id": "ap-FKjrg3NjStiRXWSat1goN6",
+    "successful_app": {
+      "description": "ecir-shared-reranker-t4",
+      "compute_usd": "0.18909833",
+      "including_egress_usd": "0.18969745"
+    },
+    "failed_startup_app_id": "ap-5X57gzpPDPklrOBMwicMmH",
+    "failed_startup_status": "Not present in provider report; charge unknown, not assumed zero",
+    "all_reported_experiment_apps_including_egress_usd": "4.20079649",
+    "workspace_payable_after_credits_usd": "0",
+    "note": "Provider snapshot; resource cost before credits. Total experimental job charge is not per-method serving cost. No new inference or API calls."
+  },
+  "failed_startup_billing_checks": 3,
+  "failed_startup_latest_rows": [],
+  "billing_followup_complete": true,
+  "failed_startup_billing_status": "Provider-unreported/unknown after three additional checks; not assumed zero"
+}

@@ -1,0 +1,52 @@
+{
+  "structured_minus_plain": {
+    "mean_difference": 0.01215064195906685,
+    "paired_95_percent_interval": [
+      0.010289482420858932,
+      0.014015128478112737
+    ],
+    "resamples": 1000,
+    "seed": 42,
+    "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+  },
+  "structured_minus_doc2query_t5": {
+    "mean_difference": 0.003918364433304043,
+    "paired_95_percent_interval": [
+      0.00206523718471923,
+      0.005770975090092499
+    ],
+    "resamples": 1000,
+    "seed": 42,
+    "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+  },
+  "structured_minus_ling_doc2query": {
+    "mean_difference": -0.0019966794146244844,
+    "paired_95_percent_interval": [
+      -0.003553062613884037,
+      -0.00023441910568435345
+    ],
+    "resamples": 1000,
+    "seed": 42,
+    "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+  },
+  "e5_minus_structured": {
+    "mean_difference": 0.020747327366958244,
+    "paired_95_percent_interval": [
+      0.016913548032380307,
+      0.02435902084436215
+    ],
+    "resamples": 1000,
+    "seed": 42,
+    "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+  },
+  "splade_minus_e5": {
+    "mean_difference": 0.0030142363724937797,
+    "paired_95_percent_interval": [
+      -0.00015356780605030353,
+      0.00607836497011054
+    ],
+    "resamples": 1000,
+    "seed": 42,
+    "note": "Exploratory query bootstrap, standard-library RNG, no multiple-comparison correction."
+  }
+}

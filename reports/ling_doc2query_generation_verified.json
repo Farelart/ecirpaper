@@ -1,0 +1,42 @@
+{
+  "verified_complete": true,
+  "products": 164900,
+  "queries": 494700,
+  "exact_saved_structured_inputs_match": true,
+  "products_queries_sha256": "b78489a91108f26519e2dfe3c96f76e49ccc221cd8b66d4864f04921a3255155",
+  "reported_control_api_cost_usd": 0.9950095764,
+  "shared_ledger_used_including_reservations_usd": "2.42493314280",
+  "generation_summary": {
+    "scope": "ling_doc2query",
+    "attempted_products": 167125,
+    "successful_products": 164900,
+    "batch_status": {
+      "ok": 22559,
+      "invalid_output": 276,
+      "request_error": 2,
+      "http_error": 1
+    },
+    "reported_cost_usd": 0.9950095764,
+    "budget_used_including_unknown_charges_usd": "2.42493314280",
+    "stopped_for_safety": false,
+    "complete": true,
+    "session_wall_seconds": 1569.7587332090043,
+    "protocol": {
+      "model": "inclusionai/ling-3.0-flash",
+      "input": "Exact saved metadata supplied to structured Ling; no further truncation",
+      "source_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+      "prompt_sha256": "b11bc00eab00d5a9cec1398055600688dc20717287220948618f4309c6c1e544",
+      "products": 164900,
+      "queries_per_product": 3,
+      "batch_size": 8,
+      "output_token_limit_per_product": 220,
+      "temperature": 0.2,
+      "reasoning_enabled": false,
+      "shared_budget_usd": 4.4,
+      "scope": "Matched model/input/output allowance; natural-language queries replace structured fields",
+      "no_training": true,
+      "no_labels_or_test_queries_used": true
+    }
+  },
+  "timing_note": "Latest-session elapsed time excludes earlier interrupted sessions; not full generation wall time"
+}

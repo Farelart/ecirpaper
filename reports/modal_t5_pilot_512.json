@@ -1,0 +1,231 @@
+{
+  "model": "castorini/doc2query-t5-base-msmarco",
+  "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+  "batches": [
+    {
+      "position": 0,
+      "products": 16,
+      "wall_seconds": 0.5902603689999992,
+      "input_tokens": 2307
+    },
+    {
+      "position": 16,
+      "products": 16,
+      "wall_seconds": 0.7847188620000018,
+      "input_tokens": 2435
+    },
+    {
+      "position": 32,
+      "products": 16,
+      "wall_seconds": 0.591108994999999,
+      "input_tokens": 1779
+    },
+    {
+      "position": 48,
+      "products": 16,
+      "wall_seconds": 0.5560291160000013,
+      "input_tokens": 2133
+    },
+    {
+      "position": 64,
+      "products": 16,
+      "wall_seconds": 0.5485269849999987,
+      "input_tokens": 1947
+    },
+    {
+      "position": 80,
+      "products": 16,
+      "wall_seconds": 0.5773940240000002,
+      "input_tokens": 1680
+    },
+    {
+      "position": 96,
+      "products": 16,
+      "wall_seconds": 0.8817398179999998,
+      "input_tokens": 3064
+    },
+    {
+      "position": 112,
+      "products": 16,
+      "wall_seconds": 0.5811384870000005,
+      "input_tokens": 2533
+    },
+    {
+      "position": 128,
+      "products": 16,
+      "wall_seconds": 0.5916399810000001,
+      "input_tokens": 2249
+    },
+    {
+      "position": 144,
+      "products": 16,
+      "wall_seconds": 0.5495955549999998,
+      "input_tokens": 2590
+    },
+    {
+      "position": 160,
+      "products": 16,
+      "wall_seconds": 0.7036235159999968,
+      "input_tokens": 2424
+    },
+    {
+      "position": 176,
+      "products": 16,
+      "wall_seconds": 0.5473653879999993,
+      "input_tokens": 2054
+    },
+    {
+      "position": 192,
+      "products": 16,
+      "wall_seconds": 0.5264228860000024,
+      "input_tokens": 1891
+    },
+    {
+      "position": 208,
+      "products": 16,
+      "wall_seconds": 0.5801658190000012,
+      "input_tokens": 2121
+    },
+    {
+      "position": 224,
+      "products": 16,
+      "wall_seconds": 0.5644961119999969,
+      "input_tokens": 2274
+    },
+    {
+      "position": 240,
+      "products": 16,
+      "wall_seconds": 0.7544007389999976,
+      "input_tokens": 2292
+    },
+    {
+      "position": 256,
+      "products": 16,
+      "wall_seconds": 0.5979472939999972,
+      "input_tokens": 2657
+    },
+    {
+      "position": 272,
+      "products": 16,
+      "wall_seconds": 0.8031128190000025,
+      "input_tokens": 2366
+    },
+    {
+      "position": 288,
+      "products": 16,
+      "wall_seconds": 0.5644791630000014,
+      "input_tokens": 2373
+    },
+    {
+      "position": 304,
+      "products": 16,
+      "wall_seconds": 0.5513161139999987,
+      "input_tokens": 2087
+    },
+    {
+      "position": 320,
+      "products": 16,
+      "wall_seconds": 0.852261170000002,
+      "input_tokens": 2107
+    },
+    {
+      "position": 336,
+      "products": 16,
+      "wall_seconds": 0.7361824370000036,
+      "input_tokens": 2310
+    },
+    {
+      "position": 352,
+      "products": 16,
+      "wall_seconds": 0.5357269180000017,
+      "input_tokens": 2390
+    },
+    {
+      "position": 368,
+      "products": 16,
+      "wall_seconds": 0.5795805290000047,
+      "input_tokens": 2136
+    },
+    {
+      "position": 384,
+      "products": 16,
+      "wall_seconds": 0.7546886929999985,
+      "input_tokens": 2520
+    },
+    {
+      "position": 400,
+      "products": 16,
+      "wall_seconds": 0.7733954959999991,
+      "input_tokens": 2397
+    },
+    {
+      "position": 416,
+      "products": 16,
+      "wall_seconds": 0.724297091000004,
+      "input_tokens": 2524
+    },
+    {
+      "position": 432,
+      "products": 16,
+      "wall_seconds": 0.6101218440000054,
+      "input_tokens": 2530
+    },
+    {
+      "position": 448,
+      "products": 16,
+      "wall_seconds": 0.532637085999994,
+      "input_tokens": 2077
+    },
+    {
+      "position": 464,
+      "products": 16,
+      "wall_seconds": 0.8430582689999966,
+      "input_tokens": 2508
+    },
+    {
+      "position": 480,
+      "products": 16,
+      "wall_seconds": 0.5179760949999945,
+      "input_tokens": 1988
+    },
+    {
+      "position": 496,
+      "products": 16,
+      "wall_seconds": 0.567319427000001,
+      "input_tokens": 2057
+    }
+  ],
+  "model_load_seconds": 7.091996476,
+  "warmup_seconds": 1.156526896999999,
+  "gpu": "Tesla T4",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.6",
+  "batch_size": 16,
+  "queries_per_product": 3,
+  "precision": "float32",
+  "function_body_seconds": 28.744989188999995,
+  "input_max_tokens": 512,
+  "max_length": 64,
+  "top_k": 10,
+  "top_p": 1.0,
+  "temperature": 1.0,
+  "note": "Same generation settings as local run; CUDA sampling need not reproduce MPS text exactly. Pilot is for throughput/cost, not replacement effectiveness rankings.",
+  "request_products": 512,
+  "timing_note": "Single remote request for pilot; model load and warmup recorded separately. Includes client request overhead in remote-call wall time.",
+  "remote_call_wall_seconds": 44.700403958995594,
+  "count": 512,
+  "batch_processing_seconds": 20.472727097,
+  "products_per_second": 25.008881209334668,
+  "projected_full_batch_hours": 1.8315715594050022,
+  "pricing_checked_date": "2026-10-06",
+  "pricing_source": "https://modal.com/pricing",
+  "configured_rates_usd_per_second": {
+    "T4": 0.000164,
+    "cpu_per_core": 1.31e-05,
+    "memory_per_gib": 2.22e-06
+  },
+  "estimated_function_compute_usd": 0.005977807951744439,
+  "estimated_full_batch_compute_usd": 1.3712170373779113,
+  "actual_billed_usd": null,
+  "cost_note": "Pricing-based estimates, not actual billing. Function-body estimate excludes container startup/image build and tail; verify account usage before extending the run. Full-corpus extrapolation assumes this fixed metadata-only hash sample throughput holds."
+}

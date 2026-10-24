@@ -1,0 +1,29 @@
+{
+  "documents": 164900,
+  "runtime": "Python3.12 source analyzer vs frozen canonical streams",
+  "note": "BM25 uses token counts; field concatenation order differences alone do not change scores. Frozen streams remain actual indexed input.",
+  "methods": {
+    "plain": {
+      "ordered_stream_differences": 0,
+      "term_frequency_differences": 0,
+      "examples": []
+    },
+    "structured": {
+      "ordered_stream_differences": 162743,
+      "term_frequency_differences": 0,
+      "examples": []
+    },
+    "doc2query_t5": {
+      "ordered_stream_differences": 1,
+      "term_frequency_differences": 1,
+      "examples": [
+        "B01N5JHXW8"
+      ]
+    },
+    "ling_doc2query": {
+      "ordered_stream_differences": 0,
+      "term_frequency_differences": 0,
+      "examples": []
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "castorini/doc2query-t5-base-msmarco",
+  "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+  "batches": [
+    {
+      "position": 0,
+      "products": 16,
+      "wall_seconds": 0.43884372399999805,
+      "input_tokens": 2307
+    }
+  ],
+  "model_load_seconds": 12.206031026,
+  "warmup_seconds": 0.9891377519999978,
+  "gpu": "NVIDIA L4",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.6",
+  "batch_size": 16,
+  "queries_per_product": 3,
+  "precision": "float32",
+  "function_body_seconds": 13.635356451000002,
+  "input_max_tokens": 512,
+  "max_length": 64,
+  "top_k": 10,
+  "top_p": 1.0,
+  "temperature": 1.0,
+  "note": "Same generation settings as local run; CUDA sampling need not reproduce MPS text exactly. Pilot is for throughput/cost, not replacement effectiveness rankings.",
+  "remote_call_wall_seconds": 28.34662570799992,
+  "count": 16,
+  "batch_processing_seconds": 0.43884372399999805,
+  "products_per_second": 36.45944814742314,
+  "projected_full_batch_hours": 1.25634253624305,
+  "pricing_checked_date": "2026-10-05",
+  "pricing_source": "https://modal.com/pricing",
+  "configured_rates_usd_per_second": {
+    "L4": 0.000222,
+    "cpu_per_core": 1.31e-05,
+    "memory_per_gib": 2.22e-06
+  },
+  "estimated_function_compute_usd": 0.003626459401707961,
+  "estimated_full_batch_compute_usd": 1.2028926993811258,
+  "actual_billed_usd": null,
+  "cost_note": "Pricing-based estimates, not actual billing. Function-body estimate excludes container startup/image build and tail; verify account usage before extending the run. Full-corpus extrapolation assumes this fixed metadata-only hash sample throughput holds."
+}

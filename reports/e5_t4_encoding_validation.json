@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "configuration": {
+    "model": "intfloat/e5-small-v2",
+    "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "gpu": "T4",
+    "precision": "float32",
+    "batch_size": 32,
+    "max_length": 512,
+    "pooling": "masked mean + L2 normalization",
+    "prefixes": {
+      "products": "passage: ",
+      "queries": "query: "
+    },
+    "input_sha256": {
+      "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+      "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+    }
+  },
+  "coverage": {
+    "products": {
+      "rows": 164900,
+      "checkpoint_files": 81,
+      "all_finite": true,
+      "max_l2_norm_error": 1.1920928955078125e-07,
+      "processing_seconds": 1459.4679911259987
+    },
+    "queries": {
+      "rows": 8956,
+      "checkpoint_files": 5,
+      "all_finite": true,
+      "max_l2_norm_error": 1.1920928955078125e-07,
+      "processing_seconds": 3.1963714729990897
+    }
+  },
+  "summary_sha256": "aa0a14f4ce91d6b43de1defb261db9e64be912423a529f4ec9398e6ddbbb4c20",
+  "note": "Independent local verification of all checkpoint arrays, ordered unique input IDs, pinned settings and summed recorded durations."
+}

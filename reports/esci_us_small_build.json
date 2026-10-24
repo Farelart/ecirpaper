@@ -1,0 +1,248 @@
+{
+  "dataset": "Amazon ESCI English small-version candidate ranking",
+  "selection": {
+    "product_locale": "us",
+    "small_version": 1
+  },
+  "source_revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+  "source_files": [
+    {
+      "name": "shopping_queries_dataset_examples.parquet",
+      "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/7916cdf6ab75a462e77f20ab40428a10923998d5/shopping_queries_dataset/shopping_queries_dataset_examples.parquet",
+      "bytes": 51286808,
+      "sha256": "4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a",
+      "upstream_lfs_sha256": "4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a"
+    },
+    {
+      "name": "shopping_queries_dataset_products.parquet",
+      "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/7916cdf6ab75a462e77f20ab40428a10923998d5/shopping_queries_dataset/shopping_queries_dataset_products.parquet",
+      "bytes": 1108857465,
+      "sha256": "25124442d064d64b26f74082d6fa09438d679efc0c183cf28d19064a2b65a265",
+      "upstream_lfs_sha256": "25124442d064d64b26f74082d6fa09438d679efc0c183cf28d19064a2b65a265"
+    },
+    {
+      "name": "shopping_queries_dataset_sources.csv",
+      "url": "https://raw.githubusercontent.com/amazon-science/esci-data/7916cdf6ab75a462e77f20ab40428a10923998d5/shopping_queries_dataset/shopping_queries_dataset_sources.csv",
+      "bytes": 1682802,
+      "sha256": "a5fed8ecc016443de40bf3c63098f0e3f23bbe4daa4236f1c38b8c3184778c50",
+      "upstream_lfs_sha256": null
+    }
+  ],
+  "built_at_utc": "2026-10-04T22:59:09.174894+00:00",
+  "duckdb_version": "1.5.6",
+  "splits": [
+    {
+      "split": "test",
+      "pairs": 181701,
+      "queries": 8956
+    },
+    {
+      "split": "train",
+      "pairs": 419653,
+      "queries": 20888
+    }
+  ],
+  "products": 482105,
+  "queries": 29844,
+  "joined_schema": [
+    {
+      "column_name": "example_id",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "query_id",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "query",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_id",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_locale",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "esci_label",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "split",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "source",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_title",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_description",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_bullet_point",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_brand",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "product_color",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    }
+  ],
+  "label_counts": [
+    {
+      "split": "test",
+      "esci_label": "C",
+      "pairs": 8099
+    },
+    {
+      "split": "test",
+      "esci_label": "E",
+      "pairs": 79708
+    },
+    {
+      "split": "test",
+      "esci_label": "I",
+      "pairs": 30331
+    },
+    {
+      "split": "test",
+      "esci_label": "S",
+      "pairs": 63563
+    },
+    {
+      "split": "train",
+      "esci_label": "C",
+      "pairs": 19090
+    },
+    {
+      "split": "train",
+      "esci_label": "E",
+      "pairs": 181819
+    },
+    {
+      "split": "train",
+      "esci_label": "I",
+      "pairs": 71116
+    },
+    {
+      "split": "train",
+      "esci_label": "S",
+      "pairs": 147628
+    }
+  ],
+  "candidates_per_query": [
+    {
+      "split": "test",
+      "minimum": 8,
+      "median": 16.0,
+      "mean": 20.288186690486825,
+      "maximum": 95
+    },
+    {
+      "split": "train",
+      "minimum": 8,
+      "median": 16.0,
+      "mean": 20.09062619685944,
+      "maximum": 188
+    }
+  ],
+  "files": [
+    {
+      "name": "products.parquet",
+      "bytes": 205093571,
+      "sha256": "ab85faa4633e59db50bf0e9272701c096382943423af3f32028da7fb1af21901"
+    },
+    {
+      "name": "queries.parquet",
+      "bytes": 374886,
+      "sha256": "d74727284e7082150ce2a1c9534fadea1d2f6e0024e8cb59513811023e7adfc9"
+    },
+    {
+      "name": "test.parquet",
+      "bytes": 76458382,
+      "sha256": "6f26543d252ab50df2d4b2da382a3dd4c2efee23d8d6c6a3a0b4c82448257fb7"
+    },
+    {
+      "name": "train.parquet",
+      "bytes": 163261413,
+      "sha256": "30eb4315c0f05d21f71b19f6e33c8086f845b196fe26d5b3f0e850cf43956bda"
+    }
+  ],
+  "validation": {
+    "raw_checksums_match": true,
+    "query_split_overlap": 0,
+    "duplicate_candidate_pairs": 0,
+    "missing_product_metadata": 0,
+    "missing_query_sources": 0,
+    "saved_pairs_and_labels_match_source": true
+  },
+  "notes": [
+    "No model training or enrichment performed.",
+    "Original null metadata values are preserved.",
+    "Parquet row order is unspecified; grouped previews sort by product ID, never relevance.",
+    "No relevance gains or binary relevance threshold have been assigned.",
+    "These candidate judgments are not exhaustive whole-catalog qrels."
+  ]
+}

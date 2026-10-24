@@ -1,0 +1,101 @@
+{
+  "all_passed": true,
+  "methods": {
+    "plain": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7009012568216669,
+      "independent_ndcg_full": 0.8240256456612434,
+      "median_ms": 4.79588399999642,
+      "p95_ms": 6.5895698999995025,
+      "rankings_sha256": "ab0f557bb3a7c5ce68ce71016381d8845208643b3ee02baa638a10821863fd20",
+      "timings_sha256": "8cd80bfe8b3bc5f79bf1714316a9708cb43988b1e0f191f6c448144a94367ca7"
+    },
+    "structured": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7130518987807338,
+      "independent_ndcg_full": 0.8315252809187932,
+      "median_ms": 4.749752999970269,
+      "p95_ms": 6.53292070000333,
+      "rankings_sha256": "08a525c7f335a5c8d99e1c08600c65dc24f7ab5dbe2732945b003d0bb0bc8273",
+      "timings_sha256": "24aa03cf14896f88e32a7c51565964b6e97ff0121583f0fa202b810136fbf56e"
+    },
+    "doc2query_t5": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7091335343474297,
+      "independent_ndcg_full": 0.8298207954015956,
+      "median_ms": 4.744807999998102,
+      "p95_ms": 6.5334287000183595,
+      "rankings_sha256": "39cdb16199dc7b8ef7b0c9798465f069ebbedae6f08d826f098b26aa6f8dabbd",
+      "timings_sha256": "6fd6dadcb632da330548b94aa1a2ef48fd1da175219d3070739b839aab6b612e"
+    },
+    "ling_doc2query": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7150485781953576,
+      "independent_ndcg_full": 0.8327769366864559,
+      "median_ms": 4.766335499994057,
+      "p95_ms": 6.506703149989335,
+      "rankings_sha256": "80c527a7e77bdd3fef440942c4c4771170f287cde47fe2ab11a0eae56eb9d60d",
+      "timings_sha256": "a5349f2d3d7ec6414449bf6ddd9965433a1943a120cbade155c81b291d4c8a9f"
+    },
+    "e5": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7337992261476931,
+      "independent_ndcg_full": 0.8433729994878737,
+      "median_ms": 7.8154330000188565,
+      "p95_ms": 8.538292250034374,
+      "rankings_sha256": "7a07b4dd5b441eb518da93e3efa4e3a24b298167944229561eb53ef6833dee8a",
+      "timings_sha256": "2f9ee950fd507bb87683191b46220968295dc26cea7fa5fef3995ec5f23c9c25"
+    },
+    "splade": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7368134625201852,
+      "independent_ndcg_full": 0.8461342937274924,
+      "median_ms": 9.305742500032466,
+      "p95_ms": 10.147974899871313,
+      "rankings_sha256": "edb70f008f320711fd98e2fbae0138288e8e5a626c02d97a0e276e5bd89fd535",
+      "timings_sha256": "bfbb5b27bc166a706bfc2bcbf2b41568b55758b6a0e0334389592e597b795cdd"
+    },
+    "hybrid_plain": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7259287421619547,
+      "independent_ndcg_full": 0.8387760084740619,
+      "median_ms": 18.485222999970574,
+      "p95_ms": 24.481160400000586,
+      "rankings_sha256": "3776cd9a938c452bb873d00871ae04d4c27e7bd408b6a0daf916689330808e8a",
+      "timings_sha256": "fcbc3239e046a559af3f49c2942fba6ffa0ca01562f2935dce2a3f574339b736"
+    },
+    "hybrid_structured": {
+      "passed": true,
+      "rows": 181701,
+      "queries": 8956,
+      "searches": 26868,
+      "independent_ndcg_at_10": 0.7325217508547891,
+      "independent_ndcg_full": 0.8425242995510088,
+      "median_ms": 18.230911000046035,
+      "p95_ms": 24.01861180005653,
+      "rankings_sha256": "4f2bda953d26ef3ac9d28141451e29f46fca25dff416507e4add0569d6214d03",
+      "timings_sha256": "6175404d7e5b9f8ad460e63da668a10db2693fba846cf755171badcb49128881"
+    }
+  }
+}

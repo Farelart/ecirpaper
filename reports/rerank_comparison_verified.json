@@ -1,0 +1,396 @@
+{
+  "passed": true,
+  "queries": 8956,
+  "pairs": 181701,
+  "settings": 20,
+  "timing_sample_queries": 100,
+  "timed_requests": 6000,
+  "maximum_metric_discrepancy": 4.440892098500626e-16,
+  "manifest": {
+    "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "precision": "float16",
+    "max_length": 256,
+    "batch_size": 32,
+    "candidate_sizes": [
+      10,
+      20,
+      50,
+      100
+    ],
+    "methods": [
+      "plain",
+      "structured",
+      "ling_doc2query",
+      "e5",
+      "splade"
+    ],
+    "quality_queries": 8956,
+    "quality_scope": "official judged-candidate ranking; rerank first min(N,candidates), append untouched tail",
+    "timing_queries": 100,
+    "timing_repeats": 3,
+    "timing_seed": 20261006,
+    "timing_scope": "exact full-corpus retrieval + fresh neural query encoding + original-metadata reranking; warm single query; excludes network/load",
+    "reranker_input": "original full cleaned metadata; tokenized query/document pair truncated to256 tokens; no enrichment supplied",
+    "training": "no ESCI training or tuning",
+    "gpu": "T4",
+    "cpu_threads": 1,
+    "input_hashes": {
+      "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+      "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+    }
+  },
+  "results": [
+    {
+      "method": "plain",
+      "candidates": 10,
+      "ndcg_at_10": 0.7205564785651792,
+      "baseline_ndcg_at_10": 0.7009012568216625,
+      "judged_relevant_candidate_recall": 0.5911337046151981,
+      "total_median_ms": 17.059477000003653,
+      "total_p95_ms": 21.134575850012993,
+      "reranker_median_ms": 12.302414499970382,
+      "timed_requests": 300
+    },
+    {
+      "method": "plain",
+      "candidates": 20,
+      "ndcg_at_10": 0.7374733317321118,
+      "baseline_ndcg_at_10": 0.7009012568216625,
+      "judged_relevant_candidate_recall": 0.9135626299576137,
+      "total_median_ms": 26.1662904999298,
+      "total_p95_ms": 31.644887099977836,
+      "reranker_median_ms": 21.04565700000194,
+      "timed_requests": 300
+    },
+    {
+      "method": "plain",
+      "candidates": 50,
+      "ndcg_at_10": 0.7390742581665546,
+      "baseline_ndcg_at_10": 0.7009012568216625,
+      "judged_relevant_candidate_recall": 0.9993504341958968,
+      "total_median_ms": 56.68141949996652,
+      "total_p95_ms": 65.59391474997653,
+      "reranker_median_ms": 52.21039649995873,
+      "timed_requests": 300
+    },
+    {
+      "method": "plain",
+      "candidates": 100,
+      "ndcg_at_10": 0.7390572743587772,
+      "baseline_ndcg_at_10": 0.7009012568216625,
+      "judged_relevant_candidate_recall": 1.0,
+      "total_median_ms": 110.1903485000264,
+      "total_p95_ms": 127.83880130002672,
+      "reranker_median_ms": 105.59428399994886,
+      "timed_requests": 300
+    },
+    {
+      "method": "structured",
+      "candidates": 10,
+      "ndcg_at_10": 0.7265937061206368,
+      "baseline_ndcg_at_10": 0.7130518987807293,
+      "judged_relevant_candidate_recall": 0.5937082192830103,
+      "total_median_ms": 16.505646500036164,
+      "total_p95_ms": 20.108787150087437,
+      "reranker_median_ms": 11.542928000039865,
+      "timed_requests": 300
+    },
+    {
+      "method": "structured",
+      "candidates": 20,
+      "ndcg_at_10": 0.737903539197298,
+      "baseline_ndcg_at_10": 0.7130518987807293,
+      "judged_relevant_candidate_recall": 0.913816659867481,
+      "total_median_ms": 25.224500999968313,
+      "total_p95_ms": 29.618720149932187,
+      "reranker_median_ms": 20.17963749995033,
+      "timed_requests": 300
+    },
+    {
+      "method": "structured",
+      "candidates": 50,
+      "ndcg_at_10": 0.7390811895818337,
+      "baseline_ndcg_at_10": 0.7130518987807293,
+      "judged_relevant_candidate_recall": 0.9993390615827894,
+      "total_median_ms": 55.02006700004358,
+      "total_p95_ms": 63.208405299980086,
+      "reranker_median_ms": 50.48810499999945,
+      "timed_requests": 300
+    },
+    {
+      "method": "structured",
+      "candidates": 100,
+      "ndcg_at_10": 0.7390572743587772,
+      "baseline_ndcg_at_10": 0.7130518987807293,
+      "judged_relevant_candidate_recall": 1.0,
+      "total_median_ms": 106.53150199999573,
+      "total_p95_ms": 121.35306949992355,
+      "reranker_median_ms": 101.8529865000346,
+      "timed_requests": 300
+    },
+    {
+      "method": "ling_doc2query",
+      "candidates": 10,
+      "ndcg_at_10": 0.7278365327863162,
+      "baseline_ndcg_at_10": 0.7150485781953538,
+      "judged_relevant_candidate_recall": 0.5929748777916841,
+      "total_median_ms": 16.21926699993992,
+      "total_p95_ms": 20.118062300008432,
+      "reranker_median_ms": 11.675407500035817,
+      "timed_requests": 300
+    },
+    {
+      "method": "ling_doc2query",
+      "candidates": 20,
+      "ndcg_at_10": 0.7378779606347997,
+      "baseline_ndcg_at_10": 0.7150485781953538,
+      "judged_relevant_candidate_recall": 0.9136576818168471,
+      "total_median_ms": 25.029866000011225,
+      "total_p95_ms": 29.949674749997257,
+      "reranker_median_ms": 20.210730000030708,
+      "timed_requests": 300
+    },
+    {
+      "method": "ling_doc2query",
+      "candidates": 50,
+      "ndcg_at_10": 0.739052650717206,
+      "baseline_ndcg_at_10": 0.7150485781953538,
+      "judged_relevant_candidate_recall": 0.999358176890965,
+      "total_median_ms": 55.007723999949576,
+      "total_p95_ms": 62.75526295008831,
+      "reranker_median_ms": 50.54008050001357,
+      "timed_requests": 300
+    },
+    {
+      "method": "ling_doc2query",
+      "candidates": 100,
+      "ndcg_at_10": 0.7390572743587772,
+      "baseline_ndcg_at_10": 0.7150485781953538,
+      "judged_relevant_candidate_recall": 1.0,
+      "total_median_ms": 106.31312199996046,
+      "total_p95_ms": 119.94445184996039,
+      "reranker_median_ms": 101.40976750000164,
+      "timed_requests": 300
+    },
+    {
+      "method": "e5",
+      "candidates": 10,
+      "ndcg_at_10": 0.7393444768490348,
+      "baseline_ndcg_at_10": 0.7337992261476876,
+      "judged_relevant_candidate_recall": 0.600323859254384,
+      "total_median_ms": 20.143250499984333,
+      "total_p95_ms": 23.100358650066255,
+      "reranker_median_ms": 11.566864500025531,
+      "timed_requests": 300
+    },
+    {
+      "method": "e5",
+      "candidates": 20,
+      "ndcg_at_10": 0.7388853094902469,
+      "baseline_ndcg_at_10": 0.7337992261476876,
+      "judged_relevant_candidate_recall": 0.9151442322755685,
+      "total_median_ms": 28.807749000009153,
+      "total_p95_ms": 33.20967100003145,
+      "reranker_median_ms": 20.30206549994773,
+      "timed_requests": 300
+    },
+    {
+      "method": "e5",
+      "candidates": 50,
+      "ndcg_at_10": 0.7390643635572708,
+      "baseline_ndcg_at_10": 0.7337992261476876,
+      "judged_relevant_candidate_recall": 0.9994084551626651,
+      "total_median_ms": 58.38152450002099,
+      "total_p95_ms": 66.40840789990534,
+      "reranker_median_ms": 49.613111500036666,
+      "timed_requests": 300
+    },
+    {
+      "method": "e5",
+      "candidates": 100,
+      "ndcg_at_10": 0.7390572743587772,
+      "baseline_ndcg_at_10": 0.7337992261476876,
+      "judged_relevant_candidate_recall": 1.0,
+      "total_median_ms": 110.30044199998201,
+      "total_p95_ms": 124.82661579994101,
+      "reranker_median_ms": 101.85771449999947,
+      "timed_requests": 300
+    },
+    {
+      "method": "splade",
+      "candidates": 10,
+      "ndcg_at_10": 0.7388764305106691,
+      "baseline_ndcg_at_10": 0.7368134625201813,
+      "judged_relevant_candidate_recall": 0.5981602324514932,
+      "total_median_ms": 21.182666499953484,
+      "total_p95_ms": 24.20139649998987,
+      "reranker_median_ms": 11.340132499981337,
+      "timed_requests": 300
+    },
+    {
+      "method": "splade",
+      "candidates": 20,
+      "ndcg_at_10": 0.7390258789585684,
+      "baseline_ndcg_at_10": 0.7368134625201813,
+      "judged_relevant_candidate_recall": 0.9148945908341299,
+      "total_median_ms": 30.13388150003493,
+      "total_p95_ms": 34.098728950056056,
+      "reranker_median_ms": 20.164884499990876,
+      "timed_requests": 300
+    },
+    {
+      "method": "splade",
+      "candidates": 50,
+      "ndcg_at_10": 0.7390577001299211,
+      "baseline_ndcg_at_10": 0.7368134625201813,
+      "judged_relevant_candidate_recall": 0.9993904353922622,
+      "total_median_ms": 59.34141649998992,
+      "total_p95_ms": 66.98142759995562,
+      "reranker_median_ms": 49.28189200001043,
+      "timed_requests": 300
+    },
+    {
+      "method": "splade",
+      "candidates": 100,
+      "ndcg_at_10": 0.7390572743587772,
+      "baseline_ndcg_at_10": 0.7368134625201813,
+      "judged_relevant_candidate_recall": 1.0,
+      "total_median_ms": 110.67540999999892,
+      "total_p95_ms": 125.14941825005508,
+      "reranker_median_ms": 100.96821600001249,
+      "timed_requests": 300
+    }
+  ],
+  "cloud_summary": {
+    "complete": true,
+    "manifest": {
+      "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "precision": "float16",
+      "max_length": 256,
+      "batch_size": 32,
+      "candidate_sizes": [
+        10,
+        20,
+        50,
+        100
+      ],
+      "methods": [
+        "plain",
+        "structured",
+        "ling_doc2query",
+        "e5",
+        "splade"
+      ],
+      "quality_queries": 8956,
+      "quality_scope": "official judged-candidate ranking; rerank first min(N,candidates), append untouched tail",
+      "timing_queries": 100,
+      "timing_repeats": 3,
+      "timing_seed": 20261006,
+      "timing_scope": "exact full-corpus retrieval + fresh neural query encoding + original-metadata reranking; warm single query; excludes network/load",
+      "reranker_input": "original full cleaned metadata; tokenized query/document pair truncated to256 tokens; no enrichment supplied",
+      "training": "no ESCI training or tuning",
+      "gpu": "T4",
+      "cpu_threads": 1,
+      "input_hashes": {
+        "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+        "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+      }
+    },
+    "quality_pairs": 181701,
+    "quality_queries": 8956,
+    "quality_processing_seconds": 190.69035843300009,
+    "elapsed_seconds": 870.7619521409999
+  },
+  "paired_comparisons": [
+    {
+      "left": [
+        "structured",
+        10
+      ],
+      "right": [
+        "ling_doc2query",
+        10
+      ],
+      "difference": -0.001242826665679475,
+      "exploratory_95_percent_interval": [
+        -0.0025596422630106345,
+        0.00010490301753428302
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "multiple_comparison_correction": false
+    },
+    {
+      "left": [
+        "structured",
+        20
+      ],
+      "right": [
+        "e5",
+        10
+      ],
+      "difference": -0.0014409376517367975,
+      "exploratory_95_percent_interval": [
+        -0.003347397367260736,
+        0.0006088255197198952
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "multiple_comparison_correction": false
+    },
+    {
+      "left": [
+        "structured",
+        10
+      ],
+      "right": [
+        "e5",
+        10
+      ],
+      "difference": -0.01275077072839805,
+      "exploratory_95_percent_interval": [
+        -0.015284846554948833,
+        -0.009974544200964103
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "multiple_comparison_correction": false
+    }
+  ],
+  "queries_with_all_candidates_reranked": {
+    "10": 97,
+    "20": 7166,
+    "50": 8918,
+    "100": 8956
+  },
+  "input_export_validation": "Cloud SPLADE exports match pinned hashes; all164900 product texts and8956 query texts exactly equal original neural exports despite different JSON field names",
+  "billing_status": "Successful app metered cost reported; failed startup not present in provider report",
+  "billing_files": [
+    "outputs/modal_rerank/billing_report.json",
+    "outputs/modal_rerank/billing_summary.json"
+  ],
+  "billing": {
+    "observed_at_utc": "2026-10-06T20:05:59.891385+00:00",
+    "successful_app_id": "ap-FKjrg3NjStiRXWSat1goN6",
+    "successful_app": {
+      "description": "ecir-shared-reranker-t4",
+      "compute_usd": "0.18909833",
+      "including_egress_usd": "0.18969745"
+    },
+    "failed_startup_app_id": "ap-5X57gzpPDPklrOBMwicMmH",
+    "failed_startup_status": "Not present in provider report; charge unknown, not assumed zero",
+    "all_reported_experiment_apps_including_egress_usd": "4.20079649",
+    "workspace_payable_after_credits_usd": "0",
+    "note": "Provider snapshot; resource cost before credits. Total experimental job charge is not per-method serving cost. No new inference or API calls."
+  },
+  "failed_startup_billing_followup": {
+    "app_id": "ap-5X57gzpPDPklrOBMwicMmH",
+    "checks": 3,
+    "status": "Provider-unreported/unknown; not assumed zero",
+    "metered_cost_usd": null,
+    "checked_at_utc": "2026-10-06T20:35:30.690490+00:00",
+    "latest_snapshot": "outputs/modal_rerank/billing_report_20261006T2035.json"
+  }
+}

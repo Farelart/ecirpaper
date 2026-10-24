@@ -1,0 +1,166 @@
+{
+  "reviewer": "Codex qualitative review; no independent second annotator",
+  "sample_size": 20,
+  "flag_definition": "At least one unsupported specific property/content/audience/capability, or potentially misleading alternative product name. Plausible use cases alone are not flagged.",
+  "selection": "Five per metadata stratum, SHA256(product_id + :audit42), independent of output content.",
+  "flagged_outputs": 16,
+  "limitations": "Exploratory single-reviewer metadata-grounding judgments, including ambiguous synonym cases; not a validated hallucination rate or evidence of retrieval effectiveness.",
+  "items": [
+    {
+      "product_id": "B07ZKJB8GF",
+      "title": "3.5mm Female to XLR Male Stereo Audio Adapter Cable, 1/8 inch Mini Jack Female to XLR Male Adapter Cable, 1 Feet - JOLGOO",
+      "stratum": "description+bullets",
+      "flag": false,
+      "note": "Connectors, cable construction and stated device connections are grounded in metadata; uses are plausible."
+    },
+    {
+      "product_id": "B07DCJ3GLT",
+      "title": "Shade&Beyond Sun Canopy Shade Sail 12'x16' Rectangle UV Block for Patio Deck Yard and Outdoor Activities Sand",
+      "stratum": "description+bullets",
+      "flag": true,
+      "kind": "broad_synonyms",
+      "note": "Outdoor awning and sun tarp may imply different construction or waterproofness; source explicitly says not waterproof and contains conflicting shape/hardware statements."
+    },
+    {
+      "product_id": "B0831S1PX9",
+      "title": "CUK ASUS TUF506IV Gaming Laptop PC (AMD Ryzen 7 4800H CPU, 64GB RAM, 2TB NVMe SSD, NVIDIA GeForce RTX 2060 6GB GPU, 15.6\" Full HD 144Hz, Windows 10 Home) Gamer Notebook Computer",
+      "stratum": "description+bullets",
+      "flag": true,
+      "kind": "unstated_capability",
+      "note": "Ray tracing capable laptop is not explicit in supplied text, although inferred from the named GPU; keep capability claims source-grounded."
+    },
+    {
+      "product_id": "B07L2TLCHM",
+      "title": "Unbreakable Love,Mr Right and Mrs Always Right Couple Mug, Valentines Wedding Gifts for Couple,Bridal Shower Gifts,Engagement Gifts or Christmas Gifts for Anniversary,Birthday,Growlers Cups,Beer Cups",
+      "stratum": "description+bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Stackable, rustproof and matte finish are absent from supplied metadata."
+    },
+    {
+      "product_id": "B07JZDNWQT",
+      "title": "Emmi-dent Oral Waver Electric Toothbrush Cleans with 100% Ultrasound and no Abrasive Brushing. Gentle Massage Feature. Limited Edition Carbon Starter Kit",
+      "stratum": "description+bullets",
+      "flag": false,
+      "note": "Ultrasound, non-abrasive cleaning, braces and implants are stated; source medical/marketing claims are not independently verified by this audit."
+    },
+    {
+      "product_id": "B07Z83JD3N",
+      "title": "Losi Front Rear Diff Pinion Gear, 12T: DBXL-E 2.0, LOS252124",
+      "stratum": "description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Metal, steel and 1/5 scale are absent from supplied metadata."
+    },
+    {
+      "product_id": "B00N41RRRQ",
+      "title": "RWR No Knot Hair Nets (Grey)",
+      "stratum": "description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_properties_and_context",
+      "note": "Elastic, mesh, breathable and equestrian-specific context are not provided in title or short description."
+    },
+    {
+      "product_id": "B085BL4PCY",
+      "title": "No Way Out: A Lucy Kincaid Novella (Lucy Kincaid Novels)",
+      "stratum": "description+no_bullets",
+      "flag": false,
+      "note": "Plot, author, series and e-novella format are stated; mystery/thriller uses are plausible."
+    },
+    {
+      "product_id": "B006RODC1M",
+      "title": "Heart Leaf Philodendron - Easiest House Plant to Grow - 4\" Pot - Live Plant",
+      "stratum": "description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Low-light and evergreen go beyond supplied text; avoiding direct sun alone does not establish low-light tolerance."
+    },
+    {
+      "product_id": "B01FL2T3ZE",
+      "title": "Lansinoh Contact Nipple Shields, 2 Count (3 Pack)",
+      "stratum": "description+no_bullets",
+      "flag": true,
+      "kind": "broad_synonyms",
+      "note": "Breast shield can denote a pump flange, a different product; nursing shield is more precise."
+    },
+    {
+      "product_id": "B07MN6G7VX",
+      "title": "Comfort Colors Men Adult Long Sleeve Tee, Style 6014, Blue Jean, Large",
+      "stratum": "no_description+bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Heavy cotton, relaxed fit, pre-shrunk, crew neck and breathable are not stated in supplied metadata."
+    },
+    {
+      "product_id": "B002XDRCY4",
+      "title": "MET-Rx RTD 51 Protein Shake, Ready to Drink and Convenient for Meal Replacement, Low Carb, Cookies and Creme, With Vitamin A, Vitamin C, Vitamin D, and Zinc to Support Immune Health, 15 oz, 12 Count",
+      "stratum": "no_description+bullets",
+      "flag": false,
+      "note": "Protein, vitamins, recovery and meal replacement are stated in source; this audit does not validate manufacturer health claims."
+    },
+    {
+      "product_id": "B07W3SH4BD",
+      "title": "The Party Animal NFL Minnesota Vikings, Adam Thielen Player Jersey Apron",
+      "stratum": "no_description+bullets",
+      "flag": true,
+      "kind": "broad_synonyms",
+      "note": "Team bib, jersey bib and kitchen bib are ambiguous and can denote a different product; other uses are grounded or plausible."
+    },
+    {
+      "product_id": "B004BTE78C",
+      "title": "Quality Chain Cobra Cable Passenger Snow Traction Tire Chains (1022)",
+      "stratum": "no_description+bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Steel and rollers are absent from supplied metadata. Winter traction situations are plausible."
+    },
+    {
+      "product_id": "B00XA30QI0",
+      "title": "Roller Derby Firestar Youth Girl's Quad Roller Skates, White/Pink, Size 13",
+      "stratum": "no_description+bullets",
+      "flag": true,
+      "kind": "unsupported_suitability",
+      "note": "Outdoor suitability is not established by supplied metadata; beginner use is plausible but not a certified suitability claim."
+    },
+    {
+      "product_id": "1623970180",
+      "title": "The Martha Washington Cook Book",
+      "stratum": "no_description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_content",
+      "note": "Title-only record does not establish manuscript, 18th-century recipes or authentic colonial content."
+    },
+    {
+      "product_id": "B0851BRKTY",
+      "title": "Anzuo Screen Protector for iPhone 8 Plus/7 Plus/6S Plus/6 Plus, [2 Pack] 5.5-Inch Full Coverage Premium Tempered Glass,9H Hardness,Case Friendly,Anti Bubble 3D Touch Accuracy Film - Black",
+      "stratum": "no_description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_capability",
+      "note": "Shatterproof and impact protection go beyond the supplied title; hardness and tempered glass do not guarantee shatterproofness."
+    },
+    {
+      "product_id": "B07F8BMP7Q",
+      "title": "Nidecker x Flow Trinity Boa Focus Snoaboard Boot - Women's Black, 7.0",
+      "stratum": "no_description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_properties",
+      "note": "Waterproof, insulated, synthetic, heel lock and all-mountain suitability are absent from the supplied title."
+    },
+    {
+      "product_id": "1418542563",
+      "title": "Fathered by God Small Group Video Series",
+      "stratum": "no_description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_audience_and_content",
+      "note": "Men-specific curriculum, masculinity, leadership and discipleship are absent from the title-only input."
+    },
+    {
+      "product_id": "1465418318",
+      "title": "Eye Wonder: Sharks",
+      "stratum": "no_description+no_bullets",
+      "flag": true,
+      "kind": "unsupported_format_and_content",
+      "note": "Photography, picture-book and encyclopedia formats are not established by title/brand; shark education uses are plausible."
+    }
+  ]
+}

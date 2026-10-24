@@ -1,0 +1,13 @@
+{
+  "initial_workers": 16,
+  "resumed_workers": 64,
+  "reason": "Increase throughput; prompt/model/token caps unchanged.",
+  "checkpoint_resume": "Completed batch log preserved. In-flight calls on interruption remain accounted in shared ledger; their outputs may be regenerated.",
+  "current_runner_sha256": "c34aba142f7d40384929abeef32a4ac5051373b0daa3b698f206cf28d9dd1b02",
+  "subsequent_workers": 32,
+  "service_interruption": "Ten HTTP 503 responses at roughly 29,000 product attempts; progress and uncertain-cost reservations preserved, resumed at 32 workers.",
+  "individual_retry_workers": 8,
+  "final_revalidation_workers": 4,
+  "final_coverage": 164900,
+  "final_cleanup": "Known missing quote/colon in an array key repaired without changing generated text; all outputs revalidated before scoring."
+}

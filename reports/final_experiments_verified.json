@@ -1,0 +1,712 @@
+{
+  "verified_at_utc": "2026-10-06T09:54:58.406873+00:00",
+  "complete": true,
+  "products": 164900,
+  "queries": 8956,
+  "judged_pairs": 181701,
+  "quality_validation": {
+    "validated_methods": {
+      "plain": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7009012568216669,
+        "independent_sql_ndcg_full": 0.8240256456612434,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 4.440892098500626e-15,
+          "ndcg_full": 1.9984014443252818e-15
+        },
+        "rankings_sha256": "5a66ffb541db2d90efdb25073f2c4e501d63f9944259938e370d34acba99551b",
+        "passed": true
+      },
+      "structured": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7130518987807338,
+        "independent_sql_ndcg_full": 0.8315252809187932,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 4.551914400963142e-15,
+          "ndcg_full": 3.774758283725532e-15
+        },
+        "rankings_sha256": "d363c610b7eb2e90d1fcb8ccddc7111e5f0b3d647b5324c107ae3ceb0a80a77e",
+        "passed": true
+      },
+      "dense": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7337892740605353,
+        "independent_sql_ndcg_full": 0.8433572013840902,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 5.329070518200751e-15,
+          "ndcg_full": 2.55351295663786e-15
+        },
+        "rankings_sha256": "f9d896fe5155f61e7a8d59b071db3dd184fd801a1f62eecf6e257a08b2ac8b7b",
+        "passed": true
+      },
+      "hybrid_plain": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7259338289331454,
+        "independent_sql_ndcg_full": 0.8387795200886644,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 1.1102230246251565e-16,
+          "ndcg_full": 1.7763568394002505e-15
+        },
+        "rankings_sha256": "8790b3b748a6ca865381aeda0f48d8f2b63641316356ff849b6e291dd2a5ba64",
+        "passed": true
+      },
+      "hybrid_structured": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7325239218605789,
+        "independent_sql_ndcg_full": 0.8425200473142566,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 5.662137425588298e-15,
+          "ndcg_full": 0.0
+        },
+        "rankings_sha256": "94c5e6632c4f1656c92fed87e4126cd368304e7c62ff4c489ad5722c1cdfd19d",
+        "passed": true
+      },
+      "doc2query_t5": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7091335343474297,
+        "independent_sql_ndcg_full": 0.8298207954015956,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 4.3298697960381105e-15,
+          "ndcg_full": 2.220446049250313e-16
+        },
+        "rankings_sha256": "fa5d34d8005397d64dbbeb0e965e350d49cf6956443639d8698c2ad4542d94b8",
+        "passed": true
+      },
+      "ling_doc2query": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7150485781953576,
+        "independent_sql_ndcg_full": 0.8327769366864559,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 3.774758283725532e-15,
+          "ndcg_full": 2.220446049250313e-16
+        },
+        "rankings_sha256": "92a05ac0727f259853a742ac0d032f4d667771210c995e4d24d12b534c7f1fa9",
+        "passed": true
+      },
+      "splade": {
+        "rows": 181701,
+        "queries": 8956,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "invalid_ranks": 0,
+        "independent_sql_ndcg_at_10": 0.7368011371202818,
+        "independent_sql_ndcg_full": 0.8461224125394037,
+        "absolute_metric_discrepancies": {
+          "ndcg_at_10": 3.9968028886505635e-15,
+          "ndcg_full": 2.6645352591003757e-15
+        },
+        "rankings_sha256": "76a5466c9b2288bb8c011a8a6d39a8a2f6010fe077baf3f70179c131a880b37a",
+        "passed": true
+      }
+    },
+    "method": "Independent DuckDB SQL over saved ranks and original ESCI labels; direct gains and full-candidate ideal ranking.",
+    "all_present_methods_passed": true
+  },
+  "timing_validation": {
+    "plain": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "f5275ec0cb35a4dc594f737241c5a02ee0312f15989fa16a5266d0883a721b81"
+    },
+    "structured": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "256f9d58f055bc3b5aa2d79b9fa2fa8b8a70403027919bd33db1721d8183dc08"
+    },
+    "doc2query_t5": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "765e9ce4cda5a046d9cfe310c2fae1e6314e4f7ea9d0fcbbb2ba9bc9562bf559"
+    },
+    "ling_doc2query": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "ed15131f269f04827db5f89919bf7d6ab0afc1397cba7224178ef3471b243564"
+    },
+    "e5": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "ea2dbef50f7a25b7643463469becec446cd9ed88934a1a56305b27e121553dc9"
+    },
+    "splade": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "f238143907734b7352928634826e78f95281936ce54e3e9bd8d536154b97b5c8"
+    },
+    "hybrid_plain": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "2bb3ac5b656556b5bac1548d7feee231e56db8fa5fa235fca75c610caa758b46"
+    },
+    "hybrid_structured": {
+      "passed": true,
+      "searches": 26868,
+      "sha256": "2b5670fdf2d1dcc7cc2e407f33abf720836fcf1f6a8b4c5467b2e8c2b3205107"
+    }
+  },
+  "timings": {
+    "plain": {
+      "method": "plain",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 0.8169795000014801,
+      "p95_ms": 2.191677200000441,
+      "mean_query_encoding_ms": 0.0,
+      "mean_search_and_top10_ms": 1.0362431521512556,
+      "index": {
+        "build_and_write_seconds": 11.189681457999999,
+        "index_bytes": 112683010,
+        "average_document_length": 190.93963614311704,
+        "document_tokenization_seconds_separately_measured": 3.50196282210527,
+        "total_indexing_seconds": 14.691644280105269,
+        "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time.",
+        "reference_score_validation_queries": 100
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "structured": {
+      "method": "structured",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 0.8319170000135045,
+      "p95_ms": 2.1590249000020374,
+      "mean_query_encoding_ms": 0.0,
+      "mean_search_and_top10_ms": 1.020682628182162,
+      "index": {
+        "build_and_write_seconds": 12.242357292000001,
+        "index_bytes": 119368143,
+        "average_document_length": 220.8061188599151,
+        "document_tokenization_seconds_separately_measured": 3.9914853146256064,
+        "total_indexing_seconds": 16.233842606625608,
+        "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time.",
+        "reference_score_validation_queries": 100
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "doc2query_t5": {
+      "method": "doc2query_t5",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 0.8093960000010725,
+      "p95_ms": 2.1865896999969423,
+      "mean_query_encoding_ms": 0.0,
+      "mean_search_and_top10_ms": 1.0297745213636944,
+      "index": {
+        "build_and_write_seconds": 22.537174042000004,
+        "index_bytes": 119144655,
+        "average_document_length": 210.16693753790176,
+        "document_tokenization_seconds_separately_measured": 0,
+        "total_indexing_seconds": 22.537174042000004,
+        "text_preparation_note": "Previously cleaned neural export under frozen Python 3.9 T5 scorer. No previous rankings changed.",
+        "reference_score_validation_queries": 100
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "ling_doc2query": {
+      "method": "ling_doc2query",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 0.8013959999857434,
+      "p95_ms": 2.1231534999998285,
+      "mean_query_encoding_ms": 0.0,
+      "mean_search_and_top10_ms": 1.0158241431069943,
+      "index": {
+        "build_and_write_seconds": 11.197440457999988,
+        "index_bytes": 115864483,
+        "average_document_length": 209.64032747119467,
+        "document_tokenization_seconds_separately_measured": 3.8414720526416204,
+        "total_indexing_seconds": 15.038912510641609,
+        "text_preparation_note": "Canonical document tokens from frozen Python 3.12 tokenizer; all query tokenizations validated identical under timing runtime. Document tokenization performed separately and excluded from index assembly time."
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "e5": {
+      "method": "e5",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 12.891374999995264,
+      "p95_ms": 14.497560300000599,
+      "mean_query_encoding_ms": 8.596501870515098,
+      "mean_search_and_top10_ms": 4.558589465274662,
+      "index": {
+        "build_and_write_seconds": 0.4838046250000012,
+        "index_bytes": 253286528,
+        "note": "Representation assembly/serialization only; document model encoding reported separately.",
+        "dense_backend_validation": "Finite cosine bounds checked on every query; independent einsum agrees for 20+ reference queries across full corpus within float32 tolerance."
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "splade": {
+      "method": "splade",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 39.269541500004834,
+      "p95_ms": 46.29856919995063,
+      "mean_query_encoding_ms": 34.819878378034275,
+      "mean_search_and_top10_ms": 5.339738276796936,
+      "index": {
+        "build_and_write_seconds": 10.191351417000021,
+        "index_bytes": 156767177,
+        "note": "Representation assembly/serialization only; document model encoding reported separately."
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "hybrid_plain": {
+      "method": "hybrid_plain",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 15.15620800000761,
+      "p95_ms": 17.139866649961277,
+      "mean_query_encoding_ms": 8.844611873640623,
+      "mean_search_and_top10_ms": 6.551806772406609,
+      "index": {
+        "build_and_write_seconds": 11.673486083,
+        "index_bytes": 365969538,
+        "note": "Sum of separately measured component builds; shared indexes; RRF k60 with 1000 hits per component, fixed without test tuning."
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    },
+    "hybrid_structured": {
+      "method": "hybrid_structured",
+      "products": 164900,
+      "queries": 8956,
+      "repeats": 3,
+      "warmup_queries": 20,
+      "median_ms": 15.125166499956322,
+      "p95_ms": 17.133770400096182,
+      "mean_query_encoding_ms": 8.818254421988211,
+      "mean_search_and_top10_ms": 6.536057623716375,
+      "index": {
+        "build_and_write_seconds": 12.726161917000002,
+        "index_bytes": 372654671,
+        "note": "Sum of separately measured component builds; shared indexes; RRF k60 with 1000 hits per component, fixed without test tuning."
+      },
+      "hardware": "Local Mac; single CPU thread; all methods sequential; warm resident indexes",
+      "scope": "Full 164900-product exact search, top10 selection, single query at a time; neural encoding included. No ANN or serving/network layer."
+    }
+  },
+  "paired_comparisons": {
+    "structured_minus_plain": {
+      "mean_difference": 0.01215064195906685,
+      "paired_95_percent_bootstrap_interval": [
+        0.010289482420858932,
+        0.014015128478112737
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap; no multiple-comparison correction. Standard-library RNG."
+    },
+    "structured_minus_doc2query_t5": {
+      "mean_difference": 0.003918364433304043,
+      "paired_95_percent_bootstrap_interval": [
+        0.00206523718471923,
+        0.005770975090092499
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap; no multiple-comparison correction. Standard-library RNG."
+    },
+    "structured_minus_ling_doc2query": {
+      "mean_difference": -0.0019966794146244844,
+      "paired_95_percent_bootstrap_interval": [
+        -0.003553062613884037,
+        -0.00023441910568435345
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap; no multiple-comparison correction. Standard-library RNG."
+    },
+    "dense_minus_structured": {
+      "mean_difference": 0.02073737527980065,
+      "paired_95_percent_bootstrap_interval": [
+        0.016889813548549303,
+        0.024324555387593556
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap; no multiple-comparison correction. Standard-library RNG."
+    },
+    "splade_minus_dense": {
+      "mean_difference": 0.0030118630597478773,
+      "paired_95_percent_bootstrap_interval": [
+        -0.0001574788629610137,
+        0.0060723275810186965
+      ],
+      "resamples": 1000,
+      "seed": 42,
+      "note": "Exploratory query bootstrap; no multiple-comparison correction. Standard-library RNG."
+    }
+  },
+  "preparation": {
+    "structured_logged_api_usd": 1.4240369976,
+    "ling_queries_logged_api_usd": 0.9950095764,
+    "shared_api_ledger_including_reservations_usd": "2.42493314280",
+    "api_ceiling_usd": 4.4,
+    "structured_total_elapsed_seconds": null,
+    "ling_queries_total_elapsed_seconds": null,
+    "t5_cloud": {
+      "verified_complete": true,
+      "products": 164900,
+      "generated_queries": 494700,
+      "checkpoint_files": 81,
+      "input_sha256": "ef91acfb8b5a8e80d312883b98d4a7fdf3e11f69449c2cda51c0e47b0cbecc3e",
+      "pins_verified": {
+        "model": "castorini/doc2query-t5-base-msmarco",
+        "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+        "batch_size": 16,
+        "queries_per_product": 3,
+        "precision": "float32",
+        "input_max_tokens": 512,
+        "max_length": 64,
+        "top_k": 10,
+        "top_p": 1.0,
+        "temperature": 1.0
+      },
+      "batch_processing_seconds": 7196.832066375007,
+      "batch_processing_minutes": 119.94720110625012,
+      "products_per_second": 22.91285922460866,
+      "latest_session_wall_seconds": 3062.23937832,
+      "total_elapsed_wall_seconds": null,
+      "timing_note": "Batch processing sum covers all saved products. Session timer reset on worker restarts; latest-session time is not full elapsed time. Uncheckpointed work and restart overhead excluded.",
+      "app_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "reported_metered_usd_partial": 1.60778359,
+      "billing_status": "Completed app billing reported as of 2026-10-06T05:40:57Z; later provider adjustments possible",
+      "estimated_batch_compute_usd": 1.4966531965233467,
+      "effectiveness_outputs_replaced": false,
+      "actual_reported_metered_compute_usd": 1.6073728,
+      "actual_reported_metered_app_total_usd": 1.60778359,
+      "billing_rows": [
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T00:00:00+01:00",
+          "resource": "Memory",
+          "cost": "0.02948779"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T00:00:00+01:00",
+          "resource": "CPU",
+          "cost": "0.04367185"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T00:00:00+01:00",
+          "resource": "Network Egress",
+          "cost": "0.00012079"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T00:00:00+01:00",
+          "resource": "T4",
+          "cost": "0.27184057"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T01:00:00+01:00",
+          "resource": "Memory",
+          "cost": "0.06368000"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T01:00:00+01:00",
+          "resource": "CPU",
+          "cost": "0.09425242"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T01:00:00+01:00",
+          "resource": "Network Egress",
+          "cost": "0.00029000"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T01:00:00+01:00",
+          "resource": "T4",
+          "cost": "0.58705004"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T02:00:00+01:00",
+          "resource": "Memory",
+          "cost": "0.04423319"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T02:00:00+01:00",
+          "resource": "CPU",
+          "cost": "0.06538219"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T02:00:00+01:00",
+          "resource": "Network Egress",
+          "cost": "0E-8"
+        },
+        {
+          "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+          "description": "ecir-doc2query-t5-full",
+          "environment": "main",
+          "interval_start": "2026-10-06T02:00:00+01:00",
+          "resource": "T4",
+          "cost": "0.40777475"
+        }
+      ],
+      "workspace_billed_cost_usd": 0.0,
+      "billing_note": "App compute includes billed GPU/CPU/memory across restart attempts. Credits are workspace-level; zero payable is not zero resource cost. Report total differs from monthly summary, so monthly usage is not attributed wholly to this app."
+    },
+    "splade": {
+      "coverage_and_configuration_verified": true,
+      "numerical_weight_validation": {
+        "passed": true,
+        "files": 86,
+        "nnz": 29849463,
+        "checks": "All weights finite and strictly positive; CSR canonical; vocab dimension 30522"
+      },
+      "configuration": {
+        "model": "naver/splade-cocondenser-ensembledistil",
+        "revision": "49cf4c7b0db5b870a401ddf5e2669993ef3699c7",
+        "max_length": 512,
+        "batch_size": 8,
+        "precision": "float32",
+        "pooling": "max(log1p(relu(logits)) * attention_mask)",
+        "pruning": "none; retain every strictly positive weight",
+        "gpu": "T4",
+        "input_sha256": {
+          "products": "f8baf175b6dab45a73d6f886e95e5662238e2d5738b229be33204832488c566e",
+          "queries": "f71fef8b9c0df015c133f3c44ce2e3e7bf3beb0509641afa8a4292151f94e503"
+        }
+      },
+      "processing_seconds": {
+        "products": 6561.427980124009,
+        "queries": 16.060086830005275
+      },
+      "note": "Batch encoding time excludes checkpoint and orchestration overhead; query encoding is offline batched, not serving latency.",
+      "products": {
+        "rows": 164900,
+        "checkpoint_files": 81,
+        "nnz": 29434500
+      },
+      "queries": {
+        "rows": 8956,
+        "checkpoint_files": 5,
+        "nnz": 414963
+      },
+      "reported_metered_app_cost_usd": 1.52273621,
+      "billing_status": "Reported snapshot; possible provider lag and later adjustments",
+      "independent_saved_score_validation": {
+        "passed": true,
+        "queries": 21,
+        "judged_pairs": 381,
+        "max_absolute_float32_difference": 1.9073486328125e-06,
+        "method": "Independent SciPy sparse matrix dot on judged candidate rows versus saved CSC posting-accumulation scores; rtol1e-5 atol1e-6"
+      }
+    },
+    "e5_product_inference_seconds": 2191.880882013,
+    "e5_compute_cost_usd": null,
+    "note": "API generation first-request-to-last-response spans recovered from logged UTC starts and monotonic durations; continuous whole-job timers including setup/final export remain unavailable. Different concurrency/deployment stacks limit speed attribution. E5 monetary compute cost is unmeasured.",
+    "reconstructed_generation_timing": {
+      "method": "Reconstructed from each logged UTC request start and monotonic request duration. First dispatch to latest reconstructed response includes gaps, retries and restarts; excludes setup before first request and final export after last response.",
+      "checked_at_utc": "2026-10-06T10:41:44.057551+00:00",
+      "clock_note": "UTC start plus monotonic duration gives approximate response timestamp; no continuous whole-job monotonic timer was saved.",
+      "methods": {
+        "structured": {
+          "products": 164900,
+          "logged_requests": 23320,
+          "timed_requests": 23296,
+          "untimed_failed_requests": {
+            "http_error": 24
+          },
+          "first_request_utc": "2026-10-05T08:38:25.751240+00:00",
+          "latest_reconstructed_response_utc": "2026-10-05T09:23:13.773046+00:00",
+          "observed_generation_span_seconds": 2688.0218057632446,
+          "observed_generation_span_minutes": 44.80036342938741,
+          "union_of_timed_request_intervals_seconds": 2475.0592885017395,
+          "no_timed_request_in_flight_seconds_within_span": 212.96251726150513,
+          "sum_of_overlapping_request_seconds": 68794.94984960556,
+          "peak_observed_timed_request_overlap": 64,
+          "index_construction_seconds": 16.233842606625608,
+          "generation_span_plus_index_seconds": 2704.2556483698704,
+          "batches_sha256": "14724100054a0a9903734ba8803c638bc2041c64ab51acce8e810fc224656e62",
+          "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+        },
+        "ling_doc2query": {
+          "products": 164900,
+          "logged_requests": 22838,
+          "timed_requests": 22835,
+          "untimed_failed_requests": {
+            "request_error": 2,
+            "http_error": 1
+          },
+          "first_request_utc": "2026-10-06T05:44:50.957859+00:00",
+          "latest_reconstructed_response_utc": "2026-10-06T06:47:36.431137+00:00",
+          "observed_generation_span_seconds": 3765.473277568817,
+          "observed_generation_span_minutes": 62.757887959480286,
+          "union_of_timed_request_intervals_seconds": 3266.700947999954,
+          "no_timed_request_in_flight_seconds_within_span": 498.7723295688629,
+          "sum_of_overlapping_request_seconds": 52483.857652425766,
+          "peak_observed_timed_request_overlap": 32,
+          "index_construction_seconds": 15.038912510641609,
+          "generation_span_plus_index_seconds": 3780.512190079459,
+          "batches_sha256": "e5d837e861c51296747e22043e811ebbaac5a3a4d2a5062fbe3912cb956b969c",
+          "note": "Observed deployment duration includes idle/recovery gaps. Union measures time with at least one timed request in flight, not complete active pipeline time. Failed requests without durations are not separately timed. Different observed concurrency prevents intrinsic model/strategy speed attribution."
+        }
+      }
+    }
+  },
+  "modal_billing": {
+    "checked_at_utc": "2026-10-06T09:54:58.406873+00:00",
+    "experiment_app_totals": {
+      "ap-GM2WEAqaXlfk2P7KsswVqo": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.00844796",
+        "including_egress_usd": "0.00883850"
+      },
+      "ap-PKW41ibPKoHtdnSi8Ws5dX": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.01316274",
+        "including_egress_usd": "0.01392078"
+      },
+      "ap-TvOIXraV1xPVTNKtUkTbTU": {
+        "description": "ecir-doc2query-t5-full",
+        "compute_usd": "1.60737280",
+        "including_egress_usd": "1.60778359"
+      },
+      "ap-TxPfXkNJDB1WrFNupYGnFX": {
+        "description": "ecir-splade-full",
+        "compute_usd": "1.52231147",
+        "including_egress_usd": "1.52273621"
+      },
+      "ap-aaNYXugtuH6UrI0wPeGHW5": {
+        "description": "ecir-doc2query-t5-benchmark",
+        "compute_usd": "0.00595282",
+        "including_egress_usd": "0.00621038"
+      },
+      "ap-jR0WRJSAUy1Qz2d5sCykh3": {
+        "description": "ecir-doc2query-t5-full",
+        "compute_usd": "0.00166399",
+        "including_egress_usd": "0.00166399"
+      }
+    },
+    "all_reported_experiment_apps_including_failed_attempts_usd": "3.16115345",
+    "monthly_workspace_summary": {
+      "metered_cost": "4.67020041",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "free_storage": "-1.23795873",
+        "reservation_adjustment": "-0E-8",
+        "credits": "-3.43000000",
+        "plan_cost": "0E-8",
+        "network_egress_allowance": "-0.00224168"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "3.43528563",
+        "llm_tokens": "0E-8",
+        "volumes": "1.23795873"
+      }
+    },
+    "note": "Provider-reported usage snapshot, subject to later adjustments. App totals include reported pilots/failed attempts; absent charges are not proof of zero. Workspace credits/payable differ from metered costs."
+  },
+  "limitations": [
+    "Quality is official judged-candidate ranking; timing is exact full-corpus top10. No whole-catalog recall evaluation.",
+    "Timing uses one local CPU thread, warm resident indexes, no network/ANN. Three shuffled passes; no uncertainty analysis across independent hardware runs.",
+    "Neural document encoding occurs separately on different hardware; preparation boundaries are not identical.",
+    "Hybrids use full-candidate RRF for quality, but top1000 per component for timing; these are different retrieval protocols.",
+    "Serialized index sizes exclude common product-ID mapping, metadata, model weights and resident-memory overhead.",
+    "Structured/T5/Ling generation uses shortened metadata; E5/SPLADE use full metadata capped at512tokens.",
+    "T5 keeps prior local effectiveness outputs; cloud rerun measures preparation, not replacement rankings.",
+    "No ESCI training/tuning. Three T5 queries per product is not a reproduction of the original40-query setup."
+  ],
+  "hardware": {
+    "cpu": "Apple M4",
+    "ram_bytes": 17179869184,
+    "os": "macOS27.0 arm64",
+    "query_inference_device": "CPU",
+    "thread_limit": 1,
+    "python": "3.9",
+    "torch": "2.8.0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "transformers": "4.57.6"
+  },
+  "current_primary_comparison_report": "reports/modal_common_t4_verified.json",
+  "scope_note": "This file preserves historical local CPU results; primary results now in modal_common_t4_verified.json."
+}

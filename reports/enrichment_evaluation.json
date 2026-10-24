@@ -1,0 +1,348 @@
+{
+  "queries": 8956,
+  "candidate_pairs": 181701,
+  "products": 164900,
+  "k1": 1.2,
+  "b": 0.75,
+  "gains": {
+    "E": 1.0,
+    "S": 0.1,
+    "C": 0.01,
+    "I": 0.0
+  },
+  "analyzer": "unicode_alphanumeric_casefold_html_v1",
+  "original_fields": [
+    "product_title",
+    "product_description",
+    "product_bullet_point",
+    "product_brand",
+    "product_color"
+  ],
+  "corpus_scope": "All distinct English official test-candidate products, identical across methods.",
+  "note": "This corpus differs from the initial 482,105-product plain baseline; this experiment reruns plain BM25 for paired comparisons.",
+  "bootstrap_repetitions": 1000,
+  "seed": 42,
+  "results": {
+    "plain": {
+      "ndcg_at_10": {
+        "mean": 0.7009012568216625,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8240256456612414,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7554616809742571,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.626507369361322,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6669611484164533,
+        "queries": 8955
+      }
+    },
+    "keywords": {
+      "ndcg_at_10": {
+        "mean": 0.7044333809934261,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8263392592347709,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7604784200248231,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.634323358642251,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6698205276018302,
+        "queries": 8955
+      }
+    },
+    "synonyms": {
+      "ndcg_at_10": {
+        "mean": 0.7117659921908351,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8303378540287313,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7666742807016481,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6435908887896382,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6761610614134859,
+        "queries": 8955
+      }
+    },
+    "situations": {
+      "ndcg_at_10": {
+        "mean": 0.7054804688804865,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8266354134291658,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7600035905318102,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6330951317552479,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6709501896281962,
+        "queries": 8955
+      }
+    },
+    "all": {
+      "ndcg_at_10": {
+        "mean": 0.7130518987807293,
+        "queries": 8956
+      },
+      "ndcg_full": {
+        "mean": 0.8315252809187894,
+        "queries": 8956
+      },
+      "mrr_exact": {
+        "mean": 0.7695536091587124,
+        "queries": 8956
+      },
+      "exact_at_1": {
+        "mean": 0.6476105404198302,
+        "queries": 8956
+      },
+      "recall_exact_at_10": {
+        "mean": 0.6761405563569604,
+        "queries": 8955
+      }
+    }
+  },
+  "paired_comparisons": {
+    "keywords": {
+      "ndcg_at_10": {
+        "mean_difference": 0.0035321241717636174,
+        "bootstrap_95_percent_ci": [
+          0.002308973853821478,
+          0.004742702379403905
+        ],
+        "improved_queries": 3186,
+        "worsened_queries": 2829
+      },
+      "ndcg_full": {
+        "mean_difference": 0.002313613573529565,
+        "bootstrap_95_percent_ci": [
+          0.0014294551115737388,
+          0.0031750256171377144
+        ],
+        "improved_queries": 3558,
+        "worsened_queries": 3210
+      }
+    },
+    "synonyms": {
+      "ndcg_at_10": {
+        "mean_difference": 0.01086473536917274,
+        "bootstrap_95_percent_ci": [
+          0.009367373444279653,
+          0.012389019799096204
+        ],
+        "improved_queries": 3658,
+        "worsened_queries": 2584
+      },
+      "ndcg_full": {
+        "mean_difference": 0.006312208367489908,
+        "bootstrap_95_percent_ci": [
+          0.005169656145438803,
+          0.007352829650600985
+        ],
+        "improved_queries": 4092,
+        "worsened_queries": 2865
+      }
+    },
+    "situations": {
+      "ndcg_at_10": {
+        "mean_difference": 0.0045792120588240585,
+        "bootstrap_95_percent_ci": [
+          0.0033449640731704868,
+          0.005870217040490653
+        ],
+        "improved_queries": 3145,
+        "worsened_queries": 2692
+      },
+      "ndcg_full": {
+        "mean_difference": 0.002609767767924431,
+        "bootstrap_95_percent_ci": [
+          0.001655448589235186,
+          0.00356618210973754
+        ],
+        "improved_queries": 3574,
+        "worsened_queries": 3067
+      }
+    },
+    "all": {
+      "ndcg_at_10": {
+        "mean_difference": 0.012150641959066849,
+        "bootstrap_95_percent_ci": [
+          0.010352952721647308,
+          0.013895162767651754
+        ],
+        "improved_queries": 4029,
+        "worsened_queries": 3021
+      },
+      "ndcg_full": {
+        "mean_difference": 0.007499635257548035,
+        "bootstrap_95_percent_ci": [
+          0.006140578358714717,
+          0.008740266449300801
+        ],
+        "improved_queries": 4314,
+        "worsened_queries": 3283
+      }
+    }
+  },
+  "provenance": {
+    "source_revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+    "enrichment_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+    "test_sha256": "6f26543d252ab50df2d4b2da382a3dd4c2efee23d8d6c6a3a0b4c82448257fb7",
+    "implementation_sha256": "4b81fff04d92b938a34953ab62123c341f5b75b0ac68d8bdddb287b9c14ef765"
+  },
+  "built_at_utc": "2026-10-05T09:25:23.160102+00:00",
+  "descriptive_subgroups": {
+    "source": {
+      "negations": {
+        "queries": 689,
+        "ndcg_at_10": {
+          "plain": 0.5257559101645332,
+          "keywords": 0.5272024749653191,
+          "synonyms": 0.5295154867421742,
+          "situations": 0.5283949294027223,
+          "all": 0.5330500560937947
+        }
+      },
+      "behavioral": {
+        "queries": 223,
+        "ndcg_at_10": {
+          "plain": 0.6793587814248654,
+          "keywords": 0.6836089654663872,
+          "synonyms": 0.6886755031505796,
+          "situations": 0.6839019233495536,
+          "all": 0.6913913550172232
+        }
+      },
+      "other": {
+        "queries": 7233,
+        "ndcg_at_10": {
+          "plain": 0.7202478619931598,
+          "keywords": 0.7239744455583806,
+          "synonyms": 0.7320360601012041,
+          "situations": 0.7251166554569821,
+          "all": 0.732870629537215
+        }
+      },
+      "parse_pattern": {
+        "queries": 781,
+        "ndcg_at_10": {
+          "plain": 0.6857128640528791,
+          "keywords": 0.6885731271428919,
+          "synonyms": 0.6950591647411413,
+          "situations": 0.6897313291513274,
+          "all": 0.6971326956157979
+        }
+      },
+      "nlqec": {
+        "queries": 30,
+        "ndcg_at_10": {
+          "plain": 0.6144764370625567,
+          "keywords": 0.6311759534883087,
+          "synonyms": 0.6169129372780613,
+          "situations": 0.6086635680224183,
+          "all": 0.6442381981377153
+        }
+      }
+    },
+    "query_length": {
+      "3-5": {
+        "queries": 5926,
+        "ndcg_at_10": {
+          "plain": 0.7043778479365527,
+          "keywords": 0.7083272701572102,
+          "synonyms": 0.7165137346070831,
+          "situations": 0.7097026632838851,
+          "all": 0.718213643034457
+        }
+      },
+      "6+": {
+        "queries": 1318,
+        "ndcg_at_10": {
+          "plain": 0.674744475386759,
+          "keywords": 0.6797824596352229,
+          "synonyms": 0.684093981409487,
+          "situations": 0.6798338102158635,
+          "all": 0.6881979151109638
+        }
+      },
+      "2": {
+        "queries": 1441,
+        "ndcg_at_10": {
+          "plain": 0.7062651264654746,
+          "keywords": 0.7084047205887023,
+          "synonyms": 0.7152870332044754,
+          "situations": 0.7092711492168574,
+          "all": 0.713892390435365
+        }
+      },
+      "1": {
+        "queries": 271,
+        "ndcg_at_10": {
+          "plain": 0.7235692377354261,
+          "keywords": 0.7180570961548067,
+          "synonyms": 0.7238057285394551,
+          "situations": 0.7177284457097215,
+          "all": 0.7165866056251213
+        }
+      }
+    }
+  },
+  "cost": {
+    "products": 164900,
+    "missing_products": 0,
+    "extra_products": 0,
+    "unique_products": 164900,
+    "new_pipeline_reported_charges_usd": "1.4269628520",
+    "uncertain_charge_reservations_usd": "0.00235853520",
+    "new_pipeline_accounted_usd": "1.42932138720",
+    "previous_gemini_pilot_usd": "0.493229",
+    "total_accounted_including_pilots_usd": "1.92255038720",
+    "budget_satisfied": true,
+    "enrichment_sha256": "aafaba81d1e20f68300aeca914c3286730c629b4cb11d0985fb66704d32708b6",
+    "final_parser_sha256": "4a488c8d997447ae387be4a3b345d8f1ba0197d116bd87841101a5d0e1e185d8",
+    "notes": [
+      "Complete coverage of official English test-candidate products.",
+      "Raw outputs retained; deduplication, field limits, source-span keyword filtering and narrow missing-key-separator JSON syntax repair applied before evaluation.",
+      "Temporary provider HTTP 503 responses and checkpoint resumes retained; no relevance labels used in generation or repair."
+    ]
+  },
+  "primary_conclusion": {
+    "metric": "ndcg_at_10",
+    "comparison": "all versus plain",
+    "absolute_improvement": 0.012150641959066788,
+    "relative_improvement_percent": 1.733574000732374,
+    "scope": "English ESCI official small-version test candidate ranking; untuned fixed BM25."
+  }
+}

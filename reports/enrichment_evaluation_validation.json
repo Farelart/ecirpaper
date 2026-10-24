@@ -1,0 +1,44 @@
+{
+  "plain": {
+    "pairs": 181701,
+    "queries": 8956,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_pairs": 0,
+    "invalid_rank_sequences": 0,
+    "independent_sql_ndcg_at_10": 0.7009012568216626
+  },
+  "keywords": {
+    "pairs": 181701,
+    "queries": 8956,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_pairs": 0,
+    "invalid_rank_sequences": 0
+  },
+  "synonyms": {
+    "pairs": 181701,
+    "queries": 8956,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_pairs": 0,
+    "invalid_rank_sequences": 0
+  },
+  "situations": {
+    "pairs": 181701,
+    "queries": 8956,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_pairs": 0,
+    "invalid_rank_sequences": 0
+  },
+  "all": {
+    "pairs": 181701,
+    "queries": 8956,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_pairs": 0,
+    "invalid_rank_sequences": 0,
+    "independent_sql_ndcg_at_10": 0.7130518987807289
+  }
+}

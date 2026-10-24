@@ -1,0 +1,132 @@
+{
+  "verified_complete": true,
+  "products": 164900,
+  "generated_queries": 494700,
+  "checkpoint_files": 81,
+  "input_sha256": "ef91acfb8b5a8e80d312883b98d4a7fdf3e11f69449c2cda51c0e47b0cbecc3e",
+  "pins_verified": {
+    "model": "castorini/doc2query-t5-base-msmarco",
+    "revision": "53926b5364548f0c81b39a31723184d3664aaf06",
+    "batch_size": 16,
+    "queries_per_product": 3,
+    "precision": "float32",
+    "input_max_tokens": 512,
+    "max_length": 64,
+    "top_k": 10,
+    "top_p": 1.0,
+    "temperature": 1.0
+  },
+  "batch_processing_seconds": 7196.832066375007,
+  "batch_processing_minutes": 119.94720110625012,
+  "products_per_second": 22.91285922460866,
+  "latest_session_wall_seconds": 3062.23937832,
+  "total_elapsed_wall_seconds": null,
+  "timing_note": "Batch processing sum covers all saved products. Session timer reset on worker restarts; latest-session time is not full elapsed time. Uncheckpointed work and restart overhead excluded.",
+  "app_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+  "reported_metered_usd_partial": 1.60778359,
+  "billing_status": "Completed app billing reported as of 2026-10-06T05:40:57Z; later provider adjustments possible",
+  "estimated_batch_compute_usd": 1.4966531965233467,
+  "effectiveness_outputs_replaced": false,
+  "actual_reported_metered_compute_usd": 1.6073728,
+  "actual_reported_metered_app_total_usd": 1.60778359,
+  "billing_rows": [
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T00:00:00+01:00",
+      "resource": "Memory",
+      "cost": "0.02948779"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T00:00:00+01:00",
+      "resource": "CPU",
+      "cost": "0.04367185"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T00:00:00+01:00",
+      "resource": "Network Egress",
+      "cost": "0.00012079"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T00:00:00+01:00",
+      "resource": "T4",
+      "cost": "0.27184057"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T01:00:00+01:00",
+      "resource": "Memory",
+      "cost": "0.06368000"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T01:00:00+01:00",
+      "resource": "CPU",
+      "cost": "0.09425242"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T01:00:00+01:00",
+      "resource": "Network Egress",
+      "cost": "0.00029000"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T01:00:00+01:00",
+      "resource": "T4",
+      "cost": "0.58705004"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T02:00:00+01:00",
+      "resource": "Memory",
+      "cost": "0.04423319"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T02:00:00+01:00",
+      "resource": "CPU",
+      "cost": "0.06538219"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T02:00:00+01:00",
+      "resource": "Network Egress",
+      "cost": "0E-8"
+    },
+    {
+      "object_id": "ap-TvOIXraV1xPVTNKtUkTbTU",
+      "description": "ecir-doc2query-t5-full",
+      "environment": "main",
+      "interval_start": "2026-10-06T02:00:00+01:00",
+      "resource": "T4",
+      "cost": "0.40777475"
+    }
+  ],
+  "workspace_billed_cost_usd": 0.0,
+  "billing_note": "App compute includes billed GPU/CPU/memory across restart attempts. Credits are workspace-level; zero payable is not zero resource cost. Report total differs from monthly summary, so monthly usage is not attributed wholly to this app."
+}

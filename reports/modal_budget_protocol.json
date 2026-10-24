@@ -1,0 +1,179 @@
+{
+  "approved_modal_ceiling_usd": 30,
+  "scope": "Additional Modal experiment usage; Ling spending limit unchanged",
+  "current_stage": "Common T4 comparison complete; independent ranking/timing/representation checks passed; report and abstract updated",
+  "gpu": "T4",
+  "max_containers": 1,
+  "function_timeout_seconds": 14400,
+  "pilot_pricing_based_timeout_compute_usd": 0.23137200000000002,
+  "actual_billed_usd": null,
+  "billing_note": "Billing API reports actual metered costs; pilot extrapolation and resource-time ceiling are estimates. Include all failed attempts. Workspace credits are distinct from metered resource cost.",
+  "failed_attempts": [
+    {
+      "app_id": "ap-PKW41ibPKoHtdnSi8Ws5dX",
+      "reason": "Result TorchVersion object requires local torch during deserialization; cast version to plain string.",
+      "actual_billed_usd": null,
+      "retain_in_accounting": true,
+      "actual_metered_compute_usd": 0.01316274
+    },
+    {
+      "app_id": "ap-HVRZOODBj4GlUWFzVBIVrl",
+      "reason": "Stopped without saved output after long wait; no active container reported by CLI.",
+      "actual_billed_usd": null,
+      "retain_in_accounting": true
+    },
+    {
+      "app_id": "ap-ayHNLxYTJvhdHXELnVYDPc",
+      "reason": "Cancelled pending larger request before retrying in smaller requests.",
+      "actual_billed_usd": null,
+      "retain_in_accounting": true
+    },
+    {
+      "call_id": "fc-01M476GD9NWP21VYP7SBGDWW3Z",
+      "reason": "Missing helper module at container startup; no generation",
+      "actual_billed_usd": null,
+      "retain_in_accounting": true
+    }
+  ],
+  "active_pilot_app_id": null,
+  "active_cli_session_id": null,
+  "full_cloud_run_launched": true,
+  "inference_duplicate_guard": "Check active app and CLI before recovery; do not start duplicate jobs.",
+  "memory_mib": 8192,
+  "billing_summary_observed": {
+    "metered_ephemeral_apps_usd": "0.02745498",
+    "billed_cost_usd": "0",
+    "scope": "October workspace snapshot; may lag active jobs. Storage separately offset by free allowance."
+  },
+  "active_full_app_id": null,
+  "active_full_call_id": null,
+  "cpu_request_cores": 2,
+  "cpu_limit_cores": 4,
+  "estimated_full_batch_compute_usd": 1.3712170373779113,
+  "pricing_based_four_hour_compute_ceiling_usd": 3.371904,
+  "latest_progress": {
+    "completed": 153600,
+    "total": 164900,
+    "last_checkpoint": "part_151552.json",
+    "session_elapsed_seconds": 2459.7525336989997,
+    "observed_products_per_second": 19.463495310310304,
+    "estimate_basis": "Latest completed checkpoint interval including checkpoint overhead",
+    "estimated_remaining_minutes": 9.676233910235457,
+    "checked_at_utc": "2026-10-06T01:31:18Z",
+    "active_container_id": "ta-01M47B0MJHGZ1H1N88MRMGZKZR",
+    "full_app_reported_metered_usd": 1.09039346,
+    "billing_status": "Partial metered charges available"
+  },
+  "cloud_verification_report": "reports/modal_t5_full_verified.json",
+  "reported_full_app_metered_usd_partial": 1.60778359,
+  "actual_full_app_metered_compute_usd": 1.6073728,
+  "actual_full_app_metered_total_usd": 1.60778359,
+  "reported_experiment_apps_metered_total_usd": 1.63800123,
+  "workspace_ephemeral_apps_metered_usd": 1.91254942,
+  "billing_as_of_utc": "2026-10-06T20:05:59.891385+00:00",
+  "splade_run": {
+    "call_id": "fc-01M47W6BKYBH89R9V9KFP7FK0M",
+    "gpu": "T4",
+    "workers": 1,
+    "timeout_seconds": 14400,
+    "batch_size": 8,
+    "cpu_limit_cores": 4,
+    "memory_mib": 8192,
+    "pricing_based_four_hour_compute_ceiling_usd": 3.371904,
+    "note": "Estimate excludes image builds and ancillary charges; shared additional Modal ceiling remains $30",
+    "complete": true
+  },
+  "final_reported_experiment_apps_including_egress_usd": "4.20079649",
+  "final_app_accounting": {
+    "ap-0i1xiZ8m2lOJEYnfutdIdJ": {
+      "description": "ecir-e5-full-t4",
+      "compute_usd": "0.36649437",
+      "including_egress_usd": "0.36682888"
+    },
+    "ap-GM2WEAqaXlfk2P7KsswVqo": {
+      "description": "ecir-doc2query-t5-benchmark",
+      "compute_usd": "0.00844796",
+      "including_egress_usd": "0.00883850"
+    },
+    "ap-KeEObtyO01vt5qW3ECOdld": {
+      "description": "ecir-common-t4-retrieval",
+      "compute_usd": "0.48260798",
+      "including_egress_usd": "0.48311671"
+    },
+    "ap-PKW41ibPKoHtdnSi8Ws5dX": {
+      "description": "ecir-doc2query-t5-benchmark",
+      "compute_usd": "0.00471824",
+      "including_egress_usd": "0.01392078"
+    },
+    "ap-TvOIXraV1xPVTNKtUkTbTU": {
+      "description": "ecir-doc2query-t5-full",
+      "compute_usd": "1.60737280",
+      "including_egress_usd": "1.60778359"
+    },
+    "ap-TxPfXkNJDB1WrFNupYGnFX": {
+      "description": "ecir-splade-full",
+      "compute_usd": "1.52231147",
+      "including_egress_usd": "1.52273621"
+    },
+    "ap-aaNYXugtuH6UrI0wPeGHW5": {
+      "description": "ecir-doc2query-t5-benchmark",
+      "compute_usd": "0.00106400",
+      "including_egress_usd": "0.00621038"
+    },
+    "ap-jR0WRJSAUy1Qz2d5sCykh3": {
+      "description": "ecir-doc2query-t5-full",
+      "compute_usd": "0.00166399",
+      "including_egress_usd": "0.00166399"
+    },
+    "ap-FKjrg3NjStiRXWSat1goN6": {
+      "description": "ecir-shared-reranker-t4",
+      "compute_usd": "0.18909833",
+      "including_egress_usd": "0.18969745"
+    }
+  },
+  "e5_t4_run": {
+    "call_id": "fc-01M48FF03TAPSY3EJMFBS259RC",
+    "gpu": "T4",
+    "workers": 1,
+    "batch_size": 32,
+    "timeout_seconds": 14400,
+    "complete": true
+  },
+  "common_t4_run": {
+    "workers": 1,
+    "gpu": "T4",
+    "timeout_seconds": 14400,
+    "methods": 8,
+    "note": "Same host sequential timings; neural encoding/search CUDA, lexical CPU; API Ling remains separate.",
+    "complete": true
+  },
+  "new_stages_pricing_based_compute_ceiling_usd": 6.743808,
+  "reranker_comparison": {
+    "active_app_id": "ap-FKjrg3NjStiRXWSat1goN6",
+    "call_id": "fc-01M49BC0WNACXC1G12362HDFGM",
+    "failed_startup_app_id": "ap-5X57gzpPDPklrOBMwicMmH",
+    "timeout_seconds": 3600,
+    "automatic_retries": 0,
+    "metered_experiment_apps_usd_snapshot": "4.01109904",
+    "billing_note": "Provider snapshot may lag; failed startup retained; additional Modal ceiling remains30USD; API budget unchanged",
+    "observed_at_utc": "2026-10-06T20:05:59.891385+00:00",
+    "successful_app_id": "ap-FKjrg3NjStiRXWSat1goN6",
+    "successful_app": {
+      "description": "ecir-shared-reranker-t4",
+      "compute_usd": "0.18909833",
+      "including_egress_usd": "0.18969745"
+    },
+    "failed_startup_status": "Not present in provider report; charge unknown, not assumed zero",
+    "all_reported_experiment_apps_including_egress_usd": "4.20079649",
+    "workspace_payable_after_credits_usd": "0",
+    "note": "Provider snapshot; resource cost before credits. Total experimental job charge is not per-method serving cost. No new inference or API calls."
+  },
+  "failed_startup_billing_followup": {
+    "app_id": "ap-5X57gzpPDPklrOBMwicMmH",
+    "checks": 3,
+    "status": "Provider-unreported/unknown; not assumed zero",
+    "metered_cost_usd": null,
+    "checked_at_utc": "2026-10-06T20:35:30.690490+00:00",
+    "latest_snapshot": "outputs/modal_rerank/billing_report_20261006T2035.json"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "target": "All 8956 official English small-version test queries, 181701 candidate pairs, 164900 unique products",
+  "primary_comparison": "All three enrichment fields versus plain BM25, NDCG@10 mean paired difference and 95% query bootstrap interval",
+  "secondary_comparisons": "Individual fields versus plain; NDCG-full, Exact MRR, Exact-at-1, Exact-recall@10. Exploratory intervals, no multiple-comparison significance claims.",
+  "corpus": "164900 distinct test candidate products for every variant; plain rerun on this corpus, each variant recomputes IDF and average document length",
+  "fixed_scoring": {
+    "k1": 1.2,
+    "b": 0.75,
+    "fields": "title,description,bullets,brand,colour",
+    "analyzer": "unicode_alphanumeric_casefold_html_v1",
+    "weights": "unweighted concatenation",
+    "ties": "product_id ascending"
+  },
+  "gains": {
+    "E": 1,
+    "S": 0.1,
+    "C": 0.01,
+    "I": 0
+  },
+  "bootstrap": {
+    "repetitions": 1000,
+    "seed": 42,
+    "unit": "query; paired differences"
+  },
+  "no_training": true,
+  "no_test_result_tuning": true,
+  "enrichment_prompt": "prompts/enrichment_english_v2.txt",
+  "enrichment_model": "inclusionai/ling-3.0-flash",
+  "generation": "Eight-product batches; up to two individual retry passes for invalid outputs. Durable $4.40 budget for new pipeline.",
+  "limits": "Candidate-ranking evaluation; incomplete judgments cannot establish whole-catalog recall; no conversational or deployment-latency claims."
+}
